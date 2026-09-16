@@ -1,2 +1,409 @@
-@import '@fontsource/roboto-condensed/latin-400.css';@import '@fontsource/roboto-condensed/latin-700.css';
-.opera-print-app{--pink:#e99898;font-family:'Roboto Condensed',Arial,sans-serif;color:#323232;background:white;min-height:100vh}.opera-print-app *{box-sizing:border-box}.opera-print-layout{display:grid;grid-template-columns:205px minmax(0,1fr)}.opera-print-layout aside{background:#323232;color:white;padding:32px 25px;display:flex;flex-direction:column}.opera-print-layout aside>b{font-size:31px;white-space:nowrap}.opera-print-layout aside em{font-style:normal;color:var(--pink)}.opera-print-layout aside>p{font-size:10px;letter-spacing:2px;line-height:1.8}.opera-print-rail{margin:55px -25px 70px;padding:25px;background:var(--pink);font-size:50px;font-weight:700;color:#323232}.opera-print-rail strong{display:block;font-size:25px;line-height:1.1;margin:10px 0 28px}.opera-print-rail span{font-size:13px;font-weight:400;line-height:1.5;display:block}.opera-print-layout aside>small{margin-top:auto;font-size:12px;line-height:1.7;color:#bbb}.opera-print-app main{padding:36px 3vw;min-width:0;max-width:1550px}.opera-print-heading>span{font-size:10px;letter-spacing:2px;color:#947070}.opera-print-app h1{font-size:clamp(38px,4vw,62px);letter-spacing:-1.5px;line-height:1.02;margin:15px 0}.opera-print-app p{font-size:15px;color:#717171;line-height:1.5}.opera-print-app button{font:inherit;font-size:13px;border:1px solid #ddd;padding:12px 16px;background:#fff;color:#323232;cursor:pointer}.opera-print-app button:disabled{opacity:.4;cursor:not-allowed}.opera-print-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:22px 0;margin:10px 0 25px;border-bottom:1px solid #ddd}.opera-print-tools>span{font-size:12px;margin-left:auto;color:#777}.opera-print-upload{position:relative;overflow:hidden;display:block;background:var(--pink);padding:13px 16px;font-size:13px;font-weight:700;cursor:pointer}.opera-print-upload input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}.opera-print-import{padding:20px;background:#faf1f1;margin-bottom:25px}.opera-print-import label{display:block;font-size:12px}.opera-print-import textarea{width:100%;display:block;font:12px/1.5 monospace;border:1px solid #ddd;padding:12px;margin:10px 0}.opera-print-import small{margin-left:20px;font-size:11px}.opera-print-work{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:28px}.opera-print-tablewrap{overflow:auto;max-height:480px;border:1px solid #ddd}.opera-print-app table{border-collapse:collapse;width:100%;font-size:12px}.opera-print-app th{font-size:11px;font-weight:400;text-align:left;padding:14px 10px;background:#f3f3f3;position:sticky;top:0}.opera-print-app td{padding:16px 10px;border-top:1px solid #ddd;max-width:150px;overflow-wrap:anywhere}.opera-print-app tr.selected{background:#f9dddd}.opera-print-app td button{padding:6px 7px;border:1px solid #ddd;font-size:11px;background:transparent}.opera-print-app .issue{color:#9c3333;font-size:11px}.opera-print-app .valid{color:#51715c;font-size:11px}.opera-print-app h2{font-size:21px;margin:0 0 20px}.opera-print-editor{margin-top:30px;padding-top:25px;border-top:1px solid #ddd}.opera-print-editor>div{display:grid;grid-template-columns:1fr 1fr;gap:20px}.opera-print-editor label{font-size:12px}.opera-print-editor input{font:inherit;font-size:15px;width:100%;display:block;border:1px solid #ccc;padding:10px;margin:8px 0 16px}.opera-print-editor small{font-size:11px;color:#888}.opera-print-card{aspect-ratio:86/54;border-radius:12px;box-shadow:0 12px 25px #00000015;overflow:hidden;background:#fff;border:1px solid #ddd;container-type:inline-size}.opera-print-card>div{height:32%;display:flex;justify-content:space-between;padding:6% 7%;align-items:center}.opera-print-card>div>b{font-size:4cqw;line-height:1}.opera-print-card>div>small{font-size:2.1cqw;line-height:1.4}.opera-print-card section{height:68%;background:var(--pink);position:relative;overflow:hidden;padding:5% 7%}.opera-print-card section>p{font-size:6cqw;line-height:1;color:#222;position:relative;z-index:1;margin:0 0 4%}.opera-print-card section>p strong{font-size:8cqw}.opera-print-card section>span{font-size:3.5cqw;display:block;position:relative;z-index:1}.opera-print-card section>b{font-size:4cqw;position:absolute;bottom:10%;left:7%;z-index:1}.opera-print-card section>i{position:absolute;width:60%;aspect-ratio:1;border:25px solid #ffffff35;border-radius:50%;right:-20%;top:-28%}.opera-print-caption{font-size:10px!important;margin:14px 0 26px}.opera-print-review{padding:22px;background:#f6f6f6;border-top:2px solid #323232}.opera-print-review h3{font-size:16px;margin:0 0 14px}.opera-print-review p{font-size:13px;color:#8b3c3c}.opera-print-review small{font-size:11px;color:#888;line-height:1.6}.opera-print-app .opera-print-export{background:var(--pink);border:0;width:100%;margin-top:22px;padding:18px;font-size:16px;font-weight:700}.opera-print-status{font-size:12px!important;margin-top:28px;min-height:20px}.opera-print-error{color:#a33232!important;background:#fff2f2;padding:12px}.opera-print-app :focus-visible{outline:2px solid #9c5555;outline-offset:3px}@media(max-width:1000px){.opera-print-layout{grid-template-columns:160px minmax(0,1fr)}.opera-print-layout aside{padding:30px 18px}.opera-print-layout aside>b{font-size:25px}.opera-print-rail{margin-left:-18px;margin-right:-18px}.opera-print-work{grid-template-columns:1fr}.opera-print-preview{max-width:600px}.opera-print-tools>span{margin-left:0}}@media(max-width:600px){.opera-print-layout{display:block}.opera-print-layout aside{display:flex;flex-direction:row;align-items:center;gap:20px;padding:18px 20px}.opera-print-layout aside>b{font-size:26px}.opera-print-layout aside>p{font-size:8px;margin-left:auto}.opera-print-rail,.opera-print-layout aside>small{display:none}.opera-print-app main{padding:30px 20px}.opera-print-app h1{font-size:42px}.opera-print-tools{gap:8px}.opera-print-tools button,.opera-print-upload{font-size:11px;padding:10px}.opera-print-tools>span{width:100%;margin-top:10px}.opera-print-app table{min-width:440px}.opera-print-import small{display:block;margin:15px 0 0}.opera-print-editor>div{gap:12px}}
+@import "@fontsource/roboto-condensed/latin-400.css";
+@import "@fontsource/roboto-condensed/latin-700.css";
+.opera-print-app {
+  --pink: #e99898;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  color: #323232;
+  background: white;
+  min-height: 100vh;
+}
+.opera-print-app * {
+  box-sizing: border-box;
+}
+.opera-print-layout {
+  display: grid;
+  grid-template-columns: 205px minmax(0, 1fr);
+}
+.opera-print-layout aside {
+  background: #323232;
+  color: white;
+  padding: 32px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.opera-print-layout aside > b {
+  font-size: 31px;
+  white-space: nowrap;
+}
+.opera-print-layout aside em {
+  font-style: normal;
+  color: var(--pink);
+}
+.opera-print-layout aside > p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+.opera-print-rail {
+  margin: 55px -25px 70px;
+  padding: 25px;
+  background: var(--pink);
+  font-size: 50px;
+  font-weight: 700;
+  color: #323232;
+}
+.opera-print-rail strong {
+  display: block;
+  font-size: 25px;
+  line-height: 1.1;
+  margin: 10px 0 28px;
+}
+.opera-print-rail span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+}
+.opera-print-layout aside > small {
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #bbb;
+}
+.opera-print-app main {
+  padding: 36px 3vw;
+  min-width: 0;
+  max-width: 1550px;
+}
+.opera-print-heading > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #947070;
+}
+.opera-print-app h1 {
+  font-size: clamp(38px, 4vw, 62px);
+  letter-spacing: -1.5px;
+  line-height: 1.02;
+  margin: 15px 0;
+}
+.opera-print-app p {
+  font-size: 15px;
+  color: #717171;
+  line-height: 1.5;
+}
+.opera-print-app button {
+  font: inherit;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  background: #fff;
+  color: #323232;
+  cursor: pointer;
+}
+.opera-print-app button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.opera-print-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 22px 0;
+  margin: 10px 0 25px;
+  border-bottom: 1px solid #ddd;
+}
+.opera-print-tools > span {
+  font-size: 12px;
+  margin-left: auto;
+  color: #777;
+}
+.opera-print-upload {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background: var(--pink);
+  padding: 13px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.opera-print-upload input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+.opera-print-import {
+  padding: 20px;
+  background: #faf1f1;
+  margin-bottom: 25px;
+}
+.opera-print-import label {
+  display: block;
+  font-size: 12px;
+}
+.opera-print-import textarea {
+  width: 100%;
+  display: block;
+  font: 12px/1.5 monospace;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 10px 0;
+}
+.opera-print-import small {
+  margin-left: 20px;
+  font-size: 11px;
+}
+.opera-print-work {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  gap: 28px;
+}
+.opera-print-tablewrap {
+  overflow: auto;
+  max-height: 480px;
+  border: 1px solid #ddd;
+}
+.opera-print-app table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+.opera-print-app th {
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  padding: 14px 10px;
+  background: #f3f3f3;
+  position: sticky;
+  top: 0;
+}
+.opera-print-app td {
+  padding: 16px 10px;
+  border-top: 1px solid #ddd;
+  max-width: 150px;
+  overflow-wrap: anywhere;
+}
+.opera-print-app tr.selected {
+  background: #f9dddd;
+}
+.opera-print-app td button {
+  padding: 6px 7px;
+  border: 1px solid #ddd;
+  font-size: 11px;
+  background: transparent;
+}
+.opera-print-app .issue {
+  color: #9c3333;
+  font-size: 11px;
+}
+.opera-print-app .valid {
+  color: #51715c;
+  font-size: 11px;
+}
+.opera-print-app h2 {
+  font-size: 21px;
+  margin: 0 0 20px;
+}
+.opera-print-editor {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #ddd;
+}
+.opera-print-editor > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.opera-print-editor label {
+  font-size: 12px;
+}
+.opera-print-editor input {
+  font: inherit;
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 8px 0 16px;
+}
+.opera-print-editor small {
+  font-size: 11px;
+  color: #888;
+}
+.opera-print-card {
+  aspect-ratio: 86/54;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px #00000015;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ddd;
+  container-type: inline-size;
+}
+.opera-print-card > div {
+  height: 32%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6% 7%;
+  align-items: center;
+}
+.opera-print-card > div > b {
+  font-size: 4cqw;
+  line-height: 1;
+}
+.opera-print-card > div > small {
+  font-size: 2.1cqw;
+  line-height: 1.4;
+}
+.opera-print-card section {
+  height: 68%;
+  background: var(--pink);
+  position: relative;
+  overflow: hidden;
+  padding: 5% 7%;
+}
+.opera-print-card section > p {
+  font-size: 6cqw;
+  line-height: 1;
+  color: #222;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 4%;
+}
+.opera-print-card section > p strong {
+  font-size: 8cqw;
+}
+.opera-print-card section > span {
+  font-size: 3.5cqw;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.opera-print-card section > b {
+  font-size: 4cqw;
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  z-index: 1;
+}
+.opera-print-card section > i {
+  position: absolute;
+  width: 60%;
+  aspect-ratio: 1;
+  border: 25px solid #ffffff35;
+  border-radius: 50%;
+  right: -20%;
+  top: -28%;
+}
+.opera-print-caption {
+  font-size: 10px !important;
+  margin: 14px 0 26px;
+}
+.opera-print-review {
+  padding: 22px;
+  background: #f6f6f6;
+  border-top: 2px solid #323232;
+}
+.opera-print-review h3 {
+  font-size: 16px;
+  margin: 0 0 14px;
+}
+.opera-print-review p {
+  font-size: 13px;
+  color: #8b3c3c;
+}
+.opera-print-review small {
+  font-size: 11px;
+  color: #888;
+  line-height: 1.6;
+}
+.opera-print-app .opera-print-export {
+  background: var(--pink);
+  border: 0;
+  width: 100%;
+  margin-top: 22px;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.opera-print-status {
+  font-size: 12px !important;
+  margin-top: 28px;
+  min-height: 20px;
+}
+.opera-print-error {
+  color: #a33232 !important;
+  background: #fff2f2;
+  padding: 12px;
+}
+.opera-print-app :focus-visible {
+  outline: 2px solid #9c5555;
+  outline-offset: 3px;
+}
+@media (max-width: 1000px) {
+  .opera-print-layout {
+    grid-template-columns: 160px minmax(0, 1fr);
+  }
+  .opera-print-layout aside {
+    padding: 30px 18px;
+  }
+  .opera-print-layout aside > b {
+    font-size: 25px;
+  }
+  .opera-print-rail {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+  .opera-print-work {
+    grid-template-columns: 1fr;
+  }
+  .opera-print-preview {
+    max-width: 600px;
+  }
+  .opera-print-tools > span {
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .opera-print-layout {
+    display: block;
+  }
+  .opera-print-layout aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 20px;
+  }
+  .opera-print-layout aside > b {
+    font-size: 26px;
+  }
+  .opera-print-layout aside > p {
+    font-size: 8px;
+    margin-left: auto;
+  }
+  .opera-print-rail,
+  .opera-print-layout aside > small {
+    display: none;
+  }
+  .opera-print-app main {
+    padding: 30px 20px;
+  }
+  .opera-print-app h1 {
+    font-size: 42px;
+  }
+  .opera-print-tools {
+    gap: 8px;
+  }
+  .opera-print-tools button,
+  .opera-print-upload {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .opera-print-tools > span {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .opera-print-app table {
+    min-width: 440px;
+  }
+  .opera-print-import small {
+    display: block;
+    margin: 15px 0 0;
+  }
+  .opera-print-editor > div {
+    gap: 12px;
+  }
+}

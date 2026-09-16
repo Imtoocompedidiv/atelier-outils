@@ -1,0 +1,347 @@
+.atelier-du-renard-app {
+  background: #fff;
+  color: #111;
+  min-height: 100vh;
+  font:
+    17px/1.45 "Fira Sans Extra Condensed",
+    sans-serif;
+}
+.atelier-du-renard-app button,
+.atelier-du-renard-app input,
+.atelier-du-renard-app textarea {
+  font:
+    400 15px "Open Sans",
+    sans-serif;
+}
+.atelier-du-renard-app button {
+  border: 1px solid #aaa;
+  background: white;
+  color: #222;
+  padding: 12px 23px;
+  border-radius: 2px;
+}
+.atelier-du-renard-app button:disabled {
+  opacity: 0.4;
+}
+.atelier-du-renard-app > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4%;
+  padding: 24px 0;
+  border-bottom: 1px solid #bcbcbc;
+}
+.atelier-du-renard-app > header strong {
+  font-size: 34px;
+  font-weight: 300;
+}
+.atelier-du-renard-app > header button {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+.atelier-du-renard-app main {
+  padding: 24px 4% 10px;
+  max-width: 1600px;
+  margin: auto;
+}
+.atelier-du-renard-app h1 {
+  font-size: clamp(42px, 4.5vw, 62px);
+  font-weight: 300;
+  line-height: 1.05;
+  margin: 0 0 6px;
+}
+.atelier-du-renard-intro {
+  font-size: 26px;
+  color: #666;
+  margin: 0 0 24px;
+}
+.atelier-du-renard-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(360px, 1fr);
+  gap: 14px;
+}
+.atelier-du-renard-drawing {
+  border: 1px solid #d5d5d5;
+  min-width: 0;
+}
+.atelier-du-renard-drawing svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 390px;
+}
+.atelier-du-renard-drawing svg text {
+  font:
+    300 23px "Fira Sans Extra Condensed",
+    sans-serif;
+  fill: #111;
+}
+.atelier-du-renard-drawing svg .atelier-du-renard-diagram-note {
+  font-size: 16px;
+  fill: #666;
+}
+.atelier-du-renard-results {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 24px 20px;
+  gap: 24px;
+}
+.atelier-du-renard-results > div {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 15px;
+}
+.atelier-du-renard-results > div:last-child {
+  border: 0;
+}
+.atelier-du-renard-results strong {
+  font-weight: 300;
+  font-size: 29px;
+  display: block;
+  white-space: nowrap;
+}
+.atelier-du-renard-results span {
+  display: block;
+  font-size: 18px;
+  line-height: 1.15;
+  color: #666;
+}
+.atelier-du-renard-form {
+  border: 1px solid #d5d5d5;
+  padding: 25px 30px;
+}
+.atelier-du-renard-form h2 {
+  font-size: 38px;
+  font-weight: 300;
+  margin: 0 0 22px;
+}
+.atelier-du-renard-form label {
+  display: grid;
+  grid-template-columns: 1fr 120px 25px;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 23px;
+  font-size: 21px;
+}
+.atelier-du-renard-form input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  font-size: 19px;
+}
+.atelier-du-renard-form small {
+  font-size: 18px;
+  color: #666;
+}
+.atelier-du-renard-form label.atelier-du-renard-height {
+  border-top: 1px solid #ddd;
+  padding-top: 27px;
+  margin-top: 28px;
+}
+.atelier-du-renard-points {
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+  padding: 18px 22px;
+}
+.atelier-du-renard-points h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0;
+  padding-right: 24px;
+  border-right: 1px solid #ddd;
+  white-space: nowrap;
+}
+.atelier-du-renard-points > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.atelier-du-renard-points label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.atelier-du-renard-points input {
+  width: 18px;
+  height: 18px;
+  accent-color: #333;
+}
+.atelier-du-renard-points .atelier-du-renard-note {
+  display: block;
+  flex: 1;
+  color: #666;
+  font-size: 15px;
+  min-width: 180px;
+}
+.atelier-du-renard-note textarea {
+  display: block;
+  margin-top: 3px;
+  width: 100%;
+  border: 1px solid #bbb;
+  padding: 8px;
+  resize: vertical;
+  font-size: 13px;
+}
+.atelier-du-renard-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 20px 0;
+}
+.atelier-du-renard-actions button:first-child {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+.atelier-du-renard-actions span {
+  margin-left: auto;
+  font-size: 16px;
+  color: #555;
+}
+.atelier-du-renard-questions {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin-top: 16px;
+  max-width: 85ch;
+}
+.atelier-du-renard-questions summary {
+  cursor: pointer;
+}
+.atelier-du-renard-questions li {
+  margin: 8px 0;
+}
+.atelier-du-renard-errors {
+  color: #962d2d;
+  font:
+    14px/1.4 "Open Sans",
+    sans-serif;
+}
+.atelier-du-renard-drawing-error {
+  display: grid;
+  place-content: center;
+  min-height: 470px;
+  color: #666;
+  font-size: 22px;
+}
+.atelier-du-renard-app .atelier-footer {
+  background: white;
+  border-top: 1px solid #eee;
+  font:
+    14px "Fira Sans Extra Condensed",
+    sans-serif;
+}
+@media (max-width: 1100px) {
+  .atelier-du-renard-workspace {
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .atelier-du-renard-form {
+    padding: 20px;
+  }
+  .atelier-du-renard-form label {
+    grid-template-columns: 1fr 95px 20px;
+    font-size: 19px;
+    gap: 8px;
+  }
+  .atelier-du-renard-results {
+    gap: 12px;
+    padding: 20px 12px;
+  }
+  .atelier-du-renard-results strong {
+    font-size: 24px;
+  }
+  .atelier-du-renard-results span {
+    font-size: 15px;
+  }
+  .atelier-du-renard-points {
+    flex-wrap: wrap;
+  }
+  .atelier-du-renard-points .atelier-du-renard-note {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .atelier-du-renard-app > header {
+    padding: 18px 0;
+  }
+  .atelier-du-renard-app > header strong {
+    font-size: 26px;
+  }
+  .atelier-du-renard-app > header button {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+  .atelier-du-renard-app main {
+    padding: 24px 20px 5px;
+  }
+  .atelier-du-renard-app h1 {
+    font-size: 47px;
+  }
+  .atelier-du-renard-intro {
+    font-size: 23px;
+    margin: 14px 0 22px;
+  }
+  .atelier-du-renard-workspace {
+    grid-template-columns: 1fr;
+  }
+  .atelier-du-renard-drawing svg {
+    min-height: 0;
+  }
+  .atelier-du-renard-results {
+    gap: 8px;
+    padding: 16px 12px;
+  }
+  .atelier-du-renard-results strong {
+    font-size: 24px;
+    white-space: normal;
+  }
+  .atelier-du-renard-results span {
+    font-size: 15px;
+  }
+  .atelier-du-renard-form label {
+    grid-template-columns: 1fr 102px 22px;
+  }
+  .atelier-du-renard-form {
+    padding: 20px;
+  }
+  .atelier-du-renard-form h2 {
+    font-size: 34px;
+  }
+  .atelier-du-renard-points {
+    padding: 18px;
+    gap: 14px;
+  }
+  .atelier-du-renard-points h2 {
+    border: 0;
+    padding: 0;
+    flex-basis: 100%;
+    font-size: 27px;
+  }
+  .atelier-du-renard-points > div {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .atelier-du-renard-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .atelier-du-renard-actions button {
+    flex: 1;
+    font-size: 13px;
+    padding: 12px;
+  }
+  .atelier-du-renard-actions span {
+    flex-basis: 100%;
+    margin: 4px 0;
+  }
+  .atelier-du-renard-questions {
+    line-height: 1.55;
+  }
+}

@@ -1,4 +1,80 @@
-export const initialOrders=[{id:'FF-01',name:'Fauteuils salon',supplier:'Manufacture A · exemple',quantity:12,unit:'400.00',departure:'2026-10-12',deposit:40,lead:10,paidDeposit:true,paidBalance:false},{id:'FF-02',name:'Tables d’appoint',supplier:'Atelier B · exemple',quantity:6,unit:'360.00',departure:'2026-11-28',deposit:40,lead:10,paidDeposit:true,paidBalance:false},{id:'FF-03',name:'Suspensions',supplier:'Studio C · exemple',quantity:8,unit:'250.00',departure:'2027-01-20',deposit:40,lead:10,paidDeposit:false,paidBalance:false}];
-export function money(raw){if(!/^\d+(?:[.,]\d{1,2})?$/.test(String(raw)))return null;const n=Number(String(raw).replace(',','.'));return Number.isFinite(n)&&n<=1000000?Math.round(n*100):null;}
-export function dateShift(date,days){if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return null;const t=Date.parse(`${date}T12:00:00Z`);if(!Number.isFinite(t)||new Date(t).toISOString().slice(0,10)!==date)return null;return new Date(t-days*86400000).toISOString().slice(0,10);}
-export function orderMath(o){const unit=money(o.unit),q=Number(o.quantity),deposit=Number(o.deposit),lead=Number(o.lead);const valid=unit!==null&&Number.isInteger(q)&&q>0&&q<=10000&&Number.isFinite(deposit)&&deposit>=0&&deposit<=100&&Number.isInteger(lead)&&lead>=0&&lead<=365&&!!dateShift(o.departure,0);if(!valid)return {valid:false};const total=unit*q,advance=Math.round(total*deposit/100),balance=total-advance;return {valid,total,advance,balance,due:dateShift(o.departure,lead),outstanding:(o.paidDeposit?0:advance)+(o.paidBalance?0:balance)};}
+export const initialOrders = [
+  {
+    id: "FF-01",
+    name: "Fauteuils salon",
+    supplier: "Manufacture A · exemple",
+    quantity: 12,
+    unit: "400.00",
+    departure: "2026-10-12",
+    deposit: 40,
+    lead: 10,
+    paidDeposit: true,
+    paidBalance: false,
+  },
+  {
+    id: "FF-02",
+    name: "Tables d’appoint",
+    supplier: "Atelier B · exemple",
+    quantity: 6,
+    unit: "360.00",
+    departure: "2026-11-28",
+    deposit: 40,
+    lead: 10,
+    paidDeposit: true,
+    paidBalance: false,
+  },
+  {
+    id: "FF-03",
+    name: "Suspensions",
+    supplier: "Studio C · exemple",
+    quantity: 8,
+    unit: "250.00",
+    departure: "2027-01-20",
+    deposit: 40,
+    lead: 10,
+    paidDeposit: false,
+    paidBalance: false,
+  },
+];
+export function money(raw) {
+  if (!/^\d+(?:[.,]\d{1,2})?$/.test(String(raw))) return null;
+  const n = Number(String(raw).replace(",", "."));
+  return Number.isFinite(n) && n <= 1000000 ? Math.round(n * 100) : null;
+}
+export function dateShift(date, days) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
+  const t = Date.parse(`${date}T12:00:00Z`);
+  if (!Number.isFinite(t) || new Date(t).toISOString().slice(0, 10) !== date)
+    return null;
+  return new Date(t - days * 86400000).toISOString().slice(0, 10);
+}
+export function orderMath(o) {
+  const unit = money(o.unit),
+    q = Number(o.quantity),
+    deposit = Number(o.deposit),
+    lead = Number(o.lead);
+  const valid =
+    unit !== null &&
+    Number.isInteger(q) &&
+    q > 0 &&
+    q <= 10000 &&
+    Number.isFinite(deposit) &&
+    deposit >= 0 &&
+    deposit <= 100 &&
+    Number.isInteger(lead) &&
+    lead >= 0 &&
+    lead <= 365 &&
+    !!dateShift(o.departure, 0);
+  if (!valid) return { valid: false };
+  const total = unit * q,
+    advance = Math.round((total * deposit) / 100),
+    balance = total - advance;
+  return {
+    valid,
+    total,
+    advance,
+    balance,
+    due: dateShift(o.departure, lead),
+    outstanding: (o.paidDeposit ? 0 : advance) + (o.paidBalance ? 0 : balance),
+  };
+}

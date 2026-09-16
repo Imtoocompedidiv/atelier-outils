@@ -1,0 +1,426 @@
+.fwells-app {
+  font:
+    13px "DM Sans",
+    Arial,
+    sans-serif;
+  background: #fff;
+  color: #111;
+}
+.fwells-app * {
+  box-sizing: border-box;
+}
+.fwells-app button,
+.fwells-app input,
+.fwells-app textarea {
+  font: inherit;
+}
+.fwells-app button {
+  cursor: pointer;
+}
+.fwells-app button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.fwells-app :focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 4px;
+}
+.fwells-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 4.5%;
+  padding: 24px 0;
+  border-bottom: 1px solid #111;
+}
+.fwells-header > b {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.fwells-header > span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  flex: 1;
+}
+.fwells-header button {
+  border: 1px solid #777;
+  background: white;
+  font-size: 10px;
+  padding: 10px 14px;
+}
+.fwells-app main {
+  padding: 30px 4.5% 15px;
+  max-width: 1500px;
+  margin: auto;
+}
+.fwells-heading {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  align-items: end;
+  gap: 8px 30px;
+  margin-bottom: 35px;
+}
+.fwells-heading > p {
+  grid-column: 1/-1;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.fwells-heading h1 {
+  font-size: clamp(45px, 5.4vw, 76px);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.fwells-heading > span {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 4px;
+}
+.fwells-work {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 0.9fr;
+  border-block: 1px solid #aaa;
+}
+.fwells-job {
+  padding: 25px 25px 20px 0;
+}
+.fwells-app h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  margin: 0;
+}
+.fwells-job > p:first-of-type,
+.fwells-preparation > p:first-of-type {
+  font-size: 8px;
+  letter-spacing: 1.6px;
+  color: #777;
+  margin: 10px 0 26px;
+}
+.fwells-job label,
+.fwells-inks > div > label:not(.fwells-color) {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 17px;
+}
+.fwells-app input:not([type="checkbox"]):not([type="color"]),
+.fwells-app textarea {
+  width: 100%;
+  display: block;
+  min-width: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px 11px;
+  margin-top: 7px;
+  font-size: 12px;
+  color: #111;
+  border-radius: 0;
+}
+.fwells-app textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+.fwells-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.fwells-job .fwells-small {
+  font-size: 9px;
+  line-height: 1.8;
+  color: #888;
+  margin-top: 23px;
+}
+.fwells-proof {
+  border-inline: 1px solid #aaa;
+  padding: 25px 23px 20px;
+}
+.fwells-proof-title > span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: #777;
+  margin-top: 10px;
+}
+.fwells-poster {
+  padding: 24px 18px 19px;
+  background: #f7f7f5;
+  margin-top: 20px;
+}
+.fwells-poster svg {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  margin: auto;
+  box-shadow: 0 4px 9px #00000013;
+}
+.fwells-proof nav {
+  display: flex;
+  border-block: 1px solid #ccc;
+  margin-top: 20px;
+}
+.fwells-proof nav button {
+  flex: 1;
+  border: 0;
+  background: #fff;
+  font-size: 9px;
+  padding: 14px 7px;
+  border-right: 1px solid #ccc;
+}
+.fwells-proof nav button:last-child {
+  border-right: 0;
+}
+.fwells-proof nav button[aria-pressed="true"] {
+  background: #111;
+  color: #fff;
+}
+.fwells-inks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 22px;
+}
+.fwells-color {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.fwells-color input {
+  border: 0;
+  background: none;
+  padding: 0;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+.fwells-color > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.fwells-color small {
+  display: block;
+  font-size: 8px;
+  color: #777;
+  letter-spacing: 0;
+  margin-top: 5px;
+}
+.fwells-inks > div > label:not(.fwells-color) {
+  font-size: 8px;
+}
+.fwells-inks input:not([type="color"]) {
+  font-size: 9px !important;
+  padding: 9px 7px !important;
+}
+.fwells-proof-note {
+  font-size: 8px;
+  line-height: 1.8;
+  color: #888;
+  margin: 0;
+}
+.fwells-preparation {
+  padding: 25px 0 20px 25px;
+}
+.fwells-preparation > label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+.fwells-preparation > label input {
+  accent-color: #111;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+.fwells-preparation > label b {
+  font-size: 12px;
+  font-weight: 600;
+}
+.fwells-preparation > label small {
+  font-size: 9px;
+  color: #777;
+  line-height: 1.7;
+  display: block;
+  margin-top: 7px;
+}
+.fwells-readiness {
+  border-top: 1px solid #111;
+  padding-top: 22px;
+  margin-top: 25px;
+}
+.fwells-readiness > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.fwells-readiness h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  max-width: 170px;
+  line-height: 1.3;
+}
+.fwells-readiness strong {
+  font-size: 30px;
+  white-space: nowrap;
+}
+.fwells-readiness i {
+  font-style: normal;
+  font-size: 17px;
+  color: #aaa;
+}
+.fwells-readiness progress {
+  width: 100%;
+  height: 7px;
+  border: 0;
+  appearance: none;
+  display: block;
+  margin: 20px 0;
+  background: #eee;
+}
+.fwells-readiness progress::-webkit-progress-bar {
+  background: #eee;
+}
+.fwells-readiness progress::-webkit-progress-value {
+  background: #111;
+}
+.fwells-readiness progress::-moz-progress-bar {
+  background: #111;
+}
+.fwells-readiness > p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #777;
+}
+.fwells-readiness > button {
+  width: 100%;
+  border: 0;
+  background: #111;
+  color: white;
+  padding: 14px 12px;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.fwells-readiness > small {
+  display: block;
+  font-size: 8px;
+  color: #888;
+  line-height: 1.8;
+  margin-top: 13px;
+}
+.fwells-status {
+  font-size: 10px;
+  line-height: 1.8;
+  min-height: 20px;
+  color: #666;
+  margin: 24px 0 0;
+}
+@media (min-width: 1300px) {
+  .fwells-heading h1 br {
+    display: none;
+  }
+  .fwells-heading {
+    grid-template-columns: 1fr;
+  }
+  .fwells-heading > span {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .fwells-work {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  .fwells-preparation {
+    grid-column: 1/-1;
+    border-top: 1px solid #aaa;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+  }
+  .fwells-preparation h2,
+  .fwells-preparation > p,
+  .fwells-readiness {
+    grid-column: 1/-1;
+  }
+  .fwells-readiness {
+    display: block;
+  }
+  .fwells-proof {
+    border-right: 0;
+  }
+  .fwells-heading > span {
+    font-size: 10px;
+  }
+  .fwells-heading h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .fwells-header {
+    margin-inline: 20px;
+    gap: 12px;
+  }
+  .fwells-header > b {
+    font-size: 25px;
+  }
+  .fwells-header > span {
+    display: none;
+  }
+  .fwells-header button {
+    font-size: 9px;
+    padding: 9px 11px;
+  }
+  .fwells-app main {
+    padding: 25px 20px 10px;
+  }
+  .fwells-heading {
+    display: block;
+  }
+  .fwells-heading h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
+    margin-top: 20px;
+  }
+  .fwells-heading > span {
+    display: block;
+    margin-top: 20px;
+  }
+  .fwells-work {
+    display: block;
+  }
+  .fwells-job {
+    padding: 25px 0;
+  }
+  .fwells-proof {
+    border: 0;
+    border-top: 1px solid #aaa;
+    padding: 25px 0;
+  }
+  .fwells-poster {
+    padding: 25px 28px;
+  }
+  .fwells-preparation {
+    display: block;
+    padding: 25px 0;
+  }
+  .fwells-preparation > p:first-of-type {
+    margin-bottom: 25px;
+  }
+  .fwells-preparation > label {
+    margin-bottom: 22px;
+  }
+  .fwells-readiness h3 {
+    max-width: none;
+  }
+  .fwells-inks input:not([type="color"]) {
+    font-size: 10px !important;
+  }
+}

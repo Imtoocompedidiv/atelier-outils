@@ -1,0 +1,571 @@
+.atelier-foggia-app {
+  --ink: #27231f;
+  --paper: #fcfbf9;
+  --rust: #84523b;
+  --rule: #cfc5bd;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.atelier-foggia-app * {
+  box-sizing: border-box;
+}
+.atelier-foggia-app button,
+.atelier-foggia-app input,
+.atelier-foggia-app select,
+.atelier-foggia-app textarea {
+  font: inherit;
+}
+.atelier-foggia-app button {
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+.atelier-foggia-app button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.atelier-foggia-app button:focus-visible,
+.atelier-foggia-app input:focus-visible,
+.atelier-foggia-app select:focus-visible,
+.atelier-foggia-app textarea:focus-visible {
+  outline: 3px solid #84523b80;
+  outline-offset: 3px;
+}
+.atelier-foggia-app header {
+  margin: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--rust);
+  gap: 20px;
+}
+.atelier-foggia-app header > div {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.atelier-foggia-app header strong {
+  font:
+    30px "Spectral",
+    serif;
+  letter-spacing: 1px;
+}
+.atelier-foggia-app header span {
+  font:
+    italic 19px "Spectral",
+    serif;
+  border-left: 1px solid var(--rust);
+  padding-left: 22px;
+}
+.atelier-foggia-app main {
+  max-width: 1540px;
+  margin: auto;
+  padding: 26px 3% 12px;
+}
+.atelier-foggia-app h1 {
+  font:
+    400 clamp(36px, 4vw, 60px)/1.12 "Spectral",
+    serif;
+  letter-spacing: -1.7px;
+  margin: 0 0 7px;
+}
+.atelier-foggia-intro {
+  font:
+    23px/1.5 "Spectral",
+    serif;
+  color: #665f59;
+  margin: 0 0 26px;
+}
+.atelier-foggia-workbench {
+  display: grid;
+  grid-template-columns: 245px minmax(300px, 1fr) 300px;
+  border-top: 1px solid var(--rust);
+  border-bottom: 1px solid var(--rust);
+}
+.atelier-foggia-section-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+.atelier-foggia-section-title span {
+  font-size: 10px;
+  color: var(--rust);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.atelier-foggia-workbench > nav {
+  padding: 20px 18px 24px 0;
+}
+.atelier-foggia-view-row {
+  margin-bottom: 17px;
+}
+.atelier-foggia-view {
+  display: grid;
+  grid-template-columns: 23px 67px 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--ink);
+}
+.atelier-foggia-number {
+  border: 1px solid var(--rust);
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  color: var(--rust);
+}
+.atelier-foggia-view[aria-pressed="true"] .atelier-foggia-number {
+  background: var(--rust);
+  color: #fff;
+}
+.atelier-foggia-view strong {
+  font:
+    19px "Spectral",
+    serif;
+  display: block;
+}
+.atelier-foggia-view small {
+  font-size: 11px;
+  color: var(--rust);
+}
+.atelier-foggia-thumb {
+  height: 80px;
+  background-size: 200% 200%;
+  border: 1px solid #e4ddd7;
+}
+.atelier-foggia-view[aria-pressed="true"] .atelier-foggia-thumb {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+.atelier-foggia-add-view {
+  font-size: 10px !important;
+  color: var(--rust);
+  background: transparent;
+  border: 1px solid var(--rule);
+  padding: 6px 8px;
+  margin: 9px 0 0 33px;
+}
+.atelier-foggia-gallery {
+  padding: 20px;
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  min-width: 0;
+}
+.atelier-foggia-photo {
+  aspect-ratio: 1;
+  background-size: 200% 200%;
+  position: relative;
+  cursor: crosshair;
+  overflow: visible;
+  background-color: #eee7df;
+}
+.atelier-foggia-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--rust);
+  color: #fff;
+  box-shadow: 0 1px 7px #0005;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  z-index: 1;
+}
+.atelier-foggia-pin.active {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+.atelier-foggia-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+.atelier-foggia-caption p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #706860;
+  margin: 0;
+}
+.atelier-foggia-text-button {
+  border: 0;
+  background: transparent;
+  color: var(--rust);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+  white-space: normal;
+  text-align: left;
+}
+.atelier-foggia-caption button {
+  font-size: 10px;
+  min-width: 95px;
+}
+.atelier-foggia-observations {
+  padding: 20px 0 20px 22px;
+}
+.atelier-foggia-app h2 {
+  font:
+    400 30px/1.2 "Spectral",
+    serif;
+  margin: 19px 0;
+}
+.atelier-foggia-point-picker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  gap: 10px;
+}
+.atelier-foggia-point-picker select {
+  padding: 5px;
+  background: white;
+  border: 1px solid var(--rule);
+  max-width: 130px;
+}
+.atelier-foggia-note {
+  font:
+    16px "Spectral",
+    serif;
+  display: block;
+}
+.atelier-foggia-note textarea {
+  width: 100%;
+  padding: 12px;
+  font:
+    14px/1.6 "Spectral",
+    serif;
+  margin-top: 9px;
+  background: transparent;
+  border: 1px solid var(--rule);
+  resize: vertical;
+  min-height: 155px;
+}
+.atelier-foggia-position-title {
+  font:
+    15px "Spectral",
+    serif;
+  margin: 22px 0 10px;
+}
+.atelier-foggia-range {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 12px 0;
+}
+.atelier-foggia-range span {
+  font:
+    16px "Spectral",
+    serif;
+  width: 12px;
+}
+.atelier-foggia-range input {
+  min-width: 0;
+  flex: 1;
+  accent-color: var(--rust);
+}
+.atelier-foggia-range output {
+  font-size: 12px;
+  width: 44px;
+  text-align: right;
+}
+.atelier-foggia-outline,
+.atelier-foggia-primary {
+  border: 1px solid var(--rust);
+  padding: 12px 17px;
+  min-height: 45px;
+  font:
+    15px "Spectral",
+    serif !important;
+}
+.atelier-foggia-outline {
+  background: transparent;
+  color: var(--rust);
+}
+.atelier-foggia-outline:hover:not(:disabled) {
+  background: #eee7df;
+}
+.atelier-foggia-primary {
+  background: var(--rust);
+  color: white;
+}
+.atelier-foggia-primary:hover:not(:disabled) {
+  background: #69402f;
+}
+.atelier-foggia-observations > .atelier-foggia-outline,
+.atelier-foggia-observations > .atelier-foggia-primary {
+  width: 100%;
+  margin-top: 14px;
+}
+.atelier-foggia-small {
+  font-size: 10px;
+  color: #756c63;
+  line-height: 1.5;
+}
+.atelier-foggia-empty-note {
+  padding: 20px 0;
+  font:
+    16px/1.7 "Spectral",
+    serif;
+}
+.atelier-foggia-missing-photo {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f2eee8;
+  border: 1px dashed var(--rule);
+  padding: 35px;
+}
+.atelier-foggia-missing-photo span {
+  font:
+    32px "Spectral",
+    serif;
+}
+.atelier-foggia-missing-photo p {
+  max-width: 270px;
+  line-height: 1.7;
+}
+.atelier-foggia-missing-photo button {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  background: transparent;
+}
+.atelier-foggia-delivery {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 35px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rust);
+}
+.atelier-foggia-delivery h2 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+.atelier-foggia-delivery p {
+  font:
+    17px "Spectral",
+    serif;
+  color: #6b625a;
+}
+.atelier-foggia-export-actions {
+  display: grid;
+  gap: 9px;
+}
+.atelier-foggia-export-actions .atelier-foggia-text-button {
+  font-size: 11px;
+  padding: 6px;
+  text-align: right;
+}
+.atelier-foggia-errors {
+  background: #f2e8e2;
+  border-left: 3px solid var(--rust);
+  padding: 7px 18px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.atelier-foggia-status {
+  min-height: 22px;
+  font-size: 12px;
+  color: var(--rust);
+}
+.atelier-foggia-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+@media (max-width: 1150px) {
+  .atelier-foggia-workbench {
+    grid-template-columns: 210px minmax(280px, 1fr) 260px;
+  }
+  .atelier-foggia-view {
+    grid-template-columns: 20px 53px 1fr;
+    gap: 9px;
+  }
+  .atelier-foggia-view strong {
+    font-size: 17px;
+  }
+  .atelier-foggia-observations {
+    padding-left: 15px;
+  }
+  .atelier-foggia-gallery {
+    padding: 18px 15px;
+  }
+  .atelier-foggia-thumb {
+    height: 70px;
+  }
+}
+@media (max-width: 950px) {
+  .atelier-foggia-workbench {
+    grid-template-columns: 190px 1fr;
+  }
+  .atelier-foggia-observations {
+    grid-column: 1/-1;
+    border-top: 1px solid var(--rule);
+    padding: 22px 0;
+    max-width: 600px;
+    width: 100%;
+    justify-self: center;
+  }
+  .atelier-foggia-gallery {
+    border-right: 0;
+  }
+  .atelier-foggia-app header strong {
+    font-size: 25px;
+  }
+  .atelier-foggia-app header span {
+    font-size: 17px;
+  }
+  .atelier-foggia-delivery {
+    grid-template-columns: 1fr 310px;
+  }
+}
+@media (max-width: 600px) {
+  .atelier-foggia-app header {
+    margin: 0 20px;
+    padding: 22px 0;
+    align-items: flex-start;
+  }
+  .atelier-foggia-app header > div {
+    display: block;
+  }
+  .atelier-foggia-app header strong {
+    font-size: 22px;
+    letter-spacing: 0.4px;
+  }
+  .atelier-foggia-app header span {
+    display: block;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+  .atelier-foggia-app header button {
+    font-size: 11px;
+    padding-top: 8px;
+  }
+  .atelier-foggia-app main {
+    padding: 24px 20px 12px;
+  }
+  .atelier-foggia-app h1 {
+    font-size: 37px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+  .atelier-foggia-intro {
+    font-size: 19px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+  .atelier-foggia-workbench {
+    display: block;
+  }
+  .atelier-foggia-workbench > nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    padding: 19px 0;
+  }
+  .atelier-foggia-workbench > nav > .atelier-foggia-section-title {
+    grid-column: 1/-1;
+    margin: 0;
+  }
+  .atelier-foggia-view-row {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  .atelier-foggia-view {
+    grid-template-columns: 18px 42px 1fr;
+    gap: 7px;
+  }
+  .atelier-foggia-number {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+  .atelier-foggia-view strong {
+    font-size: 16px;
+  }
+  .atelier-foggia-view small {
+    font-size: 10px;
+  }
+  .atelier-foggia-thumb {
+    height: 56px;
+  }
+  .atelier-foggia-add-view {
+    font-size: 9px !important;
+    padding: 5px;
+    margin: 9px 0 0 25px;
+    line-height: 1.45;
+    min-height: 34px;
+  }
+  .atelier-foggia-gallery {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    padding: 20px 0;
+  }
+  .atelier-foggia-caption {
+    gap: 18px;
+  }
+  .atelier-foggia-caption p {
+    font-size: 10px;
+  }
+  .atelier-foggia-pin {
+    width: 29px;
+    height: 29px;
+    font-size: 12px;
+  }
+  .atelier-foggia-observations {
+    padding: 21px 0;
+  }
+  .atelier-foggia-delivery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 25px 0;
+  }
+  .atelier-foggia-delivery h2 {
+    font-size: 29px;
+  }
+  .atelier-foggia-delivery p {
+    margin-bottom: 0;
+  }
+  .atelier-foggia-missing-photo {
+    padding: 22px;
+  }
+  .atelier-foggia-status {
+    line-height: 1.65;
+  }
+  .atelier-foggia-section-title {
+    font-size: 10px;
+  }
+  .atelier-foggia-point-picker select {
+    max-width: 180px;
+  }
+}

@@ -1,16 +1,290 @@
-import React, {useState} from 'react';
-import {DemoNotice,DemoFooter,useDocumentTitle} from '../../shared/ui.jsx';
-import {downloadText} from '../../shared/files.js';
-import {inspect,initial,worksheet} from './model.js';
-import './styles.css';
-export default function App(){
- useDocumentTitle('Cartonnages Guy · Dossier de façonnage');
- const [spec,setSpec]=useState({...initial}); const [notice,setNotice]=useState('');
- const result=inspect(spec); const set=(key,value)=>{setSpec(s=>({...s,[key]:value}));setNotice('');};
- const scale=result.valid?Math.min(220/result.width,250/result.height):1;
- return <div className="cartonnages-guy-app"><DemoNotice company="Cartonnages Guy"/><header className="cartonnages-guy-header"><b>Cartonnages Guy</b><span>TRANSFORMATION DU CARTON<br/>Saint-Ouen-l’Aumône</span></header><main><div className="cartonnages-guy-title"><div><span className="cartonnages-guy-eyebrow">DOSSIER DE FAÇONNAGE · 01</span><h1>La bonne feuille,<br/>dès le départ.</h1><p>Un premier contrôle des caractéristiques, avant l’étude par l’atelier.</p></div><button className="cartonnages-guy-reset" onClick={()=>{setSpec({...initial});setNotice('Exemple réinitialisé.');}}>Reprendre l’exemple ↺</button></div>
- <div className="cartonnages-guy-workspace"><section className="cartonnages-guy-form"><h2>Votre feuille</h2><label>Référence du dossier<input value={spec.reference} maxLength={80} onChange={e=>set('reference',e.target.value)}/></label><div className="cartonnages-guy-pair">{[['width','Largeur (cm)'],['height','Hauteur (cm)']].map(([key,label])=><label key={key}>{label}<input type="number" step="0.1" min="0.1" max="300" value={spec[key]} onChange={e=>set(key,e.target.value)}/></label>)}</div><div className="cartonnages-guy-pair">{[['gsm','Grammage (g/m²)'],['quantity','Exemplaires']].map(([key,label])=><label key={key}>{label}<input type="number" min="1" step="1" value={spec[key]} onChange={e=>set(key,e.target.value)}/></label>)}</div><label className="cartonnages-guy-check"><input type="checkbox" checked={spec.glue} onChange={e=>set('glue',e.target.checked)}/>Pliage-collage demandé</label><label>Forme de découpe<select value={spec.shape} onChange={e=>set('shape',e.target.value)}><option>Fournie</option><option>À créer</option><option>À confirmer</option></select></label><label>Conditionnement<textarea rows="2" value={spec.packing} maxLength={160} onChange={e=>set('packing',e.target.value)}/></label></section>
- <section className="cartonnages-guy-study"><div className="cartonnages-guy-preview"><div><span className="cartonnages-guy-eyebrow">APERÇU PROPORTIONNEL</span><h2>{result.valid?`${spec.width} × ${spec.height} cm`:'Dimensions à préciser'}</h2></div><svg viewBox="0 0 460 340" role="img" aria-label="Feuille aux proportions des dimensions saisies"><defs><pattern id="cgGrid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M 16 0 L 0 0 0 16" fill="none" stroke="#dce8f4" strokeWidth=".5"/></pattern></defs><rect width="460" height="340" fill="url(#cgGrid)"/>{result.valid&&<g><rect x={(460-result.width*scale)/2} y={(340-result.height*scale)/2} width={result.width*scale} height={result.height*scale} fill="#e9f3ff" stroke="#046bd2" strokeWidth="2"/><path d={`M ${(460-result.width*scale)/2} ${(340-result.height*scale)/2-14} h ${result.width*scale}`} stroke="#046bd2"/><text x="230" y={(340-result.height*scale)/2-22} textAnchor="middle" fill="#046bd2" fontSize="16">{spec.width} cm</text><text transform={`translate(${(460+result.width*scale)/2+25},170) rotate(90)`} textAnchor="middle" fill="#046bd2" fontSize="16">{spec.height} cm</text><text x="230" y="176" textAnchor="middle" fill="#046bd2" fontSize="22">{result.area.toLocaleString('fr-FR',{maximumFractionDigits:3})} m²</text></g>}</svg><small>Dimensions de feuille uniquement. Orientation permutée pour le contrôle de format.</small></div>
- <div className="cartonnages-guy-machines"><h2>Formats machine publiés</h2>{result.results.map(m=><div className="cartonnages-guy-machine" key={m.name}><div><strong>{m.name}</strong><small>De 32,5 × 45 à {m.max.join(' × ')} cm</small></div><span className={m.fits?'cartonnages-guy-ok':'cartonnages-guy-warn'}>{!result.valid?'À renseigner':m.fits?'✓ Dans le format':'× Hors format'}</span></div>)}</div></section></div>
- <section className="cartonnages-guy-conclusion" aria-live="polite"><div><h2>{result.errors.length?'Quelques valeurs à reprendre':result.warnings.length?'À préciser avec l’atelier':'Dossier renseigné pour étude'}</h2>{[...result.errors,...result.warnings].map(t=><p key={t}>{t}</p>)}<p>La faisabilité reste à valider selon le support, le sens fibre, la prise de pince et l’outillage.</p></div><button disabled={!result.valid} onClick={()=>{downloadText('fiche-etude-cartonnages-guy.txt',worksheet(spec,result));setNotice('Fiche d’étude téléchargée.');}}>Exporter la fiche d’étude ↓</button></section><p role="status">{notice}</p><small className="cartonnages-guy-source">Règles publiques consultées le 16 septembre 2026 · <a href="https://cartonnagesguy.fr/decoupe-et-rainage-carton-saint-ouen-laumone/" target="_blank" rel="noreferrer">Découpe et rainage</a> · <a href="https://cartonnagesguy.fr/pliage-et-collage-carton-saint-ouen-laumone/" target="_blank" rel="noreferrer">Pliage et collage</a></small></main><DemoFooter/></div>;
+import React, { useState } from "react";
+import { DemoNotice, DemoFooter, useDocumentTitle } from "../../shared/ui.jsx";
+import { downloadText } from "../../shared/files.js";
+import { inspect, initial, worksheet } from "./model.js";
+import "./styles.css";
+export default function App() {
+  useDocumentTitle("Cartonnages Guy · Dossier de façonnage");
+  const [spec, setSpec] = useState({ ...initial });
+  const [notice, setNotice] = useState("");
+  const result = inspect(spec);
+  const set = (key, value) => {
+    setSpec((s) => ({ ...s, [key]: value }));
+    setNotice("");
+  };
+  const scale = result.valid
+    ? Math.min(220 / result.width, 250 / result.height)
+    : 1;
+  return (
+    <div className="cartonnages-guy-app">
+      <DemoNotice company="Cartonnages Guy" />
+      <header className="cartonnages-guy-header">
+        <b>Cartonnages Guy</b>
+        <span>
+          TRANSFORMATION DU CARTON <br />
+          Saint-Ouen-l’Aumône
+        </span>
+      </header>
+      <main>
+        <div className="cartonnages-guy-title">
+          <div>
+            <span className="cartonnages-guy-eyebrow">
+              DOSSIER DE FAÇONNAGE · 01
+            </span>
+            <h1>
+              La bonne feuille, <br />
+              dès le départ.
+            </h1>
+            <p>
+              Un premier contrôle des caractéristiques, avant l’étude par
+              l’atelier.
+            </p>
+          </div>
+          <button
+            className="cartonnages-guy-reset"
+            onClick={() => {
+              setSpec({ ...initial });
+              setNotice("Exemple réinitialisé.");
+            }}
+          >
+            Reprendre l’exemple ↺
+          </button>
+        </div>
+        <div className="cartonnages-guy-workspace">
+          <section className="cartonnages-guy-form">
+            <h2>Votre feuille</h2>
+            <label>
+              Référence du dossier
+              <input
+                value={spec.reference}
+                maxLength={80}
+                onChange={(e) => set("reference", e.target.value)}
+              />
+            </label>
+            <div className="cartonnages-guy-pair">
+              {[
+                ["width", "Largeur (cm)"],
+                ["height", "Hauteur (cm)"],
+              ].map(([key, label]) => (
+                <label key={key}>
+                  {label}
+                  <input
+                    type="number"
+                    step="0.1"
+                    min="0.1"
+                    max="300"
+                    value={spec[key]}
+                    onChange={(e) => set(key, e.target.value)}
+                  />
+                </label>
+              ))}
+            </div>
+            <div className="cartonnages-guy-pair">
+              {[
+                ["gsm", "Grammage (g/m²)"],
+                ["quantity", "Exemplaires"],
+              ].map(([key, label]) => (
+                <label key={key}>
+                  {label}
+                  <input
+                    type="number"
+                    min="1"
+                    step="1"
+                    value={spec[key]}
+                    onChange={(e) => set(key, e.target.value)}
+                  />
+                </label>
+              ))}
+            </div>
+            <label className="cartonnages-guy-check">
+              <input
+                type="checkbox"
+                checked={spec.glue}
+                onChange={(e) => set("glue", e.target.checked)}
+              />
+              Pliage-collage demandé
+            </label>
+            <label>
+              Forme de découpe
+              <select
+                value={spec.shape}
+                onChange={(e) => set("shape", e.target.value)}
+              >
+                <option>Fournie</option>
+                <option>À créer</option>
+                <option>À confirmer</option>
+              </select>
+            </label>
+            <label>
+              Conditionnement
+              <textarea
+                rows="2"
+                value={spec.packing}
+                maxLength={160}
+                onChange={(e) => set("packing", e.target.value)}
+              />
+            </label>
+          </section>
+          <section className="cartonnages-guy-study">
+            <div className="cartonnages-guy-preview">
+              <div>
+                <span className="cartonnages-guy-eyebrow">
+                  APERÇU PROPORTIONNEL
+                </span>
+                <h2>
+                  {result.valid
+                    ? `${spec.width} × ${spec.height} cm`
+                    : "Dimensions à préciser"}
+                </h2>
+              </div>
+              <svg
+                viewBox="0 0 460 340"
+                role="img"
+                aria-label="Feuille aux proportions des dimensions saisies"
+              >
+                <defs>
+                  <pattern
+                    id="cgGrid"
+                    width="16"
+                    height="16"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path
+                      d="M 16 0 L 0 0 0 16"
+                      fill="none"
+                      stroke="#dce8f4"
+                      strokeWidth=".5"
+                    />
+                  </pattern>
+                </defs>
+                <rect width="460" height="340" fill="url(#cgGrid)" />
+                {result.valid && (
+                  <g>
+                    <rect
+                      x={(460 - result.width * scale) / 2}
+                      y={(340 - result.height * scale) / 2}
+                      width={result.width * scale}
+                      height={result.height * scale}
+                      fill="#e9f3ff"
+                      stroke="#046bd2"
+                      strokeWidth="2"
+                    />
+                    <path
+                      d={`M ${(460 - result.width * scale) / 2} ${(340 - result.height * scale) / 2 - 14} h ${result.width * scale}`}
+                      stroke="#046bd2"
+                    />
+                    <text
+                      x="230"
+                      y={(340 - result.height * scale) / 2 - 22}
+                      textAnchor="middle"
+                      fill="#046bd2"
+                      fontSize="16"
+                    >
+                      {spec.width} cm
+                    </text>
+                    <text
+                      transform={`translate(${(460 + result.width * scale) / 2 + 25},170) rotate(90)`}
+                      textAnchor="middle"
+                      fill="#046bd2"
+                      fontSize="16"
+                    >
+                      {spec.height} cm
+                    </text>
+                    <text
+                      x="230"
+                      y="176"
+                      textAnchor="middle"
+                      fill="#046bd2"
+                      fontSize="22"
+                    >
+                      {result.area.toLocaleString("fr-FR", {
+                        maximumFractionDigits: 3,
+                      })}{" "}
+                      m²
+                    </text>
+                  </g>
+                )}
+              </svg>
+              <small>
+                Dimensions de feuille uniquement. Orientation permutée pour le
+                contrôle de format.
+              </small>
+            </div>
+            <div className="cartonnages-guy-machines">
+              <h2>Formats machine publiés</h2>
+              {result.results.map((m) => (
+                <div className="cartonnages-guy-machine" key={m.name}>
+                  <div>
+                    <strong>{m.name}</strong>
+                    <small>De 32,5 × 45 à {m.max.join(" × ")} cm</small>
+                  </div>
+                  <span
+                    className={
+                      m.fits ? "cartonnages-guy-ok" : "cartonnages-guy-warn"
+                    }
+                  >
+                    {!result.valid
+                      ? "À renseigner"
+                      : m.fits
+                        ? "✓ Dans le format"
+                        : "× Hors format"}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+        <section className="cartonnages-guy-conclusion" aria-live="polite">
+          <div>
+            <h2>
+              {result.errors.length
+                ? "Quelques valeurs à reprendre"
+                : result.warnings.length
+                  ? "À préciser avec l’atelier"
+                  : "Dossier renseigné pour étude"}
+            </h2>
+            {[...result.errors, ...result.warnings].map((t) => (
+              <p key={t}>{t}</p>
+            ))}
+            <p>
+              La faisabilité reste à valider selon le support, le sens fibre, la
+              prise de pince et l’outillage.
+            </p>
+          </div>
+          <button
+            disabled={!result.valid}
+            onClick={() => {
+              downloadText(
+                "fiche-etude-cartonnages-guy.txt",
+                worksheet(spec, result),
+              );
+              setNotice("Fiche d’étude téléchargée.");
+            }}
+          >
+            Exporter la fiche d’étude ↓
+          </button>
+        </section>
+        <p role="status">{notice}</p>
+        <small className="cartonnages-guy-source">
+          Règles publiques consultées le 16 septembre 2026 ·{" "}
+          <a
+            href="https://cartonnagesguy.fr/decoupe-et-rainage-carton-saint-ouen-laumone/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Découpe et rainage
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://cartonnagesguy.fr/pliage-et-collage-carton-saint-ouen-laumone/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Pliage et collage
+          </a>
+        </small>
+      </main>
+      <DemoFooter />
+    </div>
+  );
 }

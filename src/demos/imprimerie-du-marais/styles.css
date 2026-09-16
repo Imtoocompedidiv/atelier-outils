@@ -1,0 +1,460 @@
+.imprimerie-du-marais-app {
+  font:
+    13px Arial,
+    sans-serif;
+  background: #fff;
+  color: #000;
+}
+.imprimerie-du-marais-app * {
+  box-sizing: border-box;
+}
+.imprimerie-du-marais-app button,
+.imprimerie-du-marais-app input,
+.imprimerie-du-marais-app select {
+  font: inherit;
+}
+.imprimerie-du-marais-app button {
+  cursor: pointer;
+}
+.imprimerie-du-marais-app button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.imprimerie-du-marais-app :focus-visible {
+  outline: 2px solid #f056ab;
+  outline-offset: 4px;
+}
+.imprimerie-du-marais-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 24px 4.5%;
+  border-bottom: 1px solid #000;
+}
+.imprimerie-du-marais-header > b {
+  font:
+    26px/0.94 Georgia,
+    serif;
+  letter-spacing: -1px;
+}
+.imprimerie-du-marais-header > span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.imprimerie-du-marais-header button {
+  border: 0;
+  background: none;
+  font-size: 11px;
+}
+.imprimerie-du-marais-app main {
+  padding: 35px 4.5% 15px;
+  max-width: 1500px;
+  margin: auto;
+}
+.imprimerie-du-marais-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 36px;
+}
+.imprimerie-du-marais-heading > div > p {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.imprimerie-du-marais-heading h1 {
+  font:
+    clamp(50px, 5.6vw, 80px)/0.98 Georgia,
+    serif;
+  letter-spacing: -3px;
+  font-weight: 400;
+  margin: 23px 0 0;
+}
+.imprimerie-du-marais-heading h1 em {
+  font-weight: 400;
+  color: #f056ab;
+}
+.imprimerie-du-marais-heading > p {
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 220px;
+}
+.imprimerie-du-marais-sequence {
+  display: flex;
+  gap: 25px;
+  overflow: auto;
+  padding: 5px 3px 24px;
+  border-bottom: 1px solid #000;
+}
+.imprimerie-du-marais-sequence > button {
+  border: 0;
+  background: none;
+  text-align: left;
+  min-width: 133px;
+  max-width: 160px;
+  flex: 1;
+  padding: 0 0 8px;
+}
+.imprimerie-du-marais-sequence > button > span {
+  display: grid;
+  place-items: center;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  font:
+    35px Georgia,
+    serif;
+  margin-bottom: 17px;
+}
+.imprimerie-du-marais-sequence button.selected > span {
+  outline: 1px solid #000;
+  outline-offset: 5px;
+}
+.imprimerie-du-marais-sequence b {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+}
+.imprimerie-du-marais-sequence small {
+  display: block;
+  font-size: 9px;
+  color: #666;
+  margin-top: 7px;
+}
+.imprimerie-du-marais-sequence .imprimerie-du-marais-add > span {
+  border: 1px solid #aaa;
+  background: #fff;
+  font: 34px Arial;
+}
+.imprimerie-du-marais-work {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  border-bottom: 1px solid #000;
+}
+.imprimerie-du-marais-timeline {
+  padding: 28px 34px 25px 0;
+}
+.imprimerie-du-marais-section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.imprimerie-du-marais-section-top h2 {
+  font:
+    21px Georgia,
+    serif;
+  font-weight: 400;
+  margin: 0;
+}
+.imprimerie-du-marais-section-top > span {
+  font-size: 11px;
+  white-space: nowrap;
+}
+.imprimerie-du-marais-axis {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0 12px 150px;
+  font-size: 9px;
+  color: #777;
+}
+.imprimerie-du-marais-bars > button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border: 0;
+  border-top: 1px solid #ddd;
+  padding: 16px 0;
+  text-align: left;
+  gap: 16px;
+}
+.imprimerie-du-marais-bar-label {
+  width: 134px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.imprimerie-du-marais-bar-label > b {
+  display: inline-block;
+  font-size: 9px;
+  margin-right: 10px;
+  color: #777;
+}
+.imprimerie-du-marais-bar-label small {
+  display: block;
+  font-size: 9px;
+  color: #777;
+  margin-top: 6px;
+}
+.imprimerie-du-marais-track {
+  display: block;
+  position: relative;
+  height: 33px;
+  flex: 1;
+  min-width: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    #eee 0,
+    #eee 1px,
+    transparent 1px,
+    transparent 25%
+  );
+}
+.imprimerie-du-marais-track i {
+  display: block;
+  position: absolute;
+  height: 33px;
+  top: 0;
+}
+.imprimerie-du-marais-track em {
+  position: absolute;
+  font-size: 9px;
+  right: 4px;
+  top: 10px;
+  font-style: normal;
+  background: #ffffffbb;
+  padding: 2px 4px;
+}
+.imprimerie-du-marais-legend {
+  font-size: 9px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 20px 0;
+}
+.imprimerie-du-marais-legend b {
+  display: inline-block;
+  width: 16px;
+  height: 3px;
+  background: #000;
+}
+.imprimerie-du-marais-warning {
+  font-size: 11px;
+  background: #fff4e8;
+  padding: 13px;
+  line-height: 1.6;
+}
+.imprimerie-du-marais-explanation {
+  border-top: 1px solid #ccc;
+  margin-top: 26px;
+  padding-top: 17px;
+}
+.imprimerie-du-marais-explanation h3 {
+  font: 17px Georgia;
+  font-weight: 400;
+}
+.imprimerie-du-marais-explanation p {
+  font-size: 10px;
+  color: #777;
+  line-height: 1.8;
+  max-width: 580px;
+}
+.imprimerie-du-marais-blocked {
+  padding: 26px;
+  background: #fff2f7;
+  margin-top: 26px;
+}
+.imprimerie-du-marais-blocked > span {
+  font-size: 35px;
+}
+.imprimerie-du-marais-blocked h3 {
+  font: 24px Georgia;
+}
+.imprimerie-du-marais-blocked p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.imprimerie-du-marais-editor {
+  border-left: 1px solid #000;
+  padding: 28px;
+}
+.imprimerie-du-marais-selected {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 23px;
+}
+.imprimerie-du-marais-selected > b {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 11px;
+  display: grid;
+  place-items: center;
+}
+.imprimerie-du-marais-selected h2 {
+  font: 19px Georgia;
+  font-weight: 400;
+  margin: 0;
+}
+.imprimerie-du-marais-editor > label {
+  display: block;
+  font-size: 10px;
+  color: #555;
+  margin-bottom: 17px;
+}
+.imprimerie-du-marais-editor input:not([type="checkbox"]),
+.imprimerie-du-marais-editor select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  background: white;
+  border: 1px solid #bbb;
+  padding: 11px 9px;
+  margin-top: 7px;
+  font-size: 12px;
+}
+.imprimerie-du-marais-editor fieldset {
+  padding: 17px 0 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 22px 0;
+}
+.imprimerie-du-marais-editor legend {
+  font-size: 10px;
+  padding-right: 7px;
+}
+.imprimerie-du-marais-editor fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  margin: 11px 0;
+}
+.imprimerie-du-marais-editor input[type="checkbox"] {
+  accent-color: #000;
+}
+.imprimerie-du-marais-editor fieldset b {
+  font-weight: 400;
+  color: #888;
+  margin-right: 9px;
+  font-size: 9px;
+}
+.imprimerie-du-marais-remove {
+  border: 0;
+  border-bottom: 1px solid #999;
+  background: none;
+  padding: 0 0 3px;
+  font-size: 10px !important;
+}
+.imprimerie-du-marais-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 27px;
+}
+.imprimerie-du-marais-bottom span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.imprimerie-du-marais-bottom h2 {
+  font: 23px Georgia;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.imprimerie-du-marais-bottom button {
+  border: 0;
+  background: #000;
+  color: #fff;
+  padding: 17px 25px;
+  font-size: 11px;
+}
+.imprimerie-du-marais-status {
+  font-size: 10px;
+  color: #666;
+  margin: 23px 0;
+  min-height: 20px;
+}
+@media (max-width: 950px) {
+  .imprimerie-du-marais-work {
+    grid-template-columns: 1fr 285px;
+  }
+  .imprimerie-du-marais-editor {
+    padding: 25px 20px;
+  }
+  .imprimerie-du-marais-timeline {
+    padding-right: 22px;
+  }
+  .imprimerie-du-marais-section-top {
+    display: block;
+  }
+  .imprimerie-du-marais-section-top > span {
+    display: block;
+    margin-top: 10px;
+  }
+  .imprimerie-du-marais-axis {
+    margin-left: 110px;
+  }
+  .imprimerie-du-marais-bar-label {
+    width: 96px;
+    font-size: 10px;
+  }
+  .imprimerie-du-marais-bar-label > b {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 650px) {
+  .imprimerie-du-marais-header {
+    padding: 20px;
+  }
+  .imprimerie-du-marais-header > span {
+    display: none;
+  }
+  .imprimerie-du-marais-header > b {
+    font-size: 22px;
+  }
+  .imprimerie-du-marais-header button {
+    font-size: 9px;
+  }
+  .imprimerie-du-marais-app main {
+    padding: 27px 20px 10px;
+  }
+  .imprimerie-du-marais-heading {
+    display: block;
+  }
+  .imprimerie-du-marais-heading h1 {
+    font-size: 54px;
+  }
+  .imprimerie-du-marais-heading > p {
+    font-size: 11px;
+    margin-top: 24px;
+    max-width: none;
+  }
+  .imprimerie-du-marais-heading > p br {
+    display: none;
+  }
+  .imprimerie-du-marais-work {
+    display: block;
+  }
+  .imprimerie-du-marais-timeline {
+    padding: 26px 0;
+  }
+  .imprimerie-du-marais-editor {
+    padding: 25px 0;
+    border-left: 0;
+    border-top: 1px solid #000;
+  }
+  .imprimerie-du-marais-sequence {
+    gap: 22px;
+  }
+  .imprimerie-du-marais-sequence > button {
+    min-width: 110px;
+  }
+  .imprimerie-du-marais-sequence > button > span {
+    width: 80px;
+    height: 80px;
+  }
+  .imprimerie-du-marais-bottom {
+    display: block;
+  }
+  .imprimerie-du-marais-bottom button {
+    width: 100%;
+    margin-top: 13px;
+  }
+  .imprimerie-du-marais-bottom h2 {
+    font-size: 21px;
+  }
+}

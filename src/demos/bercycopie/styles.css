@@ -1,2 +1,366 @@
-@import '@fontsource/source-sans-3/latin-400.css';@import '@fontsource/source-sans-3/latin-600.css';@import '@fontsource/source-sans-3/latin-700.css';
-.bercycopie-app{--green:#65bc7b;background:#fff;color:#212326;font-family:'Source Sans 3',Arial,sans-serif;min-height:100vh}.bercycopie-app *{box-sizing:border-box}.bercycopie-header{display:flex;align-items:center;padding:24px 4vw;gap:30px}.bercycopie-header>b{font-size:35px;letter-spacing:-1px}.bercycopie-header>b span{color:#4f9b61}.bercycopie-header p{border-left:1px solid #ccc;padding-left:28px;font-size:10px;letter-spacing:1px;line-height:1.6;color:#6c747c}.bercycopie-header button{margin-left:auto}.bercycopie-app button{font:inherit;cursor:pointer;border:1px solid #cdd3d7;background:#fff;color:#212326;padding:13px 18px;font-size:13px;border-radius:3px}.bercycopie-app button:disabled{opacity:.4;cursor:not-allowed}.bercycopie-title{background:var(--green);display:flex;justify-content:space-between;align-items:center;padding:35px 4vw;gap:30px;color:#12391e}.bercycopie-title span{font-size:10px;letter-spacing:2px}.bercycopie-app h1{font-size:clamp(38px,4vw,60px);letter-spacing:-1.8px;line-height:1.04;margin:15px 0 5px}.bercycopie-title>p{border-left:1px solid #ffffff70;padding-left:35px;font-size:18px;line-height:1.55}.bercycopie-app main{max-width:1450px;margin:auto;padding:32px 4vw}.bercycopie-work{display:grid;grid-template-columns:minmax(280px,1fr) minmax(400px,1.7fr);gap:30px}.bercycopie-app h2{font-size:23px;margin:0 0 22px}.bercycopie-list>button{display:flex;align-items:center;width:100%;text-align:left;gap:15px;padding:12px 16px;border-radius:0;border-width:0 0 1px;min-height:105px;background:#fafbfc}.bercycopie-list>button.selected{background:#e8f5ec;border-left:3px solid #4f9b61}.bercycopie-list svg{width:95px;height:75px;flex-shrink:0}.bercycopie-list strong{font-size:19px;display:block}.bercycopie-list small{font-size:11px;color:#747e86;display:block;margin:4px 0}.bercycopie-list i{font-size:11px;font-style:normal;color:#4d8059}.bercycopie-detail{border:1px solid #dfe3e7;padding:27px}.bercycopie-product{display:flex;gap:25px;align-items:center;margin-bottom:25px}.bercycopie-product svg{width:170px;height:115px;background:#f6f8f9}.bercycopie-product small{font-size:9px;letter-spacing:2px;color:#698572}.bercycopie-product h2{font-size:32px;margin:8px 0}.bercycopie-product p{font-size:15px;color:#717b82;margin:0}.bercycopie-old{background:#fff4f3;border-left:3px solid #b9635c;padding:20px}.bercycopie-old>span{font-size:9px;letter-spacing:1px;color:#98564f}.bercycopie-app code{display:block;font:11px/1.7 monospace;overflow-wrap:anywhere;white-space:normal;margin:10px 0}.bercycopie-old p,.bercycopie-new p,.bercycopie-note{font-size:12px;line-height:1.6;color:#6d777c;margin:10px 0 0}.bercycopie-new{margin-top:20px;padding:22px 0}.bercycopie-new label{font-size:15px;font-weight:600}.bercycopie-new select{display:block;width:100%;border:1px solid #b6cbbd;background:#f4fbf6;padding:13px;font:inherit;font-size:14px;margin-top:12px;color:#212326}.bercycopie-path{display:flex;align-items:center;gap:15px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:20px 0;font-size:12px;flex-wrap:wrap}.bercycopie-path b{color:#b8c2c8}.bercycopie-path strong{color:#4d8059;font-size:14px}.bercycopie-note{font-size:10px;margin-top:20px}.bercycopie-export{display:flex;align-items:center;justify-content:space-between;gap:35px;border-top:1px solid #ddd;margin-top:30px;padding-top:25px}.bercycopie-export>div:first-child{min-width:280px;max-width:480px;flex:1}.bercycopie-export strong{font-size:28px}.bercycopie-export progress{width:100%;display:block;margin:10px 0 6px;height:8px;accent-color:var(--green)}.bercycopie-export small{font-size:10px;color:#73817a}.bercycopie-export>div:last-child{display:flex;gap:12px;flex-wrap:wrap}.bercycopie-export button:last-child{background:#212326;color:white;border-color:#212326}.bercycopie-app [role=status]{font-size:12px;line-height:1.6;color:#698572;margin-top:22px;min-height:18px}.bercycopie-app :focus-visible{outline:2px solid #276b39;outline-offset:3px}@media(max-width:800px){.bercycopie-work{grid-template-columns:1fr}.bercycopie-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}.bercycopie-list h2{grid-column:1/-1}.bercycopie-list svg{width:60px}.bercycopie-export{display:block}.bercycopie-export>div:last-child{margin-top:22px}.bercycopie-header p{display:none}}@media(max-width:520px){.bercycopie-header{padding:20px;gap:15px}.bercycopie-header>b{font-size:27px}.bercycopie-header button{font-size:10px;padding:10px}.bercycopie-title{padding:30px 20px;display:block}.bercycopie-title>p{border-left:0;padding:0;font-size:14px;margin-top:22px}.bercycopie-app main{padding:25px 20px}.bercycopie-list>button{padding:12px;gap:4px;min-height:90px}.bercycopie-list svg{width:40px}.bercycopie-list strong{font-size:16px}.bercycopie-list small{font-size:9px}.bercycopie-list i{font-size:9px}.bercycopie-detail{padding:18px}.bercycopie-product svg{width:120px}.bercycopie-product{gap:15px}.bercycopie-product h2{font-size:27px}.bercycopie-product p{font-size:12px}.bercycopie-export>div:first-child{min-width:0}.bercycopie-export>div:last-child{display:block}.bercycopie-export button{width:100%;margin:5px 0}.bercycopie-path{gap:8px;font-size:10px}}
+@import "@fontsource/source-sans-3/latin-400.css";
+@import "@fontsource/source-sans-3/latin-600.css";
+@import "@fontsource/source-sans-3/latin-700.css";
+.bercycopie-app {
+  --green: #65bc7b;
+  background: #fff;
+  color: #212326;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  min-height: 100vh;
+}
+.bercycopie-app * {
+  box-sizing: border-box;
+}
+.bercycopie-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 4vw;
+  gap: 30px;
+}
+.bercycopie-header > b {
+  font-size: 35px;
+  letter-spacing: -1px;
+}
+.bercycopie-header > b span {
+  color: #4f9b61;
+}
+.bercycopie-header p {
+  border-left: 1px solid #ccc;
+  padding-left: 28px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: #6c747c;
+}
+.bercycopie-header button {
+  margin-left: auto;
+}
+.bercycopie-app button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #cdd3d7;
+  background: #fff;
+  color: #212326;
+  padding: 13px 18px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+.bercycopie-app button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.bercycopie-title {
+  background: var(--green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 4vw;
+  gap: 30px;
+  color: #12391e;
+}
+.bercycopie-title span {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.bercycopie-app h1 {
+  font-size: clamp(38px, 4vw, 60px);
+  letter-spacing: -1.8px;
+  line-height: 1.04;
+  margin: 15px 0 5px;
+}
+.bercycopie-title > p {
+  border-left: 1px solid #ffffff70;
+  padding-left: 35px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.bercycopie-app main {
+  max-width: 1450px;
+  margin: auto;
+  padding: 32px 4vw;
+}
+.bercycopie-work {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(400px, 1.7fr);
+  gap: 30px;
+}
+.bercycopie-app h2 {
+  font-size: 23px;
+  margin: 0 0 22px;
+}
+.bercycopie-list > button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  gap: 15px;
+  padding: 12px 16px;
+  border-radius: 0;
+  border-width: 0 0 1px;
+  min-height: 105px;
+  background: #fafbfc;
+}
+.bercycopie-list > button.selected {
+  background: #e8f5ec;
+  border-left: 3px solid #4f9b61;
+}
+.bercycopie-list svg {
+  width: 95px;
+  height: 75px;
+  flex-shrink: 0;
+}
+.bercycopie-list strong {
+  font-size: 19px;
+  display: block;
+}
+.bercycopie-list small {
+  font-size: 11px;
+  color: #747e86;
+  display: block;
+  margin: 4px 0;
+}
+.bercycopie-list i {
+  font-size: 11px;
+  font-style: normal;
+  color: #4d8059;
+}
+.bercycopie-detail {
+  border: 1px solid #dfe3e7;
+  padding: 27px;
+}
+.bercycopie-product {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.bercycopie-product svg {
+  width: 170px;
+  height: 115px;
+  background: #f6f8f9;
+}
+.bercycopie-product small {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #698572;
+}
+.bercycopie-product h2 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+.bercycopie-product p {
+  font-size: 15px;
+  color: #717b82;
+  margin: 0;
+}
+.bercycopie-old {
+  background: #fff4f3;
+  border-left: 3px solid #b9635c;
+  padding: 20px;
+}
+.bercycopie-old > span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #98564f;
+}
+.bercycopie-app code {
+  display: block;
+  font: 11px/1.7 monospace;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  margin: 10px 0;
+}
+.bercycopie-old p,
+.bercycopie-new p,
+.bercycopie-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6d777c;
+  margin: 10px 0 0;
+}
+.bercycopie-new {
+  margin-top: 20px;
+  padding: 22px 0;
+}
+.bercycopie-new label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.bercycopie-new select {
+  display: block;
+  width: 100%;
+  border: 1px solid #b6cbbd;
+  background: #f4fbf6;
+  padding: 13px;
+  font: inherit;
+  font-size: 14px;
+  margin-top: 12px;
+  color: #212326;
+}
+.bercycopie-path {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.bercycopie-path b {
+  color: #b8c2c8;
+}
+.bercycopie-path strong {
+  color: #4d8059;
+  font-size: 14px;
+}
+.bercycopie-note {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.bercycopie-export {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 25px;
+}
+.bercycopie-export > div:first-child {
+  min-width: 280px;
+  max-width: 480px;
+  flex: 1;
+}
+.bercycopie-export strong {
+  font-size: 28px;
+}
+.bercycopie-export progress {
+  width: 100%;
+  display: block;
+  margin: 10px 0 6px;
+  height: 8px;
+  accent-color: var(--green);
+}
+.bercycopie-export small {
+  font-size: 10px;
+  color: #73817a;
+}
+.bercycopie-export > div:last-child {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.bercycopie-export button:last-child {
+  background: #212326;
+  color: white;
+  border-color: #212326;
+}
+.bercycopie-app [role="status"] {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #698572;
+  margin-top: 22px;
+  min-height: 18px;
+}
+.bercycopie-app :focus-visible {
+  outline: 2px solid #276b39;
+  outline-offset: 3px;
+}
+@media (max-width: 800px) {
+  .bercycopie-work {
+    grid-template-columns: 1fr;
+  }
+  .bercycopie-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .bercycopie-list h2 {
+    grid-column: 1/-1;
+  }
+  .bercycopie-list svg {
+    width: 60px;
+  }
+  .bercycopie-export {
+    display: block;
+  }
+  .bercycopie-export > div:last-child {
+    margin-top: 22px;
+  }
+  .bercycopie-header p {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .bercycopie-header {
+    padding: 20px;
+    gap: 15px;
+  }
+  .bercycopie-header > b {
+    font-size: 27px;
+  }
+  .bercycopie-header button {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .bercycopie-title {
+    padding: 30px 20px;
+    display: block;
+  }
+  .bercycopie-title > p {
+    border-left: 0;
+    padding: 0;
+    font-size: 14px;
+    margin-top: 22px;
+  }
+  .bercycopie-app main {
+    padding: 25px 20px;
+  }
+  .bercycopie-list > button {
+    padding: 12px;
+    gap: 4px;
+    min-height: 90px;
+  }
+  .bercycopie-list svg {
+    width: 40px;
+  }
+  .bercycopie-list strong {
+    font-size: 16px;
+  }
+  .bercycopie-list small {
+    font-size: 9px;
+  }
+  .bercycopie-list i {
+    font-size: 9px;
+  }
+  .bercycopie-detail {
+    padding: 18px;
+  }
+  .bercycopie-product svg {
+    width: 120px;
+  }
+  .bercycopie-product {
+    gap: 15px;
+  }
+  .bercycopie-product h2 {
+    font-size: 27px;
+  }
+  .bercycopie-product p {
+    font-size: 12px;
+  }
+  .bercycopie-export > div:first-child {
+    min-width: 0;
+  }
+  .bercycopie-export > div:last-child {
+    display: block;
+  }
+  .bercycopie-export button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .bercycopie-path {
+    gap: 8px;
+    font-size: 10px;
+  }
+}

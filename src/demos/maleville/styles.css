@@ -1,0 +1,399 @@
+.maleville-app {
+  --ink: #272727;
+  background: #fff;
+  color: var(--ink);
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+}
+.maleville-app * {
+  box-sizing: border-box;
+}
+.maleville-app button,
+.maleville-app select {
+  font: inherit;
+}
+.maleville-app button {
+  cursor: pointer;
+}
+.maleville-app button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+.maleville-app button:focus-visible,
+.maleville-app select:focus-visible,
+.maleville-app input:focus-visible {
+  outline: 2px solid #786047;
+  outline-offset: 4px;
+}
+.maleville-header {
+  padding: 27px 4.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  gap: 24px;
+}
+.maleville-header > b {
+  font-family: Spectral, Georgia, serif;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+.maleville-header > b span {
+  display: block;
+  font: 8px Montserrat;
+  letter-spacing: 2px;
+}
+.maleville-header > span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.maleville-header button {
+  border: 0;
+  background: none;
+  font-size: 11px;
+}
+.maleville-app main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 40px 4.5% 20px;
+}
+.maleville-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+.maleville-kicker {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.maleville-heading h1 {
+  font-family: Spectral, Georgia, serif;
+  font-size: clamp(44px, 4.5vw, 66px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -2px;
+  margin: 18px 0;
+}
+.maleville-heading p:last-child {
+  font-size: 12px;
+  color: #777;
+}
+.maleville-counter {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.maleville-counter strong {
+  font:
+    68px Spectral,
+    serif;
+}
+.maleville-counter i {
+  font-style: normal;
+  font-size: 25px;
+  color: #a5a5a5;
+}
+.maleville-counter span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.maleville-work {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 0.75fr;
+  border-block: 1px solid #c9c7c3;
+}
+.maleville-plan {
+  background: #f6f6f4;
+  padding: 20px;
+}
+.maleville-plan nav {
+  display: flex;
+  gap: 16px;
+}
+.maleville-plan nav button {
+  border: 0;
+  border-bottom: 1px solid transparent;
+  padding: 8px 0;
+  background: none;
+  font-size: 11px;
+  color: #888;
+}
+.maleville-plan nav button[aria-pressed="true"] {
+  color: #272727;
+  border-color: #272727;
+}
+.maleville-plan svg {
+  width: 100%;
+  max-height: 400px;
+}
+.maleville-plan p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #777;
+}
+.maleville-inventory {
+  padding: 22px;
+  border-inline: 1px solid #c9c7c3;
+}
+.maleville-app h2 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 600;
+}
+.maleville-inventory h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+.maleville-inventory h2 span {
+  color: #888;
+  font-weight: 400;
+}
+.maleville-piece-list > button {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 9px;
+  border: 0;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+.maleville-piece-list > button.selected {
+  background: #f0efec;
+}
+.maleville-piece-list b {
+  font-size: 11px;
+}
+.maleville-piece-list span {
+  font-size: 11px;
+  flex: 1;
+}
+.maleville-piece-list small {
+  display: block;
+  color: #888;
+  font-size: 9px;
+  margin-top: 5px;
+}
+.maleville-piece-list i {
+  font-style: normal;
+  font-size: 9px;
+  color: #777;
+  white-space: nowrap;
+}
+.maleville-editor {
+  border-top: 1px solid #272727;
+  margin-top: 16px;
+  padding-top: 18px;
+}
+.maleville-editor > span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #888;
+}
+.maleville-editor h3 {
+  font:
+    25px Spectral,
+    serif;
+  margin: 5px 0 15px;
+}
+.maleville-editor label {
+  display: block;
+  font-size: 10px;
+}
+.maleville-editor select {
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 8px;
+}
+.maleville-editor .maleville-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.maleville-check input {
+  accent-color: #272727;
+  flex-shrink: 0;
+}
+.maleville-crates {
+  padding: 22px;
+}
+.maleville-crates > h2 {
+  margin: 0 0 22px;
+}
+.maleville-crates article {
+  padding: 16px 0;
+  border-top: 1px solid #ddd;
+}
+.maleville-crates article > div {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.maleville-crates article b {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 42px;
+  border: 1px solid #999;
+  font: 26px Spectral;
+}
+.maleville-crates article span {
+  font-size: 11px;
+}
+.maleville-crates small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.maleville-crates article p {
+  font-size: 10px;
+  line-height: 1.8;
+}
+.maleville-crates article > span {
+  font-size: 9px;
+  color: #777;
+}
+.maleville-crates > p {
+  font-size: 9px;
+  line-height: 1.8;
+  color: #777;
+}
+.maleville-export {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-top: 30px;
+}
+.maleville-export h2 {
+  font: 25px Spectral;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0;
+}
+.maleville-export p {
+  font-size: 10px;
+  color: #777;
+}
+.maleville-export > div:last-child {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.maleville-export button {
+  border: 1px solid #272727;
+  background: #272727;
+  color: white;
+  padding: 13px 18px;
+  font-size: 10px;
+}
+.maleville-export button + button {
+  background: white;
+  color: #272727;
+}
+.maleville-status {
+  min-height: 20px;
+  font-size: 11px;
+  color: #666;
+  margin-top: 24px;
+}
+@media (max-width: 850px) {
+  .maleville-header > span {
+    display: none;
+  }
+  .maleville-work {
+    grid-template-columns: 1fr 1fr;
+  }
+  .maleville-crates {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-top: 1px solid #ddd;
+  }
+  .maleville-crates h2,
+  .maleville-crates > p {
+    grid-column: 1/-1;
+  }
+  .maleville-export {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .maleville-header {
+    padding: 20px;
+    gap: 12px;
+  }
+  .maleville-header > b {
+    font-size: 21px;
+  }
+  .maleville-header > b span {
+    font-size: 6px;
+  }
+  .maleville-header button {
+    font-size: 9px;
+  }
+  .maleville-app main {
+    padding: 25px 20px;
+  }
+  .maleville-heading {
+    align-items: flex-end;
+  }
+  .maleville-heading h1 {
+    font-size: 44px;
+  }
+  .maleville-heading p:last-child {
+    max-width: 210px;
+    line-height: 1.6;
+  }
+  .maleville-counter strong {
+    font-size: 38px;
+  }
+  .maleville-counter i {
+    font-size: 18px;
+  }
+  .maleville-counter span {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+    max-width: 65px;
+  }
+  .maleville-work {
+    display: block;
+  }
+  .maleville-inventory {
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 25px 0;
+  }
+  .maleville-plan {
+    padding: 15px;
+  }
+  .maleville-crates {
+    padding: 22px 0;
+    gap: 10px;
+  }
+  .maleville-crates article > div {
+    display: block;
+  }
+  .maleville-crates article b {
+    margin-bottom: 10px;
+  }
+  .maleville-crates article p {
+    overflow-wrap: anywhere;
+  }
+  .maleville-export > div:last-child,
+  .maleville-export button {
+    width: 100%;
+  }
+}

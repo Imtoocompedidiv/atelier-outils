@@ -1,2 +1,367 @@
-@import '@fontsource/amiko/latin-400.css';@import '@fontsource/amiko/latin-600.css';@import '@fontsource/julius-sans-one/latin-400.css';
-.bouquillon-app{--gold:#e6d9bb;background:#141414;color:#e6d9bb;font-family:Amiko,Arial,sans-serif;min-height:100vh}.bouquillon-app *{box-sizing:border-box}.bouquillon-header{padding:28px 3vw;display:flex;gap:30px;align-items:center;border-bottom:1px solid #766a52}.bouquillon-header b{font-family:'Julius Sans One',Arial;font-weight:400;font-size:27px;letter-spacing:6px}.bouquillon-header small{display:block;font-family:Amiko;font-size:8px;letter-spacing:3px;margin-top:10px;text-align:center}.bouquillon-header>span{font-size:10px;letter-spacing:3px;margin-left:auto}.bouquillon-app button{font:inherit;font-size:11px;cursor:pointer;background:transparent;color:var(--gold);border:1px solid #766a52;padding:14px 18px}.bouquillon-app button:disabled{opacity:.35;cursor:not-allowed}.bouquillon-app main{max-width:1520px;margin:auto;padding:38px 3vw 25px}.bouquillon-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;gap:30px}.bouquillon-title>div>span{font-size:9px;letter-spacing:3px;color:#aaa18f}.bouquillon-app h1{font:clamp(36px,4.3vw,64px)/1.1 'Julius Sans One',Arial;letter-spacing:3px;margin:20px 0 16px}.bouquillon-app p{font-size:12px;line-height:1.7;color:#b2b0aa}.bouquillon-revision{text-align:center;border-left:1px solid #766a52;padding:0 50px}.bouquillon-revision strong{display:block;font:64px 'Julius Sans One';margin:10px 0}.bouquillon-revision small{font-size:10px;white-space:nowrap}.bouquillon-work{display:grid;grid-template-columns:minmax(230px,.9fr) minmax(360px,1.7fr) minmax(270px,1fr);gap:16px}.bouquillon-form,.bouquillon-drawing,.bouquillon-stages{border:1px solid #45443e;padding:20px}.bouquillon-app h2{font-size:10px;font-weight:400;letter-spacing:2.5px;margin:0 0 24px}.bouquillon-app label{display:block;font-size:10px;color:#c7c5bf;margin:18px 0}.bouquillon-app input:not([type=checkbox]),.bouquillon-app select,.bouquillon-app textarea{width:100%;display:block;background:#1b1b1b;border:1px solid #666760;color:#eee9dd;font:inherit;font-size:13px;padding:10px;margin-top:8px;border-radius:0}.bouquillon-pair{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.bouquillon-pair label{margin:0 0 16px}.bouquillon-drawing{display:flex;flex-direction:column;background:radial-gradient(ellipse at center,#1b1c1b,#141414);outline:1px solid #766a52;outline-offset:-9px}.bouquillon-drawing>div{display:flex;justify-content:space-between;gap:15px;font-size:9px;letter-spacing:2px;padding:8px}.bouquillon-drawing small{font-size:8px;letter-spacing:1px}.bouquillon-drawing svg{width:100%;margin:auto 0;min-height:350px}.bouquillon-drawing p{font-size:9px;padding:0 12px;color:#a6a49b}.bouquillon-stages button{display:flex;width:100%;gap:18px;align-items:center;text-align:left;border:0;border-bottom:1px solid #45443e;padding:20px 0}.bouquillon-stages button>b{flex-shrink:0;display:grid;place-items:center;width:34px;height:34px;border:1px solid #777;border-radius:50%;font-size:16px;font-weight:400}.bouquillon-stages button.done>b{background:var(--gold);color:#141414;border-color:var(--gold)}.bouquillon-stages strong{font-size:16px;font-weight:400;color:#eee9dd}.bouquillon-stages small{display:block;font-size:9px;color:#b2b0aa;line-height:1.6;margin-top:7px}.bouquillon-pieces{border-top:1px solid #766a52;border-bottom:1px solid #45443e;padding:24px 0;margin-top:24px;display:flex;align-items:center;gap:25px;flex-wrap:wrap}.bouquillon-pieces h2{margin:0 0 10px}.bouquillon-pieces p{font-size:10px;margin:0}.bouquillon-piece-list{display:flex;gap:8px;flex-wrap:wrap;flex:1}.bouquillon-piece-list label{margin:0;border:1px solid #45443e;padding:12px;min-width:76px;cursor:pointer;position:relative}.bouquillon-piece-list label.checked{border-color:var(--gold);background:#25251f}.bouquillon-piece-list input{accent-color:var(--gold);position:absolute;right:8px;top:8px;width:12px;height:12px}.bouquillon-piece-list b{display:block;font:22px 'Julius Sans One';color:var(--gold);margin:8px 0}.bouquillon-piece-list span{font-size:8px}.bouquillon-status{min-height:20px;margin-top:25px}.bouquillon-app :focus-visible{outline:2px solid var(--gold);outline-offset:3px}.bouquillon-app .atelier-footer{background:#141414;color:#aaa;border-color:#45443e}@media(max-width:1150px){.bouquillon-work{grid-template-columns:1fr 1.6fr}.bouquillon-stages{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 24px}.bouquillon-stages h2{grid-column:1/-1}.bouquillon-header>span{display:none}.bouquillon-header button{margin-left:auto}}@media(max-width:650px){.bouquillon-header{padding:22px 18px;gap:15px}.bouquillon-header b{font-size:18px;letter-spacing:3px}.bouquillon-header small{font-size:6px;letter-spacing:1px}.bouquillon-header button{font-size:9px;padding:10px}.bouquillon-app main{padding:30px 20px}.bouquillon-app h1{font-size:34px;letter-spacing:1px}.bouquillon-revision{padding:0 0 0 20px}.bouquillon-revision strong{font-size:48px}.bouquillon-revision small{white-space:normal;font-size:9px}.bouquillon-work{grid-template-columns:1fr}.bouquillon-drawing{min-height:390px}.bouquillon-stages{grid-template-columns:1fr 1fr;padding:20px 15px;gap:0 12px}.bouquillon-stages button{gap:10px}.bouquillon-stages strong{font-size:13px}.bouquillon-stages button>b{width:27px;height:27px;font-size:12px}.bouquillon-stages small{font-size:8px}.bouquillon-pieces{display:block}.bouquillon-piece-list{margin:20px 0}.bouquillon-piece-list label{min-width:86px}.bouquillon-pieces>button{width:100%}}
+@import "@fontsource/amiko/latin-400.css";
+@import "@fontsource/amiko/latin-600.css";
+@import "@fontsource/julius-sans-one/latin-400.css";
+.bouquillon-app {
+  --gold: #e6d9bb;
+  background: #141414;
+  color: #e6d9bb;
+  font-family: Amiko, Arial, sans-serif;
+  min-height: 100vh;
+}
+.bouquillon-app * {
+  box-sizing: border-box;
+}
+.bouquillon-header {
+  padding: 28px 3vw;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid #766a52;
+}
+.bouquillon-header b {
+  font-family: "Julius Sans One", Arial;
+  font-weight: 400;
+  font-size: 27px;
+  letter-spacing: 6px;
+}
+.bouquillon-header small {
+  display: block;
+  font-family: Amiko;
+  font-size: 8px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  text-align: center;
+}
+.bouquillon-header > span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-left: auto;
+}
+.bouquillon-app button {
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid #766a52;
+  padding: 14px 18px;
+}
+.bouquillon-app button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.bouquillon-app main {
+  max-width: 1520px;
+  margin: auto;
+  padding: 38px 3vw 25px;
+}
+.bouquillon-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 30px;
+}
+.bouquillon-title > div > span {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #aaa18f;
+}
+.bouquillon-app h1 {
+  font:
+    clamp(36px, 4.3vw, 64px)/1.1 "Julius Sans One",
+    Arial;
+  letter-spacing: 3px;
+  margin: 20px 0 16px;
+}
+.bouquillon-app p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #b2b0aa;
+}
+.bouquillon-revision {
+  text-align: center;
+  border-left: 1px solid #766a52;
+  padding: 0 50px;
+}
+.bouquillon-revision strong {
+  display: block;
+  font: 64px "Julius Sans One";
+  margin: 10px 0;
+}
+.bouquillon-revision small {
+  font-size: 10px;
+  white-space: nowrap;
+}
+.bouquillon-work {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.9fr) minmax(360px, 1.7fr) minmax(
+      270px,
+      1fr
+    );
+  gap: 16px;
+}
+.bouquillon-form,
+.bouquillon-drawing,
+.bouquillon-stages {
+  border: 1px solid #45443e;
+  padding: 20px;
+}
+.bouquillon-app h2 {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  margin: 0 0 24px;
+}
+.bouquillon-app label {
+  display: block;
+  font-size: 10px;
+  color: #c7c5bf;
+  margin: 18px 0;
+}
+.bouquillon-app input:not([type="checkbox"]),
+.bouquillon-app select,
+.bouquillon-app textarea {
+  width: 100%;
+  display: block;
+  background: #1b1b1b;
+  border: 1px solid #666760;
+  color: #eee9dd;
+  font: inherit;
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 0;
+}
+.bouquillon-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 12px;
+}
+.bouquillon-pair label {
+  margin: 0 0 16px;
+}
+.bouquillon-drawing {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(ellipse at center, #1b1c1b, #141414);
+  outline: 1px solid #766a52;
+  outline-offset: -9px;
+}
+.bouquillon-drawing > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  padding: 8px;
+}
+.bouquillon-drawing small {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.bouquillon-drawing svg {
+  width: 100%;
+  margin: auto 0;
+  min-height: 350px;
+}
+.bouquillon-drawing p {
+  font-size: 9px;
+  padding: 0 12px;
+  color: #a6a49b;
+}
+.bouquillon-stages button {
+  display: flex;
+  width: 100%;
+  gap: 18px;
+  align-items: center;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #45443e;
+  padding: 20px 0;
+}
+.bouquillon-stages button > b {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bouquillon-stages button.done > b {
+  background: var(--gold);
+  color: #141414;
+  border-color: var(--gold);
+}
+.bouquillon-stages strong {
+  font-size: 16px;
+  font-weight: 400;
+  color: #eee9dd;
+}
+.bouquillon-stages small {
+  display: block;
+  font-size: 9px;
+  color: #b2b0aa;
+  line-height: 1.6;
+  margin-top: 7px;
+}
+.bouquillon-pieces {
+  border-top: 1px solid #766a52;
+  border-bottom: 1px solid #45443e;
+  padding: 24px 0;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.bouquillon-pieces h2 {
+  margin: 0 0 10px;
+}
+.bouquillon-pieces p {
+  font-size: 10px;
+  margin: 0;
+}
+.bouquillon-piece-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.bouquillon-piece-list label {
+  margin: 0;
+  border: 1px solid #45443e;
+  padding: 12px;
+  min-width: 76px;
+  cursor: pointer;
+  position: relative;
+}
+.bouquillon-piece-list label.checked {
+  border-color: var(--gold);
+  background: #25251f;
+}
+.bouquillon-piece-list input {
+  accent-color: var(--gold);
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+}
+.bouquillon-piece-list b {
+  display: block;
+  font: 22px "Julius Sans One";
+  color: var(--gold);
+  margin: 8px 0;
+}
+.bouquillon-piece-list span {
+  font-size: 8px;
+}
+.bouquillon-status {
+  min-height: 20px;
+  margin-top: 25px;
+}
+.bouquillon-app :focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.bouquillon-app .atelier-footer {
+  background: #141414;
+  color: #aaa;
+  border-color: #45443e;
+}
+@media (max-width: 1150px) {
+  .bouquillon-work {
+    grid-template-columns: 1fr 1.6fr;
+  }
+  .bouquillon-stages {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 24px;
+  }
+  .bouquillon-stages h2 {
+    grid-column: 1/-1;
+  }
+  .bouquillon-header > span {
+    display: none;
+  }
+  .bouquillon-header button {
+    margin-left: auto;
+  }
+}
+@media (max-width: 650px) {
+  .bouquillon-header {
+    padding: 22px 18px;
+    gap: 15px;
+  }
+  .bouquillon-header b {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  .bouquillon-header small {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .bouquillon-header button {
+    font-size: 9px;
+    padding: 10px;
+  }
+  .bouquillon-app main {
+    padding: 30px 20px;
+  }
+  .bouquillon-app h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+  .bouquillon-revision {
+    padding: 0 0 0 20px;
+  }
+  .bouquillon-revision strong {
+    font-size: 48px;
+  }
+  .bouquillon-revision small {
+    white-space: normal;
+    font-size: 9px;
+  }
+  .bouquillon-work {
+    grid-template-columns: 1fr;
+  }
+  .bouquillon-drawing {
+    min-height: 390px;
+  }
+  .bouquillon-stages {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 15px;
+    gap: 0 12px;
+  }
+  .bouquillon-stages button {
+    gap: 10px;
+  }
+  .bouquillon-stages strong {
+    font-size: 13px;
+  }
+  .bouquillon-stages button > b {
+    width: 27px;
+    height: 27px;
+    font-size: 12px;
+  }
+  .bouquillon-stages small {
+    font-size: 8px;
+  }
+  .bouquillon-pieces {
+    display: block;
+  }
+  .bouquillon-piece-list {
+    margin: 20px 0;
+  }
+  .bouquillon-piece-list label {
+    min-width: 86px;
+  }
+  .bouquillon-pieces > button {
+    width: 100%;
+  }
+}

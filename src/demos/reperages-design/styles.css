@@ -1,2 +1,390 @@
-@import '@fontsource/roboto/latin-400.css';@import '@fontsource/roboto/latin-500.css';@import '@fontsource/roboto/latin-700.css';
-.reperages-design-app{background:#fff;color:#111;font-family:Roboto,Arial,sans-serif;min-height:100vh}.reperages-design-app *{box-sizing:border-box}.reperages-design-header{display:flex;align-items:center;gap:50px;padding:26px 4vw;border-bottom:1px solid #ddd}.reperages-design-header b{font-size:24px;letter-spacing:6px;font-weight:400}.reperages-design-header b small{display:block;text-align:center;font-size:9px;letter-spacing:4px;margin-top:5px}.reperages-design-header>span{font-size:10px;letter-spacing:2px;color:#5d6c7b}.reperages-design-header button{margin-left:auto;background:white;color:#5d6c7b;border:1px solid #ddd}.reperages-design-app button{font:inherit;padding:13px 20px;cursor:pointer;border:0;background:#5d6c7b;color:#fff;font-size:12px}.reperages-design-app button:disabled{opacity:.4;cursor:not-allowed}.reperages-design-app main{max-width:1460px;padding:45px 4vw 25px;margin:auto}.reperages-design-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:45px;gap:30px}.reperages-design-title>div>span{font-size:10px;letter-spacing:2px;color:#5d6c7b}.reperages-design-app h1{font-size:clamp(36px,4vw,59px);font-weight:500;letter-spacing:-2px;line-height:1.05;margin:18px 0}.reperages-design-app p{font-size:14px;line-height:1.6;color:#697581}.reperages-design-outstanding{text-align:right;min-width:250px}.reperages-design-outstanding strong{display:block;font-size:35px;font-weight:400;margin:12px 0 20px}.reperages-design-app small{font-size:11px;color:#7c858e;line-height:1.5}.reperages-design-work{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(320px,1fr);gap:36px}.reperages-design-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:20px}.reperages-design-toolbar b{font-size:14px;font-weight:400}.reperages-design-app input:not([type=checkbox]){font:inherit;padding:12px;border:1px solid #d6dbe0;border-radius:2px;min-width:0;background:#fff;color:#222}.reperages-design-toolbar input{max-width:55%;font-size:12px}.reperages-design-columns{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:20px;border-bottom:1px solid #d6dbe0;padding:15px;font-size:10px;color:#7c858e}.reperages-design-row{display:grid!important;grid-template-columns:1.5fr 1fr 1fr;align-items:center;text-align:left;gap:20px;width:100%;padding:23px 15px!important;background:white!important;color:#111!important;border-bottom:1px solid #d6dbe0!important;min-height:115px}.reperages-design-row.selected{background:#eaf0f5!important}.reperages-design-row>span:first-child{display:flex;align-items:center;gap:10px}.reperages-design-row svg{width:52px;flex-shrink:0}.reperages-design-row strong{font-size:13px;font-weight:500}.reperages-design-row small{display:block;margin-top:6px}.reperages-design-project{padding:28px 10px;margin-top:50px;max-width:400px}.reperages-design-project>span{font-size:10px;letter-spacing:2px}.reperages-design-detail{border-left:1px solid #d6dbe0;padding-left:30px}.reperages-design-detailtitle{display:flex;gap:10px;align-items:center;margin-bottom:20px}.reperages-design-detailtitle svg{width:75px}.reperages-design-app h2{font-size:24px;font-weight:500;margin:7px 0}.reperages-design-detailtitle p{font-size:11px;margin:0}.reperages-design-detail label{display:block;font-size:11px;color:#697581;margin:20px 0}.reperages-design-detail input:not([type=checkbox]){width:100%;display:block;margin-top:8px;font-size:14px}.reperages-design-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.reperages-design-pair label{margin:0 0 20px}.reperages-design-money{border-top:1px solid #d6dbe0;border-bottom:1px solid #d6dbe0;padding:20px 0;display:flex;justify-content:space-between;gap:8px;font-size:11px;color:#7c858e}.reperages-design-money strong{display:block;margin-top:9px;font-size:17px;font-weight:500;color:#111}.reperages-design-detail .reperages-design-check{display:flex;align-items:center;gap:10px;margin:15px 0;color:#333}.reperages-design-check input{width:17px;height:17px;accent-color:#5d6c7b}.reperages-design-timeline{display:flex;align-items:center;padding:35px 0;margin-top:38px;border-top:1px solid #d6dbe0;border-bottom:1px solid #d6dbe0;gap:35px}.reperages-design-timeline>div:not(.reperages-design-line){position:relative;padding-left:30px}.reperages-design-dot{position:absolute;left:0;top:3px;border:2px solid #5d6c7b;width:13px;height:13px;border-radius:50%;background:white}.reperages-design-dot.departure{background:#5d6c7b}.reperages-design-timeline strong{display:block;font-size:24px;font-weight:400;margin-top:12px}.reperages-design-timeline p{font-size:11px;margin:8px 0 0}.reperages-design-line{flex:1;height:1px;background:#c4ccd3}.reperages-design-source{font-size:11px!important;max-width:950px;margin-top:22px}.reperages-design-app a{color:inherit}.reperages-design-app :focus-visible{outline:2px solid #5d6c7b;outline-offset:3px}@media(max-width:900px){.reperages-design-work{grid-template-columns:1fr}.reperages-design-detail{border-left:0;border-top:1px solid #ddd;padding:25px 0}.reperages-design-project{margin-top:16px;max-width:none}.reperages-design-header>span{display:none}}@media(max-width:560px){.reperages-design-header{padding:20px;gap:12px}.reperages-design-header b{font-size:18px;letter-spacing:3px}.reperages-design-header button{padding:10px;font-size:10px}.reperages-design-app main{padding:30px 20px}.reperages-design-title{display:block}.reperages-design-outstanding{text-align:left;margin-top:25px}.reperages-design-outstanding strong{font-size:26px;display:inline-block;margin:0 0 0 18px}.reperages-design-outstanding button{display:block;width:100%;margin-top:20px}.reperages-design-columns{grid-template-columns:1.5fr 1fr 1fr;gap:8px;padding:12px 4px}.reperages-design-row{gap:8px;padding:18px 4px!important;font-size:10px!important;min-height:100px}.reperages-design-row svg{display:none}.reperages-design-row strong{font-size:12px}.reperages-design-row small{font-size:9px}.reperages-design-timeline{gap:10px}.reperages-design-timeline>div:not(.reperages-design-line){padding-left:20px;flex:1}.reperages-design-timeline strong{font-size:18px}.reperages-design-timeline small{font-size:9px}.reperages-design-line{display:none}}
+@import "@fontsource/roboto/latin-400.css";
+@import "@fontsource/roboto/latin-500.css";
+@import "@fontsource/roboto/latin-700.css";
+.reperages-design-app {
+  background: #fff;
+  color: #111;
+  font-family: Roboto, Arial, sans-serif;
+  min-height: 100vh;
+}
+.reperages-design-app * {
+  box-sizing: border-box;
+}
+.reperages-design-header {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 26px 4vw;
+  border-bottom: 1px solid #ddd;
+}
+.reperages-design-header b {
+  font-size: 24px;
+  letter-spacing: 6px;
+  font-weight: 400;
+}
+.reperages-design-header b small {
+  display: block;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+.reperages-design-header > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #5d6c7b;
+}
+.reperages-design-header button {
+  margin-left: auto;
+  background: white;
+  color: #5d6c7b;
+  border: 1px solid #ddd;
+}
+.reperages-design-app button {
+  font: inherit;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: 0;
+  background: #5d6c7b;
+  color: #fff;
+  font-size: 12px;
+}
+.reperages-design-app button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.reperages-design-app main {
+  max-width: 1460px;
+  padding: 45px 4vw 25px;
+  margin: auto;
+}
+.reperages-design-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+  gap: 30px;
+}
+.reperages-design-title > div > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #5d6c7b;
+}
+.reperages-design-app h1 {
+  font-size: clamp(36px, 4vw, 59px);
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin: 18px 0;
+}
+.reperages-design-app p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #697581;
+}
+.reperages-design-outstanding {
+  text-align: right;
+  min-width: 250px;
+}
+.reperages-design-outstanding strong {
+  display: block;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 12px 0 20px;
+}
+.reperages-design-app small {
+  font-size: 11px;
+  color: #7c858e;
+  line-height: 1.5;
+}
+.reperages-design-work {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(320px, 1fr);
+  gap: 36px;
+}
+.reperages-design-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.reperages-design-toolbar b {
+  font-size: 14px;
+  font-weight: 400;
+}
+.reperages-design-app input:not([type="checkbox"]) {
+  font: inherit;
+  padding: 12px;
+  border: 1px solid #d6dbe0;
+  border-radius: 2px;
+  min-width: 0;
+  background: #fff;
+  color: #222;
+}
+.reperages-design-toolbar input {
+  max-width: 55%;
+  font-size: 12px;
+}
+.reperages-design-columns {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 20px;
+  border-bottom: 1px solid #d6dbe0;
+  padding: 15px;
+  font-size: 10px;
+  color: #7c858e;
+}
+.reperages-design-row {
+  display: grid !important;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  width: 100%;
+  padding: 23px 15px !important;
+  background: white !important;
+  color: #111 !important;
+  border-bottom: 1px solid #d6dbe0 !important;
+  min-height: 115px;
+}
+.reperages-design-row.selected {
+  background: #eaf0f5 !important;
+}
+.reperages-design-row > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reperages-design-row svg {
+  width: 52px;
+  flex-shrink: 0;
+}
+.reperages-design-row strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+.reperages-design-row small {
+  display: block;
+  margin-top: 6px;
+}
+.reperages-design-project {
+  padding: 28px 10px;
+  margin-top: 50px;
+  max-width: 400px;
+}
+.reperages-design-project > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.reperages-design-detail {
+  border-left: 1px solid #d6dbe0;
+  padding-left: 30px;
+}
+.reperages-design-detailtitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.reperages-design-detailtitle svg {
+  width: 75px;
+}
+.reperages-design-app h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 7px 0;
+}
+.reperages-design-detailtitle p {
+  font-size: 11px;
+  margin: 0;
+}
+.reperages-design-detail label {
+  display: block;
+  font-size: 11px;
+  color: #697581;
+  margin: 20px 0;
+}
+.reperages-design-detail input:not([type="checkbox"]) {
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.reperages-design-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.reperages-design-pair label {
+  margin: 0 0 20px;
+}
+.reperages-design-money {
+  border-top: 1px solid #d6dbe0;
+  border-bottom: 1px solid #d6dbe0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: #7c858e;
+}
+.reperages-design-money strong {
+  display: block;
+  margin-top: 9px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #111;
+}
+.reperages-design-detail .reperages-design-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  color: #333;
+}
+.reperages-design-check input {
+  width: 17px;
+  height: 17px;
+  accent-color: #5d6c7b;
+}
+.reperages-design-timeline {
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+  margin-top: 38px;
+  border-top: 1px solid #d6dbe0;
+  border-bottom: 1px solid #d6dbe0;
+  gap: 35px;
+}
+.reperages-design-timeline > div:not(.reperages-design-line) {
+  position: relative;
+  padding-left: 30px;
+}
+.reperages-design-dot {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  border: 2px solid #5d6c7b;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: white;
+}
+.reperages-design-dot.departure {
+  background: #5d6c7b;
+}
+.reperages-design-timeline strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+.reperages-design-timeline p {
+  font-size: 11px;
+  margin: 8px 0 0;
+}
+.reperages-design-line {
+  flex: 1;
+  height: 1px;
+  background: #c4ccd3;
+}
+.reperages-design-source {
+  font-size: 11px !important;
+  max-width: 950px;
+  margin-top: 22px;
+}
+.reperages-design-app a {
+  color: inherit;
+}
+.reperages-design-app :focus-visible {
+  outline: 2px solid #5d6c7b;
+  outline-offset: 3px;
+}
+@media (max-width: 900px) {
+  .reperages-design-work {
+    grid-template-columns: 1fr;
+  }
+  .reperages-design-detail {
+    border-left: 0;
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+  }
+  .reperages-design-project {
+    margin-top: 16px;
+    max-width: none;
+  }
+  .reperages-design-header > span {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .reperages-design-header {
+    padding: 20px;
+    gap: 12px;
+  }
+  .reperages-design-header b {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  .reperages-design-header button {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .reperages-design-app main {
+    padding: 30px 20px;
+  }
+  .reperages-design-title {
+    display: block;
+  }
+  .reperages-design-outstanding {
+    text-align: left;
+    margin-top: 25px;
+  }
+  .reperages-design-outstanding strong {
+    font-size: 26px;
+    display: inline-block;
+    margin: 0 0 0 18px;
+  }
+  .reperages-design-outstanding button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .reperages-design-columns {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 8px;
+    padding: 12px 4px;
+  }
+  .reperages-design-row {
+    gap: 8px;
+    padding: 18px 4px !important;
+    font-size: 10px !important;
+    min-height: 100px;
+  }
+  .reperages-design-row svg {
+    display: none;
+  }
+  .reperages-design-row strong {
+    font-size: 12px;
+  }
+  .reperages-design-row small {
+    font-size: 9px;
+  }
+  .reperages-design-timeline {
+    gap: 10px;
+  }
+  .reperages-design-timeline > div:not(.reperages-design-line) {
+    padding-left: 20px;
+    flex: 1;
+  }
+  .reperages-design-timeline strong {
+    font-size: 18px;
+  }
+  .reperages-design-timeline small {
+    font-size: 9px;
+  }
+  .reperages-design-line {
+    display: none;
+  }
+}

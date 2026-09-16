@@ -1,0 +1,438 @@
+.loiseau-app {
+  font-family: Mulish, Arial, sans-serif;
+  background: #f7f8fa;
+  color: #252e5a;
+  font-size: 14px;
+}
+.loiseau-app * {
+  box-sizing: border-box;
+}
+.loiseau-app button,
+.loiseau-app input,
+.loiseau-app select,
+.loiseau-app textarea {
+  font: inherit;
+}
+.loiseau-app button {
+  cursor: pointer;
+}
+.loiseau-app button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.loiseau-app :focus-visible {
+  outline: 3px solid #c35e29;
+  outline-offset: 3px;
+}
+.loiseau-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 26px 5%;
+  border-bottom: 1px solid #e4e4e4;
+  gap: 20px;
+}
+.loiseau-header > b {
+  font:
+    600 27px Montserrat,
+    sans-serif;
+  letter-spacing: 2px;
+}
+.loiseau-header b span {
+  display: block;
+  font: 8px Mulish;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+.loiseau-header > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #6d7290;
+}
+.loiseau-header button {
+  font-size: 11px;
+  border: 0;
+  background: none;
+  color: #4c5eb9;
+}
+.loiseau-app main {
+  padding: 42px 5% 20px;
+  max-width: 1450px;
+  margin: auto;
+}
+.loiseau-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 20px;
+}
+.loiseau-heading p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #4c5eb9;
+  font-weight: 600;
+}
+.loiseau-heading h1 {
+  font:
+    600 clamp(30px, 3.2vw, 46px)/1.2 Montserrat,
+    sans-serif;
+  letter-spacing: -1.5px;
+  margin: 16px 0;
+}
+.loiseau-heading h1 span {
+  color: #4c5eb9;
+}
+.loiseau-stamp {
+  border-left: 3px solid #c35e29;
+  padding: 12px 0 12px 18px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.loiseau-stamp strong {
+  display: block;
+  font-size: 21px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+  max-width: 250px;
+}
+.loiseau-stamp span {
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #787e97;
+}
+.loiseau-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background: white;
+  border: 1px solid #e4e4e4;
+}
+.loiseau-report {
+  padding: 32px;
+}
+.loiseau-section-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.loiseau-section-title > b {
+  font-size: 11px;
+  border: 1px solid #d7dbec;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  color: #4c5eb9;
+}
+.loiseau-section-title h2 {
+  font:
+    600 16px Montserrat,
+    sans-serif;
+  margin: 0;
+}
+.loiseau-report > label,
+.loiseau-pair > label,
+.loiseau-rate-grid > label {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 17px;
+  color: #636981;
+}
+.loiseau-app input:not([type="checkbox"]),
+.loiseau-app textarea,
+.loiseau-app select {
+  border: 1px solid #dce0ec;
+  background: #fff;
+  border-radius: 2px;
+  padding: 11px 12px;
+  color: #252e5a;
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  min-width: 0;
+}
+.loiseau-app textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+.loiseau-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.loiseau-report > .loiseau-section-title:not(:first-child) {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e4e4e4;
+}
+.loiseau-time-entry {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.loiseau-time-entry > label {
+  font-size: 11px;
+  color: #636981;
+  width: 125px;
+}
+.loiseau-time-entry input {
+  font-size: 25px !important;
+}
+.loiseau-time-entry > label > span {
+  display: block;
+  font-size: 10px;
+  margin-top: 6px;
+}
+.loiseau-time-entry > div {
+  text-align: right;
+}
+.loiseau-time-entry strong {
+  font: 600 43px Montserrat;
+  color: #4c5eb9;
+}
+.loiseau-time-entry small {
+  font-size: 14px;
+  margin-left: 7px;
+}
+.loiseau-time-entry > div > span {
+  display: block;
+  font-size: 10px;
+  color: #797e90;
+  margin-top: 5px;
+}
+.loiseau-ruler {
+  margin-top: 23px;
+}
+.loiseau-ruler-bg {
+  height: 17px;
+  background: repeating-linear-gradient(
+    90deg,
+    #e9ebf3 0,
+    #e9ebf3 calc(20% - 1px),
+    #fff calc(20% - 1px),
+    #fff 20%
+  );
+  position: relative;
+}
+.loiseau-ruler-bg i {
+  display: block;
+  height: 17px;
+  background: #4c5eb9;
+  opacity: 0.65;
+}
+.loiseau-ruler-bg b {
+  position: absolute;
+  width: 3px;
+  height: 29px;
+  top: -6px;
+  transform: translateX(-3px);
+  background: #c35e29;
+}
+.loiseau-ruler > div + div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #9095a8;
+  margin-top: 8px;
+}
+.loiseau-ruler p {
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 15px 0;
+}
+.loiseau-ruler p i {
+  display: inline-block;
+  background: #4c5eb9;
+  width: 8px;
+  height: 8px;
+}
+.loiseau-ruler p b {
+  display: inline-block;
+  background: #c35e29;
+  width: 3px;
+  height: 10px;
+  margin-left: 16px;
+}
+.loiseau-rule {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #81869a;
+  background: #f6f7fa;
+  padding: 12px;
+}
+.loiseau-report .loiseau-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.loiseau-check input {
+  accent-color: #4c5eb9;
+}
+.loiseau-billing {
+  border-left: 1px solid #e4e4e4;
+  background: #fcfcfd;
+  padding: 32px;
+}
+.loiseau-billing > .loiseau-section-title {
+  margin-bottom: 14px;
+}
+.loiseau-billing > p {
+  font-size: 11px;
+  color: #82869a;
+  line-height: 1.7;
+}
+.loiseau-rate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 16px;
+  margin-top: 25px;
+}
+.loiseau-rate-grid label > div {
+  position: relative;
+}
+.loiseau-rate-grid label input {
+  padding-right: 30px !important;
+}
+.loiseau-rate-grid label > div span {
+  position: absolute;
+  right: 13px;
+  top: 12px;
+}
+.loiseau-receipt {
+  padding: 12px 0;
+  margin-top: 12px;
+}
+.loiseau-receipt p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 15px;
+  margin: 18px 0;
+}
+.loiseau-receipt p b {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.loiseau-receipt p span {
+  color: #70758e;
+}
+.loiseau-receipt .subtotal {
+  border-top: 1px solid #dce0ec;
+  padding-top: 19px;
+}
+.loiseau-receipt .total {
+  display: block;
+  background: #edf0fa;
+  margin: 23px -12px 12px;
+  padding: 20px 18px;
+  border-left: 3px solid #4c5eb9;
+}
+.loiseau-receipt .total span {
+  font-size: 11px;
+}
+.loiseau-receipt strong {
+  display: block;
+  font: 600 34px Montserrat;
+  margin-top: 8px;
+}
+.loiseau-export {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  background: #c35e29;
+  color: white;
+  font-size: 12px !important;
+}
+.loiseau-billing .loiseau-helper {
+  font-size: 10px;
+}
+.loiseau-error {
+  color: #a63119 !important;
+}
+.loiseau-status {
+  font-size: 11px;
+  color: #646d94;
+  min-height: 22px;
+  margin-top: 24px;
+}
+@media (max-width: 850px) {
+  .loiseau-header > span {
+    display: none;
+  }
+  .loiseau-heading h1 {
+    font-size: 34px;
+  }
+  .loiseau-layout {
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .loiseau-report,
+  .loiseau-billing {
+    padding: 23px;
+  }
+  .loiseau-rate-grid {
+    grid-template-columns: 1fr;
+  }
+  .loiseau-section-title h2 {
+    font-size: 13px;
+  }
+  .loiseau-stamp {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .loiseau-header {
+    padding: 20px;
+  }
+  .loiseau-header > b {
+    font-size: 24px;
+  }
+  .loiseau-header b span {
+    font-size: 6px;
+  }
+  .loiseau-header button {
+    font-size: 9px;
+  }
+  .loiseau-app main {
+    padding: 28px 20px 12px;
+  }
+  .loiseau-heading h1 {
+    font-size: 31px;
+    letter-spacing: -1px;
+  }
+  .loiseau-layout {
+    display: block;
+  }
+  .loiseau-report,
+  .loiseau-billing {
+    padding: 23px 18px;
+  }
+  .loiseau-billing {
+    border-left: 0;
+    border-top: 1px solid #e4e4e4;
+  }
+  .loiseau-pair {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .loiseau-rate-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .loiseau-time-entry strong {
+    font-size: 36px;
+  }
+  .loiseau-time-entry > div > span {
+    max-width: 130px;
+  }
+  .loiseau-ruler p {
+    font-size: 8px;
+  }
+}
