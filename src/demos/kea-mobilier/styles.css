@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&display=swap");
+.kea-mobilier {
+  font:
+    14px Poppins,
+    sans-serif;
+  background: #fff;
+  color: #212121;
+  min-height: 100vh;
+}
+.kea-mobilier button,
+.kea-mobilier input,
+.kea-mobilier select {
+  font: inherit;
+}
+.kea-header {
+  padding: 23px 32px;
+  border-bottom: 1px solid #d6d5d5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.kea-header strong {
+  font:
+    43px/1 Anton,
+    sans-serif;
+  letter-spacing: 2px;
+}
+.kea-header strong span {
+  display: block;
+  font:
+    10px Poppins,
+    sans-serif;
+  letter-spacing: 5px;
+  margin-top: 8px;
+}
+.kea-header button {
+  border: 0;
+  background: none;
+  text-decoration: underline;
+}
+.kea-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 355px;
+  max-width: 1500px;
+  margin: auto;
+  padding: 30px;
+  gap: 35px;
+}
+.kea-canvas h1 {
+  font:
+    46px/1.12 Anton,
+    sans-serif;
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+.kea-canvas > p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #706f6f;
+  max-width: 570px;
+}
+.kea-drawing {
+  margin-top: 25px;
+  background: #f4f4f2;
+  border: 1px solid #e1e1dd;
+  border-radius: 4px;
+}
+.kea-drawing svg {
+  width: 100%;
+  display: block;
+  max-height: 610px;
+}
+.kea-canvas .kea-disclaimer {
+  font-size: 12px;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+.kea-config {
+  border: 1px solid #dededa;
+  border-radius: 4px;
+  padding: 25px;
+}
+.kea-config h2 {
+  font-size: 23px;
+  margin: 0 0 24px;
+}
+.kea-config h3 {
+  font-size: 15px;
+  margin: 26px 0 17px;
+}
+.kea-config label {
+  display: grid;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+}
+.kea-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 20px;
+}
+.kea-config input,
+.kea-config select {
+  min-width: 0;
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #d2d2cd;
+  border-radius: 4px;
+  background: white;
+  color: #252525;
+  font-size: 14px;
+}
+.kea-module {
+  display: grid !important;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  margin: 11px 0;
+  gap: 15px !important;
+}
+.kea-check {
+  display: flex !important;
+  gap: 11px !important;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ecebe7;
+  font-size: 13px !important;
+  line-height: 1.5;
+}
+.kea-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: #212121;
+  flex-shrink: 0;
+}
+.kea-help {
+  font-size: 11px;
+  color: #7d7b73;
+  line-height: 1.5;
+}
+.kea-export {
+  background: #f3e7a1;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600 !important;
+  padding: 15px;
+  width: 100%;
+  margin-top: 18px;
+}
+.kea-errors {
+  background: #fff4db;
+  padding: 12px;
+  font-size: 12px;
+  color: #925c18;
+}
+.kea-errors p {
+  margin: 7px 0;
+}
+.kea-config [role="status"] {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.kea-mobilier button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.kea-mobilier :focus-visible {
+  outline: 3px solid #a79948;
+  outline-offset: 3px;
+}
+@media (max-width: 1050px) {
+  .kea-main {
+    grid-template-columns: 1fr;
+  }
+  .kea-canvas h1 br {
+    display: none;
+  }
+  .kea-config {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .kea-header {
+    padding: 18px;
+  }
+  .kea-header strong {
+    font-size: 33px;
+  }
+  .kea-header button {
+    font-size: 12px;
+  }
+  .kea-main {
+    padding: 26px 18px;
+  }
+  .kea-canvas h1 {
+    font-size: 38px;
+  }
+  .kea-config {
+    padding: 23px 18px;
+  }
+  .kea-canvas > p {
+    font-size: 14px;
+  }
+}

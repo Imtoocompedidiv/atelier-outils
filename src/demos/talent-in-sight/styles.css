@@ -1,0 +1,427 @@
+.talent {
+  --teal: #0ba3b3;
+  color: #333;
+  background: #fff;
+  min-height: 100vh;
+  font:
+    14px/1.6 "Open Sans",
+    Arial,
+    sans-serif;
+}
+.talent-header {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 25px 32px;
+  max-width: 1580px;
+  margin: auto;
+}
+.talent-header > a {
+  font-size: 31px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.6px;
+}
+.talent-header a span,
+.talent-paper-brand span {
+  color: var(--teal);
+}
+.talent-header p {
+  color: #737c85;
+  margin: 0;
+}
+.talent-header > button {
+  margin-left: auto;
+  border: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 12px;
+  padding: 9px;
+  background: white;
+  color: #56616c;
+}
+.talent main {
+  padding: 20px 32px 0;
+  max-width: 1580px;
+  margin: auto;
+}
+.talent-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 27px;
+}
+.talent h1 {
+  font-size: clamp(27px, 2.8vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1.1px;
+  margin: 0;
+  font-weight: 600;
+  max-width: 790px;
+}
+.talent-heading > button {
+  background: #fff;
+  border: 1px solid #0d828e;
+  color: #076773;
+  padding: 11px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  max-width: 210px;
+}
+.talent-heading > button.active {
+  background: #e6f7f9;
+}
+.talent-desk {
+  display: grid;
+  grid-template-columns: minmax(235px, 0.9fr) minmax(300px, 1.1fr) minmax(
+      245px,
+      0.8fr
+    );
+  gap: 22px;
+  align-items: start;
+}
+.talent-desk.client-only {
+  display: block;
+  max-width: 730px;
+  margin: auto;
+}
+.talent-files,
+.talent-controls {
+  border-top: 5px solid #333;
+  padding-top: 18px;
+}
+.talent h2 {
+  margin: 0 0 14px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.talent-files > p {
+  font-size: 13px;
+  color: #6b747e;
+  margin-bottom: 20px;
+}
+.talent-file {
+  display: grid;
+  grid-template-columns: 1fr 31px;
+  gap: 7px 10px;
+  padding: 18px 10px 18px 0;
+  border-top: 1px solid #e4e8eb;
+}
+.talent-file-type {
+  grid-column: 1/-1;
+  font-size: 10px;
+  color: #0c7b86;
+}
+.talent-file strong {
+  font-weight: 600;
+  font-size: 14px;
+}
+.talent-file small {
+  display: block;
+  color: #7b848c;
+  font-size: 11px;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+.talent-file.internal {
+  background: #f6f7f8;
+  padding-left: 10px;
+  color: #858d94;
+}
+.talent-toggle {
+  border: 1px solid #b4c5cb;
+  background: #fff;
+  color: #326975;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  font-size: 21px;
+  line-height: 25px;
+  padding: 0;
+}
+.talent-toggle.selected {
+  background: #087e8a;
+  border-color: #087e8a;
+  color: white;
+}
+.talent-toggle:disabled {
+  opacity: 0.25;
+}
+.talent-preview {
+  background: #f1f5f6;
+  padding: 20px;
+  border-top: 5px solid var(--teal);
+}
+.talent-paper {
+  padding: 26px;
+  background: white;
+  box-shadow: 0 4px 14px #253d4f0c;
+}
+.talent-paper-brand {
+  padding-bottom: 17px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid var(--teal);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.talent-for {
+  font-size: 11px;
+  color: #78828a;
+  margin: 0 0 5px;
+}
+.talent-paper h2 {
+  font-size: 26px;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+.talent-person {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  padding-bottom: 24px;
+}
+.talent-person > span {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #0b8a98;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+.talent-person strong {
+  font-size: 24px;
+}
+.talent-person p {
+  margin: 2px 0 0;
+  color: #707a83;
+  font-size: 11px;
+}
+.talent-paper h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.talent-manifest {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.talent-manifest button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 9px;
+  background: white;
+  color: #344953;
+  border: 0;
+  border-bottom: 1px solid #e4eaed;
+  text-align: left;
+  font-size: 11px;
+}
+.talent-manifest button.selected {
+  background: #edf9fa;
+  box-shadow: inset 3px 0 var(--teal);
+}
+.talent-manifest button span {
+  font-size: 9px;
+  color: #17818b;
+  white-space: nowrap;
+}
+.talent-excerpt {
+  margin-top: 19px;
+  padding: 15px;
+  background: #f8fafb;
+}
+.talent-excerpt h4 {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.talent-excerpt pre {
+  font:
+    11px/1.8 "Open Sans",
+    Arial,
+    sans-serif;
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: #586b75;
+}
+.talent-paper-footer {
+  border-top: 1px solid var(--teal);
+  padding-top: 17px;
+  margin: 20px 0 0;
+  font-size: 10px;
+  color: #637782;
+}
+.talent-controls > label {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+}
+.talent-controls select {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 11px;
+  background: white;
+  color: #333;
+  border: 1px solid #ccd8dd;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.talent-consent {
+  margin-top: 24px;
+  padding: 17px;
+  background: #eaf8fa;
+  border-left: 3px solid var(--teal);
+}
+.talent-consent label {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
+.talent-consent strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.talent-consent input {
+  flex-shrink: 0;
+  margin-top: 4px;
+  accent-color: #087e8a;
+  width: 18px;
+  height: 18px;
+}
+.talent-consent p {
+  color: #55737b;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+.talent-output {
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #d4e3e6;
+}
+.talent-output h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 13px;
+}
+.talent-output p {
+  font-size: 12px;
+  color: #6d7d85;
+}
+.talent-primary {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #087e8a;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.talent-primary:disabled {
+  opacity: 0.4;
+}
+.talent-output small {
+  display: block;
+  color: #7e8b92;
+  font-size: 10px;
+  margin-top: 9px;
+}
+.talent-notice {
+  min-height: 24px;
+  font-size: 12px;
+  color: #166875;
+  margin: 25px 0 0;
+}
+.talent-empty {
+  font-size: 12px;
+  padding: 18px 0;
+  color: #7b7270;
+}
+@media (max-width: 1050px) {
+  .talent-desk {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  }
+  .talent-controls {
+    grid-column: 1/-1;
+  }
+  .talent-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 30px;
+  }
+  .talent-controls h2 {
+    grid-column: 1/-1;
+    margin: 0;
+  }
+  .talent-consent {
+    margin: 0;
+    grid-row: span 2;
+  }
+  .talent-output {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+@media (max-width: 650px) {
+  .talent-header {
+    padding: 20px 16px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .talent-header > a {
+    font-size: 25px;
+  }
+  .talent-header p {
+    font-size: 12px;
+  }
+  .talent main {
+    padding: 16px;
+  }
+  .talent-heading {
+    display: block;
+  }
+  .talent h1 {
+    font-size: 31px;
+  }
+  .talent-heading > button {
+    max-width: none;
+    margin-top: 20px;
+  }
+  .talent-desk,
+  .talent-controls {
+    display: block;
+  }
+  .talent-files {
+    margin-bottom: 25px;
+  }
+  .talent-preview {
+    padding: 12px;
+  }
+  .talent-paper {
+    padding: 21px;
+  }
+  .talent-controls {
+    margin-top: 25px;
+  }
+  .talent-controls h2 {
+    margin-bottom: 15px;
+  }
+  .talent-consent,
+  .talent-output {
+    margin-top: 22px;
+  }
+}

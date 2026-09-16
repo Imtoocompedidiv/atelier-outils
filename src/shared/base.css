@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  color: #232730;
+  background: #fff;
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main,
+section,
+article,
+aside,
+form {
+  min-width: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+:focus-visible {
+  outline: 3px solid #2075be;
+  outline-offset: 3px;
+}
+a {
+  color: inherit;
+}
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+img,
+svg {
+  max-width: 100%;
+}
+.atelier-message {
+  max-width: 660px;
+  margin: 14vh auto;
+  padding: 24px;
+  line-height: 1.65;
+}
+.atelier-notice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 10px 24px;
+  font:
+    12px/1.5 Arial,
+    sans-serif;
+  color: #49515c;
+  background: #f4f6f8;
+  border-bottom: 1px solid #dce1e6;
+}
+.atelier-notice a {
+  text-underline-offset: 3px;
+}
+.atelier-footer {
+  padding: 28px 24px;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  color: #59616a;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+@media print {
+  .atelier-notice,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+}

@@ -1,0 +1,330 @@
+.ams-locations {
+  font:
+    15px Inter,
+    Arial,
+    sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  min-height: 100vh;
+}
+.ams-locations button,
+.ams-locations input,
+.ams-locations select {
+  font: inherit;
+}
+.ams-header {
+  background: #1a1a1a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 32px;
+}
+.ams-header strong {
+  font-size: 33px;
+  font-style: italic;
+  color: #e3101b;
+}
+.ams-header strong span {
+  font-size: 25px;
+  font-style: normal;
+  color: #fff;
+}
+.ams-header button {
+  border: 0;
+  background: none;
+  color: #fff;
+  text-decoration: underline;
+}
+.ams-main {
+  max-width: 1550px;
+  padding: 35px 30px;
+  margin: auto;
+}
+.ams-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.ams-title h1 {
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 0 0 15px;
+  color: #000;
+}
+.ams-title p {
+  font-size: 17px;
+  color: #60656c;
+  margin: 0;
+}
+.ams-export {
+  padding: 16px 22px;
+  background: #e3101b;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700 !important;
+  white-space: nowrap;
+}
+.ams-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 295px;
+  gap: 24px;
+}
+.ams-timeline {
+  border: 1px solid #dce0e4;
+  border-radius: 4px;
+  padding: 24px;
+}
+.ams-timeline h2,
+.ams-packing h2,
+.ams-steps-title {
+  font-size: 22px;
+  margin: 0 0 22px;
+}
+.ams-hours {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #70757e;
+}
+.ams-track {
+  height: 110px;
+  margin-top: 15px;
+  position: relative;
+  background: repeating-linear-gradient(
+    90deg,
+    #f6f7f8 0,
+    #f6f7f8 calc(11.11% - 1px),
+    #e4e7ea calc(11.11% - 1px),
+    #e4e7ea 11.11%
+  );
+  overflow: hidden;
+}
+.ams-track > div {
+  position: absolute;
+  top: 22px;
+  min-width: 10px;
+  background: #292929;
+  color: white;
+  padding: 12px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  height: 68px;
+  overflow: hidden;
+}
+.ams-track strong {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+.ams-track span {
+  font-size: 11px;
+  white-space: nowrap;
+}
+.ams-track .ams-late {
+  background: #e3101b;
+}
+.ams-steps-title {
+  margin: 30px 0 18px;
+}
+.ams-stop {
+  border: 1px solid #dce0e4;
+  border-left: 4px solid #2c353c;
+  padding: 18px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.ams-stop-warning {
+  background: #fff0f1;
+  border-left-color: #e3101b;
+}
+.ams-stop-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+.ams-stop-name > span {
+  font-size: 25px;
+  font-weight: 700;
+  color: #a3a6ac;
+}
+.ams-stop-name h3 {
+  font-size: 17px;
+  margin: 0;
+}
+.ams-stop-name p {
+  font-size: 13px;
+  margin: 5px 0 0;
+  color: #6a6e77;
+}
+.ams-order {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+.ams-order button {
+  font-size: 12px;
+  padding: 6px 8px;
+  border: 1px solid #ced3d8;
+  background: #fff;
+  border-radius: 3px;
+}
+.ams-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+.ams-fields label {
+  display: grid;
+  gap: 7px;
+  font-size: 12px;
+  color: #5d626b;
+}
+.ams-fields input,
+.ams-fields select {
+  width: 100%;
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid #cdd2d8;
+  border-radius: 3px;
+  background: #fff;
+  color: #252a32;
+  font-size: 14px;
+}
+.ams-error {
+  color: #b00914;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+.ams-help {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6c727a;
+}
+.ams-packing {
+  border: 1px solid #dce0e4;
+  border-radius: 4px;
+  padding: 24px;
+  height: max-content;
+}
+.ams-packing > p {
+  font-size: 14px;
+  color: #6b717b;
+  line-height: 1.5;
+}
+.ams-packing > div {
+  padding: 24px 0;
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #e6e8ea;
+}
+.ams-packing svg {
+  width: 28px;
+  height: 42px;
+  flex-shrink: 0;
+}
+.ams-packing h3 {
+  font-size: 15px;
+  margin: 0;
+}
+.ams-packing > div p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+  color: #555c64;
+}
+.ams-status {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ams-status strong {
+  color: #b2101a;
+}
+.ams-status p {
+  font-size: 13px;
+  color: #6b717b;
+}
+.ams-locations button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.ams-locations :focus-visible {
+  outline: 3px solid #e3101b;
+  outline-offset: 3px;
+}
+@media (max-width: 1050px) {
+  .ams-body {
+    grid-template-columns: 1fr;
+  }
+  .ams-packing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .ams-packing > div {
+    padding: 15px 0;
+  }
+  .ams-title h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 650px) {
+  .ams-header {
+    padding: 19px;
+  }
+  .ams-header strong {
+    font-size: 28px;
+  }
+  .ams-header strong span {
+    font-size: 20px;
+  }
+  .ams-header button {
+    font-size: 12px;
+  }
+  .ams-main {
+    padding: 28px 18px;
+  }
+  .ams-title {
+    display: block;
+  }
+  .ams-title h1 {
+    font-size: 37px;
+  }
+  .ams-export {
+    margin-top: 22px;
+    width: 100%;
+  }
+  .ams-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ams-stop-name {
+    flex-wrap: wrap;
+  }
+  .ams-order {
+    margin-left: 0;
+  }
+  .ams-timeline {
+    padding: 20px 15px;
+  }
+  .ams-track strong {
+    font-size: 10px;
+  }
+  .ams-track > div {
+    padding: 10px 5px;
+  }
+  .ams-track span {
+    font-size: 9px;
+  }
+  .ams-packing {
+    display: block;
+  }
+}

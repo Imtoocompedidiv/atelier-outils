@@ -1,0 +1,380 @@
+.horizons-secrets-app {
+  --forest: #0c2306;
+  --ink: #0f0326;
+  --white: #fcfffc;
+  color: var(--ink);
+  background: var(--white);
+  font:
+    16px/1.55 Lato,
+    sans-serif;
+  min-height: 100vh;
+}
+.horizons-secrets-app button {
+  font-size: 14px;
+  border: 1px solid #cbd4c8;
+  background: transparent;
+  padding: 12px 18px;
+  border-radius: 4px;
+  color: inherit;
+}
+.horizons-secrets-app button:disabled {
+  opacity: 0.45;
+}
+.horizons-secrets-header {
+  background: var(--forest);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+}
+.horizons-secrets-header > span {
+  font:
+    29px Georgia,
+    serif;
+}
+.horizons-secrets-header button {
+  color: white;
+  border-color: #6f8667;
+}
+.horizons-secrets-desk {
+  display: grid;
+  grid-template-columns: 215px minmax(300px, 1fr) minmax(350px, 1fr);
+  min-height: 735px;
+}
+.horizons-secrets-rail {
+  padding: 50px 16px;
+  border-right: 1px solid #dce4da;
+  background: #f6faf6;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.horizons-secrets-rail button {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 12px;
+  border: 0;
+}
+.horizons-secrets-rail button[aria-pressed="true"] {
+  color: white;
+  background: var(--forest);
+}
+.horizons-secrets-rail strong {
+  font:
+    30px Georgia,
+    serif;
+  border-right: 1px solid #a6b4a0;
+  padding-right: 15px;
+}
+.horizons-secrets-rail small {
+  display: block;
+  color: #667060;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.horizons-secrets-rail [aria-pressed="true"] small {
+  color: #d3e0cd;
+}
+.horizons-secrets-book {
+  margin-top: 35px !important;
+  border-top: 1px solid #d4dcd0 !important;
+  border-radius: 0 !important;
+}
+.horizons-secrets-editor {
+  padding: 42px 36px;
+}
+.horizons-secrets-editor h1 {
+  font:
+    clamp(34px, 3.3vw, 50px)/1.13 Georgia,
+    serif;
+  font-weight: 400;
+  letter-spacing: -1.7px;
+  margin: 0 0 18px;
+}
+.horizons-secrets-intro {
+  color: #62636a;
+  font-size: 15px;
+  margin-bottom: 34px;
+  max-width: 47ch;
+}
+.horizons-secrets-editor label {
+  display: block;
+  font-size: 14px;
+}
+.horizons-secrets-editor input,
+.horizons-secrets-editor textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #cbd2c8;
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  padding: 12px;
+  margin: 7px 0 22px;
+  font:
+    16px/1.6 Lato,
+    sans-serif;
+  resize: vertical;
+}
+.horizons-secrets-fields {
+  display: grid;
+  grid-template-columns: 70px 1fr 90px;
+  gap: 13px;
+}
+.horizons-secrets-fields input {
+  padding: 9px 6px;
+}
+.horizons-secrets-count {
+  display: block;
+  text-align: right;
+  color: #667060;
+  margin-top: -14px;
+}
+.horizons-secrets-note {
+  background: #edf4ed;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #42513d;
+  margin-top: 25px;
+}
+.horizons-secrets-errors {
+  color: #9e201c;
+  font-size: 13px;
+}
+.horizons-secrets-preview {
+  background: var(--forest);
+  padding: 32px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horizons-secrets-preview-label {
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 25px;
+}
+.horizons-secrets-paper {
+  background: var(--white);
+  color: var(--ink);
+  width: 100%;
+  max-width: 460px;
+  min-height: 590px;
+  position: relative;
+  text-align: center;
+  padding: 32px 30px 66px;
+  border: 8px solid var(--white);
+  outline: 1px solid #63735a;
+  outline-offset: -17px;
+  clip-path: polygon(
+    6% 0,
+    94% 0,
+    100% 5%,
+    100% 95%,
+    94% 100%,
+    6% 100%,
+    0 95%,
+    0 5%
+  );
+}
+.horizons-secrets-paper-brand {
+  font:
+    18px Georgia,
+    serif;
+  letter-spacing: 2px;
+  margin: 12px 0 25px;
+}
+.horizons-secrets-paper-rule {
+  width: 42px;
+  height: 1px;
+  background: #718468;
+  margin: 25px auto;
+}
+.horizons-secrets-paper small {
+  display: block;
+  font-size: 12px;
+  margin-top: 35px;
+}
+.horizons-secrets-paper h2 {
+  font:
+    italic 42px/1.1 Georgia,
+    serif;
+  font-weight: 400;
+  margin: 12px 0;
+}
+.horizons-secrets-instruction {
+  font:
+    24px/1.55 Georgia,
+    serif;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  max-width: 25ch;
+  margin: 35px auto;
+}
+.horizons-secrets-paper ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  font-size: 12px;
+}
+.horizons-secrets-paper li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid #d9e0d6;
+}
+.horizons-secrets-paper-end {
+  position: absolute;
+  bottom: 32px;
+  left: 30px;
+  right: 30px;
+  font-size: 10px;
+  color: #67705f;
+}
+.horizons-secrets-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 32px;
+  border-top: 1px solid #dce4da;
+}
+.horizons-secrets-actions > span {
+  font-size: 12px;
+  margin-right: auto;
+  color: #48623e;
+}
+.horizons-secrets-primary {
+  background: var(--forest) !important;
+  color: white !important;
+}
+.horizons-secrets-app .atelier-footer {
+  background: #f6faf6;
+}
+@media (max-width: 1100px) {
+  .horizons-secrets-desk {
+    grid-template-columns: 175px 1fr 1fr;
+  }
+  .horizons-secrets-editor {
+    padding: 32px 23px;
+  }
+  .horizons-secrets-preview {
+    padding: 25px 20px;
+  }
+  .horizons-secrets-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .horizons-secrets-fields label:first-child {
+    grid-column: 1/-1;
+  }
+  .horizons-secrets-fields label:first-child input {
+    max-width: 70px;
+  }
+  .horizons-secrets-paper {
+    padding: 30px 22px 65px;
+  }
+  .horizons-secrets-instruction {
+    font-size: 21px;
+  }
+}
+@media (max-width: 780px) {
+  .horizons-secrets-header {
+    padding: 14px 18px;
+  }
+  .horizons-secrets-header > span {
+    font-size: 24px;
+  }
+  .horizons-secrets-desk {
+    display: block;
+  }
+  .horizons-secrets-rail {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    border: 0;
+  }
+  .horizons-secrets-rail button {
+    flex: 0 0 150px;
+    padding: 12px;
+  }
+  .horizons-secrets-rail strong {
+    font-size: 24px;
+  }
+  .horizons-secrets-book {
+    margin-top: 0 !important;
+    flex-basis: 165px !important;
+    border: 0 !important;
+  }
+  .horizons-secrets-editor {
+    padding: 30px 22px;
+  }
+  .horizons-secrets-editor h1 {
+    font-size: 41px;
+  }
+  .horizons-secrets-fields {
+    grid-template-columns: 60px 1fr 85px;
+  }
+  .horizons-secrets-fields label:first-child {
+    grid-column: auto;
+  }
+  .horizons-secrets-preview {
+    padding: 25px 22px;
+  }
+  .horizons-secrets-paper {
+    min-height: 530px;
+  }
+  .horizons-secrets-actions {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .horizons-secrets-actions > span {
+    flex: 1 0 100%;
+  }
+  .horizons-secrets-actions button {
+    flex: 1;
+  }
+}
+@media print {
+  .horizons-secrets-header,
+  .horizons-secrets-rail,
+  .horizons-secrets-editor,
+  .horizons-secrets-actions,
+  .horizons-secrets-preview-label,
+  .horizons-secrets-app .atelier-footer {
+    display: none !important;
+  }
+  .horizons-secrets-desk {
+    display: block;
+    min-height: 0;
+  }
+  .horizons-secrets-preview {
+    background: white;
+    padding: 0;
+  }
+  .horizons-secrets-paper {
+    width: 100%;
+    max-width: 150mm;
+    min-height: 200mm;
+    break-inside: avoid;
+  }
+}
+@media (max-width: 780px) {
+  .horizons-secrets-fields {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 0 13px;
+  }
+  .horizons-secrets-fields label:last-child {
+    grid-column: 2;
+  }
+  .horizons-secrets-fields label:last-child input {
+    width: 115px;
+    margin-top: 6px;
+  }
+}

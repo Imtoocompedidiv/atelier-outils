@@ -1,0 +1,284 @@
+.proformalys {
+  --plum: #510865;
+  --lavender: #eee5f1;
+  background: #fff;
+  color: #382242;
+  min-height: 100vh;
+  font:
+    15px/1.55 Arial,
+    sans-serif;
+}
+.proformalys header {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+  padding: 23px 38px;
+  border-bottom: 1px solid #d1bdd8;
+}
+.proformalys header a {
+  font:
+    bold 39px Georgia,
+    serif;
+  color: var(--plum);
+  text-decoration: none;
+}
+.proformalys header span {
+  font-size: 13px;
+  color: #796782;
+}
+.proformalys main {
+  max-width: 1580px;
+  margin: auto;
+  padding: 35px 38px 0;
+}
+.proformalys h1 {
+  font:
+    normal clamp(34px, 3.2vw, 50px)/1.1 Georgia,
+    serif;
+  color: var(--plum);
+  margin: 0 0 16px;
+  letter-spacing: -1px;
+}
+.proformalys-intro {
+  font-size: 17px;
+  color: #77667f;
+  margin-bottom: 26px;
+}
+.proformalys button {
+  border: 1px solid var(--plum);
+  border-radius: 4px;
+  background: white;
+  color: var(--plum);
+  font:
+    14px Arial,
+    sans-serif;
+  padding: 12px 17px;
+}
+.proformalys button.primary {
+  background: var(--plum);
+  color: white;
+  width: 100%;
+}
+.proformalys-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.proformalys-tools label {
+  font-size: 13px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.proformalys input[type="checkbox"],
+.proformalys input[type="radio"] {
+  accent-color: var(--plum);
+  width: 18px;
+  height: 18px;
+}
+.proformalys-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(285px, 0.85fr);
+  gap: 25px;
+  align-items: start;
+}
+.proformalys-matrix {
+  overflow: auto;
+  border: 1px solid #ddd0e2;
+  border-radius: 5px;
+}
+.proformalys table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 790px;
+}
+.proformalys th,
+.proformalys td {
+  border-right: 1px solid #e6ddea;
+  border-bottom: 1px solid #e6ddea;
+  padding: 18px 9px;
+  text-align: center;
+  font-size: 13px;
+}
+.proformalys thead th {
+  font-family: Georgia, serif;
+  color: var(--plum);
+  background: var(--lavender);
+  font-size: 14px;
+}
+.proformalys th:first-child {
+  text-align: left;
+  min-width: 170px;
+  padding-left: 17px;
+}
+.proformalys th small {
+  display: block;
+  font-weight: normal;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+.proformalys tbody th {
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.proformalys tbody th input {
+  vertical-align: middle;
+  margin: 0 7px 0 0;
+  width: 15px;
+  height: 15px;
+}
+.proformalys .proformalys-group th {
+  background: #f5f0f7;
+  color: var(--plum);
+  font:
+    bold 15px Georgia,
+    serif;
+  padding: 14px 17px;
+}
+.proformalys tr.disabled {
+  opacity: 0.4;
+  background: #f6f3f7;
+}
+.proformalys aside {
+  padding: 24px;
+  border: 1px solid #e0d3e4;
+  border-radius: 5px;
+}
+.proformalys h2 {
+  font:
+    normal 27px/1.15 Georgia,
+    serif;
+  color: var(--plum);
+  margin: 0 0 13px;
+}
+.proformalys aside > p {
+  font-size: 13px;
+  color: #77677e;
+}
+.proformalys-options {
+  max-height: 260px;
+  overflow: auto;
+  margin: 22px 0;
+}
+.proformalys-options label {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  padding: 13px 10px;
+  border-bottom: 1px solid #e7dfeb;
+  font-size: 14px;
+}
+.proformalys-options label.selected {
+  background: var(--lavender);
+  border-radius: 4px;
+}
+.proformalys-options small {
+  display: block;
+  font-size: 11px;
+  color: #85718c;
+  margin-top: 3px;
+}
+.proformalys aside h3 {
+  font:
+    normal 24px Georgia,
+    serif;
+  border-top: 1px solid #dfd1e4;
+  padding-top: 24px;
+}
+.proformalys-chosen {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  background: var(--lavender);
+  padding: 24px 12px;
+}
+.proformalys-chosen div + div {
+  border-left: 1px solid #d4bbdf;
+  padding-left: 20px;
+}
+.proformalys-chosen small {
+  display: block;
+  font:
+    15px Georgia,
+    serif;
+  margin-bottom: 10px;
+}
+.proformalys-chosen strong {
+  font:
+    normal 31px Georgia,
+    serif;
+  color: var(--plum);
+}
+.proformalys-trainer {
+  text-align: center;
+}
+.proformalys-help {
+  font-size: 12px;
+  color: #7e6d86;
+  line-height: 1.8;
+}
+.proformalys-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 25px 0;
+}
+.proformalys-bottom p {
+  font-size: 12px;
+  color: #356647;
+}
+.proformalys-empty {
+  background: #f5edf7;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 25px;
+}
+.proformalys-empty p {
+  font-size: 13px;
+}
+@media (max-width: 1100px) {
+  .proformalys-workspace {
+    grid-template-columns: 1fr;
+  }
+  .proformalys-options {
+    max-height: 200px;
+  }
+  .proformalys h1 br {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .proformalys header {
+    padding: 20px 16px;
+    display: block;
+  }
+  .proformalys header a {
+    font-size: 32px;
+  }
+  .proformalys header span {
+    display: block;
+    margin-top: 10px;
+  }
+  .proformalys main {
+    padding: 25px 16px 0;
+  }
+  .proformalys h1 {
+    font-size: 36px;
+  }
+  .proformalys-tools {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .proformalys aside {
+    padding: 20px;
+  }
+  .proformalys-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

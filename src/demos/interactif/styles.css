@@ -1,0 +1,420 @@
+.interactif {
+  --yellow: #f2bd1e;
+  --ink: #2f2f30;
+  color: var(--ink);
+  font-family: Avenir, "Avenir Next", "Trebuchet MS", Arial, sans-serif;
+  background: white;
+  min-height: 100vh;
+}
+.interactif-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1536px;
+  margin: auto;
+  padding: 24px 40px;
+  border-bottom: 1px solid #ececee;
+  font-size: 15px;
+}
+.interactif-brand {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+.interactif-brand span {
+  display: block;
+  background: var(--yellow);
+  height: 6px;
+  width: 38px;
+  margin-top: 6px;
+}
+.interactif-reset {
+  margin-left: auto;
+  border: 0;
+  padding: 10px 0;
+  background: transparent;
+  color: #565660;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.interactif main {
+  max-width: 1536px;
+  margin: auto;
+  padding: 35px 40px 0;
+}
+.interactif h1 {
+  font-size: clamp(31px, 3.2vw, 49px);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -1.3px;
+  margin: 0 0 14px;
+  max-width: 1050px;
+}
+.interactif-break {
+  display: none;
+}
+.interactif-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #64646b;
+  margin: 0 0 25px;
+}
+.interactif-session {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.interactif label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.interactif-session input {
+  display: block;
+  margin-top: 7px;
+  padding: 11px 13px;
+  border: 1px solid #d6d7dd;
+  border-radius: 5px;
+  font-size: 15px;
+  background: #fff;
+  color: var(--ink);
+}
+.interactif-session input[type="number"] {
+  width: 130px;
+}
+.interactif-progress {
+  flex: 1;
+  max-width: 490px;
+  margin-left: 15px;
+  display: grid;
+  gap: 7px;
+}
+.interactif-progress strong {
+  font-size: 17px;
+}
+.interactif-progress progress {
+  appearance: none;
+  border: 0;
+  height: 10px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e9e9ec;
+}
+.interactif-progress progress::-webkit-progress-bar {
+  background: #e9e9ec;
+}
+.interactif-progress progress::-webkit-progress-value {
+  background: var(--yellow);
+}
+.interactif-progress progress::-moz-progress-bar {
+  background: var(--yellow);
+}
+.interactif-progress span {
+  font-size: 12px;
+  color: #61616a;
+}
+.interactif-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.interactif-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.interactif h2 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: -0.35px;
+}
+.interactif select {
+  padding: 8px 28px 8px 10px;
+  border: 1px solid #d6d7dd;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #fff;
+  color: var(--ink);
+}
+.interactif-table-wrap {
+  border: 1px solid #dedfe5;
+  border-radius: 5px;
+  overflow: auto;
+}
+.interactif table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.interactif th,
+.interactif td {
+  padding: 20px 12px;
+  border-bottom: 1px solid #e9e9ef;
+}
+.interactif thead th {
+  padding-block: 18px;
+  background: #f4f5f7;
+  color: #565b68;
+  font-weight: 600;
+}
+.interactif tbody tr:last-child > * {
+  border-bottom: none;
+}
+.interactif tbody tr.selected {
+  background: #fffbed;
+  box-shadow: inset 5px 0 var(--yellow);
+}
+.interactif-person {
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+.interactif-person small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #71717a;
+  margin-top: 5px;
+}
+.interactif-initials {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ececf0;
+  color: #444650;
+  font-weight: 600;
+  font-size: 12px;
+}
+.interactif-check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  padding: 7px 6px;
+  background: #fff0e8;
+  color: #8d4125;
+  border-radius: 5px;
+}
+.interactif-check.complete {
+  color: #17624b;
+  background: #e6f4ec;
+}
+.interactif-check input {
+  accent-color: #257b61;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+.interactif-state {
+  font-size: 11px;
+  color: #745900;
+}
+.interactif-state.ready {
+  color: #21664d;
+}
+.interactif-paper {
+  border: 1px solid #dedfe5;
+  border-radius: 5px;
+  padding: 22px;
+  background: #fff;
+  box-shadow: 0 6px 16px #2f2f3005;
+}
+.interactif-paper h3 {
+  margin: 25px 0 17px;
+  font-size: 18px;
+}
+.interactif-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5e5e9;
+}
+.interactif-details select {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+.interactif-document-title {
+  font-size: 11px;
+  color: #70717b;
+  margin: 18px 0 12px;
+}
+.interactif pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font:
+    14px/1.7 Avenir,
+    "Trebuchet MS",
+    sans-serif;
+  margin: 0 0 21px;
+  min-height: 170px;
+}
+.interactif-primary {
+  background: var(--yellow);
+  color: #292614;
+  border: 1px solid #e2ac08;
+  border-radius: 5px;
+  padding: 13px 17px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.interactif-primary:hover {
+  background: #ffce35;
+}
+.interactif-count {
+  font-size: 11px;
+  color: #656672;
+  margin-bottom: 0;
+}
+.interactif-rule,
+.interactif-empty {
+  font-size: 12px;
+  color: #676a74;
+  line-height: 1.7;
+  padding: 0 4px;
+}
+.interactif-empty {
+  padding: 30px;
+}
+.interactif-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #e3e3e7;
+}
+.interactif-bottom p {
+  font-size: 13px;
+  color: #656672;
+}
+.interactif-live {
+  min-height: 22px;
+  color: #326552;
+  font-size: 12px;
+}
+.interactif-ready {
+  padding: 24px 0;
+  color: #266b55;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.interactif-ready > span {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e6f4ec;
+  font-size: 25px;
+}
+.interactif-warning {
+  padding: 12px 16px;
+  background: #fff4d4;
+  border-left: 4px solid var(--yellow);
+  font-size: 14px;
+}
+@media (min-width: 1550px) {
+  .interactif table {
+    font-size: 14px;
+  }
+  .interactif-person {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1120px) {
+  .interactif main {
+    padding: 28px 24px 0;
+  }
+  .interactif-header {
+    padding: 20px 24px;
+  }
+  .interactif-workspace {
+    grid-template-columns: 1fr;
+  }
+  .interactif-paper {
+    display: block;
+  }
+  .interactif pre {
+    min-height: 0;
+  }
+  .interactif table {
+    min-width: 650px;
+  }
+}
+@media (max-width: 600px) {
+  .interactif main {
+    padding: 26px 16px 0;
+  }
+  .interactif-header {
+    padding: 18px 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .interactif-header > span {
+    font-size: 12px;
+  }
+  .interactif-brand {
+    font-size: 24px;
+  }
+  .interactif-reset {
+    font-size: 11px;
+  }
+  .interactif h1 {
+    font-size: 34px;
+    letter-spacing: -0.9px;
+  }
+  .interactif-intro {
+    font-size: 14px;
+  }
+  .interactif-session {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 18px;
+  }
+  .interactif-session input {
+    width: 100%;
+  }
+  .interactif-session input[type="number"] {
+    width: 100%;
+  }
+  .interactif-progress {
+    grid-column: 1/-1;
+    margin: 0;
+  }
+  .interactif-filter h2 {
+    font-size: 19px;
+  }
+  .interactif-paper {
+    padding: 19px;
+  }
+  .interactif-bottom {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .interactif .atelier-notice {
+    padding-inline: 16px;
+  }
+}

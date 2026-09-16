@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+.concept-et-plan {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #27323d;
+  background: #fff;
+  min-height: 100vh;
+}
+.concept-et-plan * {
+  box-sizing: border-box;
+}
+.cep-header {
+  padding: 23px 30px;
+  border-bottom: 1px solid #d9e0e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cep-header strong {
+  font-size: 31px;
+  color: #10151b;
+  letter-spacing: -1px;
+}
+.cep-header em {
+  font-style: normal;
+  color: #0077b3;
+}
+.cep-header span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #3e6582;
+  margin-top: 5px;
+}
+.concept-et-plan button {
+  cursor: pointer;
+  font: inherit;
+}
+.cep-header button {
+  font-size: 11px;
+  border: 0;
+  background: none;
+  color: #677888;
+  text-decoration: underline;
+}
+.cep-main {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) 275px;
+  min-height: 800px;
+}
+.cep-groups {
+  padding: 26px 14px;
+  border-right: 1px solid #e0e6eb;
+  background: #f9fbfd;
+}
+.cep-groups h2 {
+  font-size: 12px;
+  margin: 0 5px 24px;
+}
+.cep-groups button {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 13px 10px;
+  border: 0;
+  border-left: 3px solid transparent;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+}
+.cep-groups button[aria-pressed="true"] {
+  border-left-color: #0077b3;
+  background: #e5f1fc;
+  color: #0067a0;
+}
+.cep-groups b {
+  font-weight: 600;
+}
+.cep-count {
+  margin: 45px 10px 0;
+  border-top: 1px solid #d8e3ec;
+  padding-top: 25px;
+}
+.cep-count strong {
+  font-size: 42px;
+  color: #0077b3;
+}
+.cep-count strong span {
+  font-size: 18px;
+  color: #93a3b2;
+}
+.cep-count p,
+.cep-help {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #7d8c9a;
+}
+.cep-help {
+  margin: 30px 10px;
+}
+.cep-work {
+  padding: 32px 26px;
+  min-width: 0;
+}
+.cep-work h1 {
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  margin: 0 0 8px;
+  color: #10151b;
+  line-height: 1.1;
+}
+.cep-work > p {
+  font-size: 13px;
+  color: #6d7c8d;
+}
+.cep-import {
+  margin: 28px 0;
+  min-height: 153px;
+  border: 1px dashed #80b7db;
+  background: #f5f9fc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 5px;
+}
+.cep-import > button:first-of-type {
+  border: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #176392;
+}
+.cep-import span {
+  font-size: 28px;
+}
+.cep-import strong {
+  font-size: 13px;
+}
+.cep-import small {
+  font-size: 10px;
+  color: #7f8f9e;
+}
+.cep-sample {
+  font-size: 10px !important;
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  color: #0077b3;
+}
+.cep-filters {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.cep-filters > input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #d4dde6;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 11px;
+}
+.cep-filters label {
+  font-size: 10px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cep-filters input[type="checkbox"] {
+  accent-color: #0077b3;
+}
+.cep-table {
+  overflow: auto;
+  border: 1px solid #e1e7ed;
+  border-radius: 5px;
+}
+.cep-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+  min-width: 590px;
+}
+.cep-table th,
+.cep-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #e6edf3;
+  text-align: left;
+  white-space: nowrap;
+}
+.cep-table thead th {
+  background: #f6f8fb;
+  font-weight: 600;
+  color: #6b7d8e;
+}
+.cep-table tbody tr.selected {
+  background: #e5f2fc;
+}
+.cep-table tbody button {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 11px;
+  text-align: left;
+  color: #264253;
+}
+.cep-table button small {
+  display: block;
+  font-size: 9px;
+  margin-top: 6px;
+  color: #8b99a6;
+}
+.cep-ok {
+  color: #268249;
+}
+.cep-bad {
+  color: #b2601e;
+}
+.cep-legend {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 9px;
+  color: #8997a4;
+  margin: 15px 0;
+}
+.cep-inspector {
+  border-left: 1px solid #e1e7ed;
+  padding: 26px 21px;
+  background: #fff;
+}
+.cep-inspector h2 {
+  font-size: 15px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #e1e7ed;
+  padding-bottom: 15px;
+}
+.cep-current {
+  font-size: 12px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  margin-bottom: 23px;
+}
+.cep-inspector label {
+  display: block;
+  font-size: 10px;
+  margin: 14px 0;
+}
+.cep-inspector input {
+  display: block;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #d6dfe8;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 12px;
+  margin-top: 6px;
+  background: #fff;
+}
+.cep-errors-panel,
+.cep-valid-panel {
+  border-left: 3px solid #de863c;
+  padding: 8px 12px;
+  font-size: 11px;
+  background: #fff8f1;
+  margin-top: 20px;
+  color: #9a602c;
+}
+.cep-errors-panel p {
+  margin: 6px 0;
+}
+.cep-valid-panel {
+  border-color: #399665;
+  color: #2b764b;
+  background: #f5faf6;
+}
+.cep-remove {
+  font-size: 10px !important;
+  color: #8a6471;
+  border: 0;
+  background: none;
+  padding: 15px 0;
+  text-decoration: underline;
+}
+.cep-export {
+  margin-top: 20px;
+  border-top: 1px solid #dae4ec;
+  padding-top: 20px;
+}
+.cep-export strong {
+  font-size: 12px;
+}
+.cep-export p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #7f8d9b;
+}
+.cep-export button {
+  background: #0077b3;
+  border: 0;
+  padding: 13px 8px;
+  color: #fff;
+  width: 100%;
+  font-size: 11px;
+  border-radius: 4px;
+}
+.concept-et-plan button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.cep-error {
+  color: #ac3429 !important;
+}
+.cep-message {
+  color: #0077b3 !important;
+  font-size: 11px !important;
+}
+.concept-et-plan :focus-visible {
+  outline: 3px solid #75b8db;
+  outline-offset: 3px;
+}
+@media (max-width: 1150px) {
+  .cep-main {
+    grid-template-columns: minmax(0, 1fr) 270px;
+  }
+  .cep-groups {
+    grid-column: 1/-1;
+    border-bottom: 1px solid #d8e3ec;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    overflow-x: auto;
+  }
+  .cep-groups h2,
+  .cep-count,
+  .cep-help {
+    display: none;
+  }
+  .cep-groups button {
+    width: auto;
+    white-space: nowrap;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .cep-groups button[aria-pressed="true"] {
+    border-bottom-color: #0077b3;
+  }
+  .cep-work h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .cep-header {
+    padding: 20px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .cep-header strong {
+    font-size: 23px;
+    white-space: nowrap;
+  }
+  .cep-header span {
+    font-size: 6px;
+    letter-spacing: 2px;
+  }
+  .cep-header button {
+    font-size: 9px;
+    max-width: 85px;
+    text-align: right;
+  }
+  .cep-main {
+    display: block;
+  }
+  .cep-groups {
+    display: flex;
+  }
+  .cep-work {
+    padding: 28px 18px 12px;
+  }
+  .cep-work h1 {
+    font-size: 32px;
+  }
+  .cep-filters {
+    flex-wrap: wrap;
+  }
+  .cep-filters > input {
+    flex-basis: 100%;
+  }
+  .cep-import small {
+    font-size: 9px;
+  }
+  .cep-inspector {
+    border-left: 0;
+    border-top: 1px solid #d8e3ec;
+    padding: 25px 22px;
+  }
+  .cep-legend {
+    font-size: 8px;
+  }
+  .cep-inspector label {
+    font-size: 12px;
+  }
+  .cep-inspector input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cep-table::before {
+    content: "Faites défiler pour voir toutes les colonnes →";
+    display: block;
+    position: sticky;
+    left: 0;
+    padding: 10px 6px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #62727a;
+    background: #f7f9fa;
+  }
+}

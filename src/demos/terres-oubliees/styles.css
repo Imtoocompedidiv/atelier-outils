@@ -1,0 +1,411 @@
+.terres-oubliees-app {
+  --earth: #b65046;
+  --brown: #231a18;
+  --paper: #fbf7ec;
+  --stone: #d7d3cd;
+  color: var(--brown);
+  background: #ebe8e2;
+  font:
+    17px/1.5 "Source Sans 3",
+    sans-serif;
+  min-height: 100vh;
+}
+.terres-oubliees-app .atelier-notice {
+  background: var(--brown);
+  color: #eee6de;
+  border: 0;
+}
+.terres-oubliees-app button {
+  font:
+    600 14px "Source Sans 3",
+    sans-serif;
+  color: inherit;
+  border: 1px solid #bfb8b0;
+  background: #faf7f1;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.terres-oubliees-app button:disabled {
+  opacity: 0.45;
+}
+.terres-oubliees-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 19px 30px;
+  background: #f7f4ee;
+  border-bottom: 1px solid #d6d0c7;
+}
+.terres-oubliees-header > span:first-child {
+  font:
+    600 29px Fraunces,
+    serif;
+  letter-spacing: -1.2px;
+}
+.terres-oubliees-header > span:nth-child(2) {
+  border-left: 1px solid #bdb5a9;
+  padding-left: 25px;
+}
+.terres-oubliees-header button {
+  margin-left: auto;
+}
+.terres-oubliees-main {
+  max-width: 1550px;
+  margin: auto;
+  padding: 30px;
+}
+.terres-oubliees-main h1 {
+  font:
+    400 clamp(34px, 3.6vw, 54px)/1.16 Fraunces,
+    serif;
+  letter-spacing: -1.9px;
+  margin: 0 0 14px;
+}
+.terres-oubliees-main h1 br {
+  display: none;
+}
+.terres-oubliees-main > p {
+  color: #655b56;
+  margin: 0 0 30px;
+}
+.terres-oubliees-desk {
+  display: grid;
+  grid-template-columns: 250px minmax(400px, 1fr) 305px;
+  gap: 20px;
+  align-items: stretch;
+}
+.terres-oubliees-index,
+.terres-oubliees-review {
+  background: #f5f1e9;
+  padding: 22px 17px;
+  border-radius: 4px;
+}
+.terres-oubliees-index h2 {
+  font:
+    600 20px Fraunces,
+    serif;
+  margin: 0 0 22px;
+}
+.terres-oubliees-index button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 19px 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #d8d2c8;
+  border-radius: 0;
+  background: transparent;
+}
+.terres-oubliees-index button[aria-pressed="true"] {
+  background: var(--earth);
+  color: white;
+  border-radius: 4px;
+}
+.terres-oubliees-index button > span {
+  flex: 1;
+}
+.terres-oubliees-index strong {
+  font-size: 15px;
+}
+.terres-oubliees-index small {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.terres-oubliees-index b {
+  font-size: 13px;
+  background: #e3ddd3;
+  color: #443b35;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.terres-oubliees-index > p {
+  font-size: 14px;
+  color: #766a61;
+  border-top: 1px solid #d4cbbf;
+  padding-top: 25px;
+  margin-top: 60px;
+}
+.terres-oubliees-folder {
+  background: #d0c2a8;
+  border-radius: 6px;
+  padding: 16px;
+  position: relative;
+  margin-top: 14px;
+  box-shadow: 0 5px 12px #34251812;
+}
+.terres-oubliees-folder:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -14px;
+  background: #d0c2a8;
+  width: 42%;
+  height: 20px;
+  border-radius: 12px 12px 0 0;
+}
+.terres-oubliees-paper {
+  background: var(--paper);
+  padding: 28px 24px 35px;
+  min-height: 595px;
+  box-shadow: 0 2px 6px #33261922;
+  position: relative;
+}
+.terres-oubliees-paper-brand {
+  font:
+    600 25px Fraunces,
+    serif;
+  border-bottom: 1px solid #b9afa2;
+  padding-bottom: 17px;
+}
+.terres-oubliees-paper h2 {
+  font:
+    400 35px/1.15 Fraunces,
+    serif;
+  letter-spacing: -1.3px;
+  margin: 28px 0 10px;
+}
+.terres-oubliees-paper h3 {
+  font:
+    400 22px Fraunces,
+    serif;
+  margin: 0;
+}
+.terres-oubliees-ref {
+  font-size: 13px;
+  color: #70665c;
+  margin: 7px 0 34px;
+}
+.terres-oubliees-manifest-head,
+.terres-oubliees-manifest-row {
+  display: grid;
+  grid-template-columns: 1.6fr 0.65fr 1fr;
+  gap: 10px;
+}
+.terres-oubliees-manifest-head {
+  font-size: 12px;
+  border-bottom: 1px solid #a89d8e;
+  padding-bottom: 10px;
+}
+.terres-oubliees-manifest-row {
+  padding: 22px 0;
+  border-bottom: 1px solid #d5cbbf;
+  align-items: start;
+  font-size: 15px;
+}
+.terres-oubliees-manifest-row small {
+  display: block;
+  color: #776d64;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+.terres-oubliees-manifest-row > span {
+  background: #e6dfd2;
+  padding: 2px 8px;
+  justify-self: start;
+  border-radius: 3px;
+}
+.terres-oubliees-ready {
+  color: #275d32;
+}
+.terres-oubliees-pending {
+  color: #9f352c;
+}
+.terres-oubliees-paper-note {
+  font-size: 12px;
+  color: #7f7061;
+  margin: 30px 0 0;
+  font-style: italic;
+}
+.terres-oubliees-review h2 {
+  font:
+    400 29px/1.2 Fraunces,
+    serif;
+  letter-spacing: -0.6px;
+  margin: 0 0 18px;
+}
+.terres-oubliees-review > p {
+  font-size: 15px;
+  color: #625952;
+}
+.terres-oubliees-warning {
+  padding: 14px;
+  background: #f5e4da;
+  border: 1px solid #e2b8a9;
+  color: #923729;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.terres-oubliees-versions {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.terres-oubliees-versions span {
+  flex: 1;
+  font-size: 12px;
+  border: 1px solid #d7cdc1;
+  padding: 12px;
+}
+.terres-oubliees-versions strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.terres-oubliees-review label {
+  display: block;
+  font-size: 13px;
+}
+.terres-oubliees-review textarea {
+  display: block;
+  width: 100%;
+  background: #fffdf8;
+  border: 1px solid #cfc6b9;
+  border-radius: 3px;
+  padding: 12px;
+  font:
+    14px/1.6 "Source Sans 3",
+    sans-serif;
+  margin: 8px 0 12px;
+  resize: vertical;
+  color: var(--brown);
+}
+.terres-oubliees-review > button {
+  width: 100%;
+  margin: 5px 0;
+}
+.terres-oubliees-primary {
+  background: var(--earth) !important;
+  color: white !important;
+  border-color: var(--earth) !important;
+}
+.terres-oubliees-review .terres-oubliees-small {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 18px;
+}
+.terres-oubliees-actions {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 28px;
+}
+.terres-oubliees-actions > span {
+  font-size: 13px;
+  margin-right: auto;
+}
+.terres-oubliees-message {
+  font-size: 13px;
+  margin: 18px 0 0 !important;
+  min-height: 22px;
+}
+.terres-oubliees-app .atelier-footer {
+  background: #f7f4ee;
+}
+@media (max-width: 1200px) {
+  .terres-oubliees-desk {
+    grid-template-columns: 200px minmax(300px, 1fr) 270px;
+    gap: 12px;
+  }
+  .terres-oubliees-main {
+    padding: 25px 20px;
+  }
+  .terres-oubliees-paper {
+    padding: 25px 18px;
+  }
+  .terres-oubliees-manifest-row {
+    font-size: 13px;
+  }
+  .terres-oubliees-index {
+    padding: 20px 12px;
+  }
+  .terres-oubliees-index button {
+    gap: 8px;
+  }
+  .terres-oubliees-index svg {
+    display: none;
+  }
+  .terres-oubliees-paper h2 {
+    font-size: 30px;
+  }
+  .terres-oubliees-main h1 br {
+    display: block;
+  }
+}
+@media (max-width: 850px) {
+  .terres-oubliees-header {
+    padding: 17px 20px;
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+  .terres-oubliees-header > span:first-child {
+    font-size: 25px;
+  }
+  .terres-oubliees-header > span:nth-child(2) {
+    font-size: 14px;
+    border: 0;
+    padding: 0;
+  }
+  .terres-oubliees-main h1 {
+    font-size: 39px;
+  }
+  .terres-oubliees-desk {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .terres-oubliees-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .terres-oubliees-index h2 {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .terres-oubliees-index button {
+    flex: 1;
+    min-width: 94px;
+    display: block;
+    padding: 13px 8px;
+  }
+  .terres-oubliees-index strong {
+    font-size: 13px;
+  }
+  .terres-oubliees-index small {
+    font-size: 10px;
+  }
+  .terres-oubliees-index b {
+    display: inline-block;
+    margin-top: 9px;
+  }
+  .terres-oubliees-index > p {
+    display: none;
+  }
+  .terres-oubliees-folder {
+    padding: 12px;
+  }
+  .terres-oubliees-paper {
+    min-height: 530px;
+  }
+  .terres-oubliees-paper-brand {
+    font-size: 24px;
+  }
+  .terres-oubliees-actions > span {
+    order: -1;
+    flex-basis: 100%;
+  }
+  .terres-oubliees-actions button {
+    flex: 1;
+  }
+  .terres-oubliees-actions button:first-child {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,324 @@
+.route-des-voyages-app {
+  --ink: #0f1b24;
+  --sand: #9f9a7c;
+  --paper: #efece9;
+  color: var(--ink);
+  background: var(--paper);
+  font:
+    14px/1.6 Lexend,
+    sans-serif;
+  min-height: 100vh;
+}
+.route-des-voyages-app button {
+  font:
+    13px Lexend,
+    sans-serif;
+  border: 1px solid #c4c1b8;
+  border-radius: 4px;
+  background: transparent;
+  padding: 12px 18px;
+  color: inherit;
+}
+.route-des-voyages-app button:disabled {
+  opacity: 0.45;
+}
+.route-des-voyages-header {
+  background: var(--ink);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  padding: 17px 40px;
+}
+.route-des-voyages-header > span:first-child {
+  font:
+    26px Asul,
+    serif;
+}
+.route-des-voyages-header button {
+  color: white;
+  margin-left: auto;
+  border-color: #63717b;
+}
+.route-des-voyages-main {
+  max-width: 1420px;
+  margin: auto;
+  padding: 40px;
+}
+.route-des-voyages-main h1 {
+  font:
+    700 clamp(40px, 4.5vw, 64px)/1.13 Asul,
+    serif;
+  letter-spacing: -1px;
+  margin: 0 0 18px;
+}
+.route-des-voyages-main > p {
+  color: #56616c;
+  max-width: 82ch;
+}
+.route-des-voyages-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #e3e0d7;
+  margin: 30px 0 20px;
+  padding: 20px 26px;
+  border-radius: 4px;
+}
+.route-des-voyages-summary > div {
+  padding: 0 22px;
+  border-right: 1px solid #ccc8b9;
+}
+.route-des-voyages-summary > div:first-child {
+  padding-left: 0;
+}
+.route-des-voyages-summary > div:last-child {
+  border: 0;
+}
+.route-des-voyages-summary strong {
+  font:
+    700 23px Asul,
+    serif;
+}
+.route-des-voyages-summary small {
+  display: block;
+  color: #62676c;
+  margin-top: 5px;
+}
+.route-des-voyages-filter {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 20px 0;
+}
+.route-des-voyages-filter input {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--ink);
+}
+.route-des-voyages-table {
+  background: #fbfaf9;
+}
+.route-des-voyages-table-head,
+.route-des-voyages-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 1.5fr;
+}
+.route-des-voyages-table-head {
+  align-items: center;
+  background: #e0dfdc;
+}
+.route-des-voyages-table-head > * {
+  margin: 0;
+  padding: 17px 24px;
+}
+.route-des-voyages-table-head h2 {
+  font:
+    700 22px Asul,
+    serif;
+}
+.route-des-voyages-table-head > h2:last-child {
+  background: #dbd8cf;
+}
+.route-des-voyages-row {
+  border-bottom: 1px solid #dddcd7;
+}
+.route-des-voyages-row h3 {
+  font:
+    700 22px/1.35 Asul,
+    serif;
+  padding: 26px 20px;
+  margin: 0;
+}
+.route-des-voyages-original,
+.route-des-voyages-revised {
+  padding: 22px 24px;
+  border-left: 1px solid #e1ded8;
+}
+.route-des-voyages-original strong {
+  font-size: 15px;
+}
+.route-des-voyages-original small {
+  color: #64707a;
+}
+.route-des-voyages-original-numbers {
+  display: flex;
+  gap: 35px;
+  margin: 16px 0;
+}
+.route-des-voyages-edit-fields {
+  display: grid;
+  grid-template-columns: 2fr 0.7fr 1fr;
+  gap: 12px;
+}
+.route-des-voyages-revised label {
+  display: block;
+  font-size: 11px;
+  color: #5b6268;
+}
+.route-des-voyages-revised input,
+.route-des-voyages-notes textarea {
+  border: 1px solid #d5d3cd;
+  border-radius: 4px;
+  background: white;
+  padding: 9px 10px;
+  width: 100%;
+  font:
+    13px/1.5 Lexend,
+    sans-serif;
+  color: var(--ink);
+  margin-top: 5px;
+}
+.route-des-voyages-revised input.route-des-voyages-changed {
+  background: #e7e3d7;
+}
+.route-des-voyages-activity {
+  margin-top: 10px;
+}
+.route-des-voyages-remove {
+  font-size: 11px !important;
+  padding: 4px 0 !important;
+  border: 0 !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: 9px;
+  color: #727a80 !important;
+}
+.route-des-voyages-added,
+.route-des-voyages-deleted {
+  color: #727568;
+}
+.route-des-voyages-add {
+  margin: 18px 0 26px;
+  background: #fbfaf9 !important;
+}
+.route-des-voyages-notes {
+  display: block;
+  color: #454d53;
+}
+.route-des-voyages-notes textarea {
+  display: block;
+  min-height: 80px;
+  resize: vertical;
+}
+.route-des-voyages-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 13px;
+  margin-top: 22px;
+}
+.route-des-voyages-actions span {
+  font-size: 12px;
+  margin-right: auto;
+  color: #4d6744;
+}
+.route-des-voyages-primary {
+  background: var(--ink) !important;
+  color: white !important;
+}
+.route-des-voyages-empty {
+  padding: 30px;
+}
+.route-des-voyages-errors {
+  color: #9c3227;
+  font-size: 13px;
+}
+.route-des-voyages-app .atelier-footer {
+  background: #f8f6f4;
+}
+@media (max-width: 1050px) {
+  .route-des-voyages-table-head,
+  .route-des-voyages-row {
+    grid-template-columns: 140px 0.8fr 1.5fr;
+  }
+  .route-des-voyages-main {
+    padding: 32px 24px;
+  }
+  .route-des-voyages-row h3 {
+    font-size: 19px;
+  }
+  .route-des-voyages-original,
+  .route-des-voyages-revised {
+    padding: 19px 16px;
+  }
+  .route-des-voyages-edit-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .route-des-voyages-wide {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 700px) {
+  .route-des-voyages-header {
+    padding: 16px 20px;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .route-des-voyages-header > span:first-child {
+    font-size: 24px;
+  }
+  .route-des-voyages-header > span:nth-child(2) {
+    display: none;
+  }
+  .route-des-voyages-main {
+    padding: 30px 20px;
+  }
+  .route-des-voyages-main h1 {
+    font-size: 42px;
+  }
+  .route-des-voyages-summary {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .route-des-voyages-summary > div {
+    padding: 14px 0 !important;
+    border: 0;
+    border-bottom: 1px solid #cbc7bd;
+  }
+  .route-des-voyages-summary strong {
+    font-size: 21px;
+  }
+  .route-des-voyages-table-head {
+    display: none;
+  }
+  .route-des-voyages-row {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #d6d1c7;
+  }
+  .route-des-voyages-row h3 {
+    padding: 18px;
+    background: #e1ded5;
+    font-size: 24px;
+  }
+  .route-des-voyages-original:before {
+    content: "Version initiale";
+    display: block;
+    font-size: 12px;
+    color: #657079;
+    margin-bottom: 10px;
+  }
+  .route-des-voyages-revised:before {
+    content: "Nouvelle version";
+    display: block;
+    font-size: 12px;
+    color: #657079;
+    margin-bottom: 12px;
+  }
+  .route-des-voyages-original,
+  .route-des-voyages-revised {
+    border-left: 0;
+  }
+  .route-des-voyages-revised {
+    border-top: 1px solid #dedbd3;
+  }
+  .route-des-voyages-actions {
+    flex-wrap: wrap;
+  }
+  .route-des-voyages-actions span {
+    flex: 1 0 100%;
+  }
+  .route-des-voyages-actions button {
+    flex: 1;
+  }
+}

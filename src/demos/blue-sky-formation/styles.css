@@ -1,0 +1,526 @@
+.blue-sky {
+  --bs-navy: #15416e;
+  --bs-green: #117a40;
+  background: #edf5fa;
+  color: var(--bs-navy);
+  min-height: 100vh;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.blue-sky * {
+  box-sizing: border-box;
+}
+.blue-sky header {
+  max-width: 1450px;
+  margin: auto;
+  padding: 23px 36px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blue-sky header a {
+  font:
+    bold 29px "Hind Vadodara",
+    sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+.blue-sky header span {
+  color: #52677b;
+}
+.blue-sky main {
+  max-width: 1450px;
+  margin: auto;
+  padding: 12px 36px 20px;
+}
+.blue-sky h1,
+.blue-sky h2,
+.blue-sky h3 {
+  font-family: "Hind Vadodara", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+.blue-sky h1 {
+  font-size: 38px;
+  letter-spacing: -0.8px;
+}
+.blue-sky-intro {
+  font-size: 18px;
+  margin: 8px 0 25px;
+  color: #41617e;
+}
+.blue-sky button,
+.blue-sky input {
+  font: inherit;
+}
+.blue-sky button {
+  border: 1px solid #b7cddd;
+  background: #fff;
+  color: var(--bs-navy);
+  border-radius: 5px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+.blue-sky button:hover {
+  background: #e7f1f8;
+  border-color: var(--bs-navy);
+}
+.blue-sky button:disabled {
+  cursor: default;
+  opacity: 0.58;
+}
+.blue-sky :focus-visible {
+  outline: 3px solid #18ba60;
+  outline-offset: 3px;
+}
+.blue-sky-journey {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) 120px;
+  gap: 18px;
+  align-items: stretch;
+  margin-bottom: 25px;
+}
+.blue-sky-journey button {
+  text-align: left;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+}
+.blue-sky-journey button:disabled {
+  opacity: 1;
+}
+.blue-sky-journey button > span:not(.blue-sky-session-top),
+.blue-sky-journey button > small {
+  padding-left: 8px;
+}
+.blue-sky-session-top {
+  background: #e0f0fc;
+  border: 1px solid #bad8ef;
+  display: flex;
+  align-items: center;
+  padding: 10px 9px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  position: relative;
+}
+.blue-sky-session-top > b {
+  font-size: 18px;
+  color: #fff;
+  background: #337cac;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.blue-sky-session-top strong {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.blue-sky-session-top small {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+.blue-sky-journey .done .blue-sky-session-top {
+  background: #e0f4eb;
+  border-color: #abdcc2;
+}
+.blue-sky-journey .done b {
+  background: #16894c;
+}
+.blue-sky-journey .unplanned .blue-sky-session-top {
+  background: #fff0ed;
+  border-color: #e3a9a1;
+}
+.blue-sky-journey .unplanned b {
+  background: #b33929;
+}
+.blue-sky-journey button[aria-pressed="true"] .blue-sky-session-top {
+  outline: 2px solid var(--bs-navy);
+  outline-offset: 2px;
+}
+.blue-sky-course {
+  border-left: 1px solid #a5c3d7;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.blue-sky-course strong {
+  font-size: 35px;
+  line-height: 1.2;
+}
+.blue-sky-workspace {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 18px;
+}
+.blue-sky-calendar,
+.blue-sky-proposal {
+  background: #fff;
+  border: 1px solid #d6e5ee;
+  border-radius: 8px;
+  padding: 22px;
+}
+.blue-sky h2 {
+  font-size: 23px;
+}
+.blue-sky-calendar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.blue-sky-calendar-title > span {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.blue-sky-week {
+  display: grid;
+  grid-template-columns: 48px repeat(5, minmax(0, 1fr));
+  grid-template-rows: 42px 440px;
+  min-width: 550px;
+}
+.blue-sky-corner,
+.blue-sky-day {
+  background: #e4f0f7;
+  padding: 10px 6px;
+  border: 1px solid #d1e0e9;
+  font-size: 13px;
+  text-align: center;
+}
+.blue-sky-hours {
+  position: relative;
+  margin-top: 0;
+  border-left: 1px solid #dce8ee;
+}
+.blue-sky-hours span {
+  position: absolute;
+  left: 4px;
+  font-size: 12px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 2px;
+}
+.blue-sky-hours span:first-child {
+  transform: translateY(0);
+}
+.blue-sky-hours span:last-child {
+  transform: translateY(-100%);
+}
+.blue-sky-day-body {
+  position: relative;
+  border-right: 1px solid #dce8ee;
+  border-bottom: 1px solid #dce8ee;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(10% - 1px),
+    #e4edf3 calc(10% - 1px),
+    #e4edf3 10%
+  );
+}
+.blue-sky-event {
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  padding: 6px 5px;
+  background: #e0f0fc;
+  border: 1px solid #8ebadb;
+  border-radius: 4px;
+  font-size: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+.blue-sky-event strong {
+  font-size: 13px;
+}
+.blue-sky-event.blocked {
+  background: #fbe7e5;
+  border-color: #d8a19a;
+  color: #8b3024;
+}
+.blue-sky-event.done {
+  background: #e0f4eb;
+  border-color: #a0d1b3;
+}
+.blue-sky-event.proposed {
+  background: #e2f9eb;
+  border: 2px dashed #16894c;
+  color: #07572d;
+  left: 8px;
+  right: 8px;
+}
+.blue-sky-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 13px;
+  margin: 18px 0 5px;
+}
+.blue-sky-legend span:nth-child(2) {
+  color: #983f34;
+}
+.blue-sky-legend span:nth-child(3) {
+  color: #117a40;
+}
+.blue-sky-weekend {
+  font-size: 12px;
+  color: #5d7486;
+  margin: 5px 0 0;
+}
+.blue-sky-fields {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+.blue-sky label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+.blue-sky input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #b9cedd;
+  padding: 8px 10px;
+  color: var(--bs-navy);
+  border-radius: 5px;
+  background: #fff;
+}
+.blue-sky-duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.blue-sky-examples {
+  display: flex;
+  gap: 8px;
+}
+.blue-sky-examples button {
+  font-size: 12px;
+  padding: 7px 10px;
+}
+.blue-sky-feedback {
+  padding: 12px 14px;
+  margin: 15px 0 19px;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.blue-sky-feedback.error {
+  background: #fbedeb;
+  color: #8c2e25;
+}
+.blue-sky-feedback.available {
+  background: #e5f5eb;
+  color: #126332;
+}
+.blue-sky-feedback strong {
+  font-size: 15px;
+}
+.blue-sky h3 {
+  font-size: 16px;
+}
+.blue-sky pre {
+  font:
+    13px/1.5 "Hind Siliguri",
+    sans-serif;
+  white-space: pre-wrap;
+  background: #f1f6fa;
+  border: 1px solid #d8e5ee;
+  border-radius: 5px;
+  padding: 12px 14px;
+  margin: 8px 0 12px;
+}
+.blue-sky .primary {
+  width: 100%;
+  background: var(--bs-green);
+  color: #fff;
+  border-color: var(--bs-green);
+  font-weight: 600;
+}
+.blue-sky .primary:hover {
+  background: #085c2c;
+}
+.blue-sky-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.blue-sky-actions button {
+  font-size: 13px;
+  flex: 1;
+  padding: 9px 7px;
+}
+.blue-sky-totals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid #c7deec;
+  background: #e3f0f7;
+  border-radius: 7px;
+  padding: 20px 25px;
+  margin-top: 18px;
+}
+.blue-sky-totals h2 {
+  font-size: 22px;
+}
+.blue-sky-totals h2 small {
+  font:
+    12px "Hind Siliguri",
+    sans-serif;
+  display: block;
+  margin-top: 7px;
+}
+.blue-sky-totals div {
+  display: flex;
+  flex-direction: column;
+}
+.blue-sky-totals div span {
+  font-size: 13px;
+}
+.blue-sky-totals strong {
+  font-size: 29px;
+  line-height: 1.15;
+}
+.blue-sky-totals > b {
+  font-size: 22px;
+  color: #6990ac;
+}
+.blue-sky-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  min-height: 60px;
+  font-size: 13px;
+}
+.blue-sky-bottom button {
+  white-space: nowrap;
+}
+.blue-sky-mobile-break {
+  display: none;
+}
+.blue-sky-scroll {
+  overflow: auto;
+}
+@media (max-width: 1100px) {
+  .blue-sky-journey {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .blue-sky-course {
+    display: none;
+  }
+  .blue-sky-workspace {
+    grid-template-columns: 1fr;
+  }
+  .blue-sky-week {
+    grid-template-rows: 42px 400px;
+  }
+  .blue-sky-totals h2 {
+    max-width: 180px;
+  }
+  .blue-sky-proposal pre {
+    min-height: 140px;
+  }
+  .blue-sky-calendar-title h2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 600px) {
+  .blue-sky header {
+    padding: 20px 18px 6px;
+  }
+  .blue-sky header a {
+    font-size: 23px;
+  }
+  .blue-sky header > span {
+    display: none;
+  }
+  .blue-sky main {
+    padding: 14px 18px;
+  }
+  .blue-sky h1 {
+    font-size: 30px;
+    letter-spacing: -0.4px;
+  }
+  .blue-sky-intro {
+    font-size: 16px;
+  }
+  .blue-sky-journey {
+    gap: 15px 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .blue-sky-calendar,
+  .blue-sky-proposal {
+    padding: 16px;
+  }
+  .blue-sky h2 {
+    font-size: 21px;
+  }
+  .blue-sky-calendar-title {
+    display: block;
+  }
+  .blue-sky-calendar-title > span {
+    display: block;
+    margin-top: 4px;
+  }
+  .blue-sky-fields {
+    gap: 10px;
+  }
+  .blue-sky-totals {
+    display: grid;
+    grid-template-columns: 1fr 18px 1fr;
+    padding: 18px;
+    gap: 13px;
+  }
+  .blue-sky-totals h2 {
+    grid-column: 1/-1;
+    max-width: none;
+  }
+  .blue-sky-totals > b:nth-of-type(2) {
+    display: none;
+  }
+  .blue-sky-totals div:last-child {
+    border-top: 1px solid #adc9db;
+    padding-top: 6px;
+  }
+  .blue-sky-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 0;
+  }
+  .blue-sky pre {
+    font-size: 14px;
+  }
+  .blue-sky-mobile-break {
+    display: block;
+  }
+  .blue-sky-examples button {
+    flex: 1;
+  }
+}

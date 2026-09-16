@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@500;600&display=swap");
+.qualitec {
+  color: #202c34;
+  background: #f8fafb;
+  min-height: 100vh;
+  font:
+    15px Roboto,
+    sans-serif;
+}
+.qualitec input,
+.qualitec button,
+.qualitec textarea {
+  font: inherit;
+}
+.qt-header {
+  padding: 24px 34px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.qt-header strong {
+  font-size: 33px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.qt-header strong span {
+  font-size: 17px;
+  font-weight: 500;
+  color: #52606a;
+  border-left: 1px solid #cad5dc;
+  padding-left: 25px;
+}
+.qt-header button {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  color: #405763;
+}
+.qt-banner {
+  padding: 25px 36px;
+  background: #00b9e2;
+  color: #fff;
+}
+.qt-banner h1 {
+  font-size: 43px;
+  line-height: 1.1;
+  margin: 0 0 9px;
+  letter-spacing: -1.1px;
+}
+.qt-banner p {
+  margin: 0;
+  font-size: 17px;
+}
+.qt-workspace {
+  max-width: 1520px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 28px 34px;
+}
+.qt-form h2 {
+  font-size: 19px;
+  margin: 0 0 16px;
+  color: #0082a0;
+}
+.qt-form h2:not(:first-child) {
+  margin-top: 27px;
+}
+.qt-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.qt-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.qt-form input,
+.qt-form textarea {
+  border: 1px solid #c7d3db;
+  border-radius: 3px;
+  background: white;
+  padding: 11px;
+  width: 100%;
+  min-width: 0;
+  color: #28363e;
+}
+.qt-form textarea {
+  min-height: 110px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.qt-parts {
+  border: 1px solid #d5dfe5;
+  background: #edf2f5;
+  padding: 12px;
+}
+.qt-parts > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 70px 60px;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.qt-parts > div:last-child {
+  margin-bottom: 0;
+}
+.qt-parts button {
+  border: 0;
+  background: none;
+  font-size: 12px;
+  color: #627483;
+}
+.qt-add {
+  margin-top: 10px;
+  border: 1px solid #c7d3db;
+  background: #fff;
+  border-radius: 3px;
+  padding: 9px 13px;
+  color: #304650;
+}
+.qt-checks {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.qt-checks label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.qt-checks input {
+  width: 20px;
+  height: 20px;
+  accent-color: #0096b8;
+}
+.qt-preview {
+  background: #e5ecef;
+  border: 1px solid #aebcc5;
+  border-radius: 4px;
+  height: max-content;
+  overflow: hidden;
+}
+.qt-preview-bar {
+  background: #243139;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 500;
+}
+.qt-paper {
+  background: white;
+  margin: 24px;
+  padding: 26px 28px;
+  font-size: 14px;
+  min-height: 670px;
+}
+.qt-paper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #243139;
+  padding-bottom: 22px;
+}
+.qt-paper header strong {
+  font-size: 31px;
+  color: #000;
+}
+.qt-paper header span {
+  font-size: 11px;
+  padding-left: 12px;
+  border-left: 4px solid #00b9e2;
+  line-height: 1.5;
+}
+.qt-paper h2 {
+  font-size: 20px;
+  margin: 24px 0;
+}
+.qt-paper-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  border-block: 1px solid #d6dfe5;
+  padding: 18px 0;
+}
+.qt-paper-meta small {
+  display: block;
+  color: #647580;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.qt-paper-meta b {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.qt-paper h3 {
+  font-size: 14px;
+  margin-top: 22px;
+}
+.qt-paper p {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.qt-paper ul {
+  padding: 0;
+  list-style: none;
+}
+.qt-paper li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px;
+  background: #f2f6f8;
+  border-bottom: 1px solid #dbe3e8;
+}
+.qt-paper footer {
+  border-top: 1px solid #cbd8e0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 28px;
+  padding-top: 18px;
+  font-size: 12px;
+}
+.qt-help {
+  font-size: 12px;
+  margin: 0 25px 22px;
+  color: #5b6c78;
+}
+.qt-bottom {
+  padding: 20px 34px;
+  border-top: 1px solid #d3dfe5;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+.qt-bottom p {
+  font-size: 14px;
+  color: #526975;
+}
+.qt-bottom button {
+  background: #009bbc;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 15px 22px;
+  flex-shrink: 0;
+}
+.qt-bottom button:disabled {
+  background: #c4d2d9;
+  cursor: not-allowed;
+}
+.qt-error {
+  color: #a8341f;
+  font-size: 14px;
+}
+.qualitec :focus-visible {
+  outline: 3px solid #007f9b;
+  outline-offset: 3px;
+}
+@media (max-width: 1000px) {
+  .qt-workspace {
+    grid-template-columns: 1fr;
+  }
+  .qt-preview {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .qt-header {
+    padding: 18px;
+  }
+  .qt-header strong {
+    font-size: 27px;
+  }
+  .qt-header strong span {
+    display: none;
+  }
+  .qt-header button {
+    font-size: 13px;
+  }
+  .qt-banner {
+    padding: 24px 20px;
+  }
+  .qt-banner h1 {
+    font-size: 34px;
+  }
+  .qt-workspace {
+    padding: 24px 18px;
+  }
+  .qt-fields {
+    gap: 12px;
+  }
+  .qt-checks {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .qt-paper {
+    margin: 12px;
+    padding: 22px 18px;
+  }
+  .qt-paper header strong {
+    font-size: 26px;
+  }
+  .qt-paper header span {
+    font-size: 10px;
+  }
+  .qt-bottom {
+    padding: 20px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .qt-bottom p {
+    margin: 0;
+  }
+  .qt-parts > div {
+    grid-template-columns: minmax(0, 1fr) 60px 48px;
+  }
+}

@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@500;700&display=swap");
+.indico {
+  font:
+    15px Roboto,
+    sans-serif;
+  background: #fff;
+  color: #222;
+  min-height: 100vh;
+}
+.indico input,
+.indico button,
+.indico select,
+.indico textarea {
+  font: inherit;
+}
+.in-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 25px 32px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.in-header strong {
+  font:
+    500 32px Raleway,
+    sans-serif;
+  letter-spacing: -1px;
+}
+.in-header strong span {
+  color: #f5401d;
+}
+.in-header p {
+  font-size: 14px;
+  color: #6c6c6c;
+}
+.in-header button {
+  margin-left: auto;
+  background: none;
+  border: 0;
+  text-decoration: underline;
+}
+.in-main {
+  max-width: 1550px;
+  margin: auto;
+  padding: 36px 28px;
+}
+.in-main h1 {
+  font:
+    700 clamp(34px, 3.7vw, 54px) / 1.1 Raleway,
+    sans-serif;
+  letter-spacing: -1.7px;
+  margin: 0 0 16px;
+}
+.in-lead {
+  font-size: 19px;
+  color: #6a6a6a;
+  margin: 0 0 32px;
+}
+.in-work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 24px;
+}
+.in-scroll {
+  overflow: auto;
+}
+.in-work table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border: 1px solid #dedede;
+}
+.in-work th,
+.in-work td {
+  text-align: left;
+  padding: 18px 12px;
+  border: 1px solid #e2e2e2;
+  vertical-align: top;
+}
+.in-work thead,
+.in-work tfoot {
+  background: #f6f6f6;
+}
+.in-work th {
+  font-weight: 500;
+}
+.in-work small {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 7px;
+  font-weight: 400;
+}
+.in-work tbody th {
+  min-width: 135px;
+  line-height: 1.5;
+}
+.in-work tbody th small {
+  margin: 0 0 7px;
+  color: #8d8d8d;
+}
+.in-work td input {
+  width: 88px;
+  padding: 10px 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  background: #fff;
+}
+.in-work select {
+  display: block;
+  margin-top: 7px;
+  width: 88px;
+  padding: 5px;
+  border: 1px solid #dedede;
+  background: #fff;
+  color: #555;
+  font-size: 13px;
+}
+.in-problem {
+  background: #fff3ef;
+}
+.in-work .in-warning {
+  color: #ba3e24;
+}
+.in-work tfoot strong {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.in-method {
+  padding: 18px;
+  border-left: 3px solid #f5401d;
+  background: #fff6f3;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.in-work aside {
+  border: 1px solid #dedede;
+  padding: 23px;
+  border-radius: 3px;
+  height: max-content;
+}
+.in-work aside h2 {
+  font-size: 21px;
+  margin: 0 0 25px;
+}
+.in-work aside h2 span {
+  margin-left: 7px;
+  color: #f5401d;
+}
+.in-question {
+  padding: 0 0 18px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.in-question h3 {
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+.in-question textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+  padding: 11px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  color: #515151;
+  font-size: 14px;
+}
+.in-export {
+  background: #fff;
+  border: 1px solid #f5401d;
+  color: #d93719;
+  padding: 13px 10px;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 500 !important;
+}
+.in-export:disabled {
+  opacity: 0.4;
+}
+.in-work [role="status"],
+.in-empty {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.indico :focus-visible {
+  outline: 3px solid #f5401d;
+  outline-offset: 2px;
+}
+@media (max-width: 1120px) {
+  .in-work {
+    grid-template-columns: 1fr;
+  }
+  .in-work aside {
+    max-width: none;
+  }
+  .in-question textarea {
+    min-height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .in-header {
+    padding: 20px;
+  }
+  .in-header p {
+    display: none;
+  }
+  .in-header button {
+    font-size: 13px;
+  }
+  .in-main {
+    padding: 28px 18px;
+  }
+  .in-main h1 {
+    font-size: 37px;
+  }
+  .in-lead {
+    font-size: 17px;
+  }
+  .in-work th,
+  .in-work td {
+    padding: 13px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .in-scroll::before {
+    content: "Faites défiler pour voir toutes les colonnes →";
+    display: block;
+    position: sticky;
+    left: 0;
+    padding: 10px 6px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #62727a;
+    background: #f7f9fa;
+  }
+}
+.indico .in-common-total {
+  background: #fff3eb;
+}
+.indico .in-common-total strong {
+  color: #bd3a1a;
+}

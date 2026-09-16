@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap");
+.bpi-menuisier {
+  font-family: "Instrument Sans", Arial, sans-serif;
+  color: #13334e;
+  background: #fff;
+  min-height: 100vh;
+}
+.bpi-menuisier * {
+  box-sizing: border-box;
+}
+.bpi-header {
+  padding: 22px 3%;
+  border-bottom: 1px solid #e4e9ec;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.bpi-mark {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.bpi-mark > span {
+  color: #fea101;
+  font-size: 70px;
+  line-height: 0.75;
+}
+.bpi-mark strong {
+  font: 800 42px/0.9 "Bricolage Grotesque";
+  letter-spacing: -2px;
+  color: #005b9d;
+}
+.bpi-mark small {
+  display: block;
+  font: 700 8px/1.1 "Instrument Sans";
+  letter-spacing: 0.7px;
+  margin-top: 7px;
+}
+.bpi-header > p {
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  flex: 1;
+  border-left: 1px solid #cad3dc;
+  padding: 12px 25px;
+}
+.bpi-menuisier button {
+  font-family: inherit;
+  cursor: pointer;
+}
+.bpi-header > button {
+  font-size: 11px;
+  background: none;
+  border: 0;
+  color: #7a8d9e;
+  text-decoration: underline;
+}
+.bpi-main {
+  max-width: 1600px;
+  padding: 34px 3% 45px;
+  margin: auto;
+}
+.bpi-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.bpi-title h1 {
+  font: 700 clamp(34px, 3.2vw, 48px) / 1.04 "Bricolage Grotesque";
+  letter-spacing: -1.5px;
+  margin: 0;
+  color: #151c22;
+}
+.bpi-title h1 span {
+  color: #005b9d;
+}
+.bpi-title p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #82909d;
+  max-width: 270px;
+}
+.bpi-work {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr) 255px;
+  border: 1px solid #dce5ed;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.bpi-jobs {
+  padding: 22px 15px;
+  border-right: 1px solid #dce5ed;
+  background: #fcfdfe;
+}
+.bpi-jobs h2 {
+  font-size: 14px;
+  margin: 0 0 22px;
+}
+.bpi-jobs > button {
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: 1px solid #dce5ed;
+  border-left: 5px solid transparent;
+  border-radius: 4px;
+  padding: 15px 12px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+.bpi-jobs > button[aria-pressed="true"] {
+  border-color: #fea101;
+  border-left-color: #fea101;
+}
+.bpi-jobs > button small {
+  font-size: 9px;
+  display: block;
+  color: #95a4b1;
+}
+.bpi-jobs > button strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.bpi-jobs > button span {
+  font-size: 10px;
+  color: #8696a4;
+  display: block;
+  margin-top: 7px;
+}
+.bpi-jobs > button p {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 12px;
+}
+.bpi-jobs > button b {
+  color: #005b9d;
+}
+.bpi-jobs > button i {
+  font-style: normal;
+  font-size: 10px;
+  background: #eef5f9;
+  color: #5288ac;
+  border-radius: 3px;
+  padding: 4px 6px;
+}
+.bpi-example {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #94a2ad;
+  padding: 12px;
+}
+.bpi-planner {
+  min-width: 0;
+  padding-bottom: 25px;
+}
+.bpi-planner > header {
+  text-align: center;
+  padding: 23px 15px;
+  border-bottom: 1px solid #dce5ed;
+}
+.bpi-planner header > span {
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #92a1ae;
+}
+.bpi-planner header h2 {
+  font: 600 21px "Bricolage Grotesque";
+  margin: 7px 0;
+}
+.bpi-planner header > small {
+  font-size: 10px;
+  color: #7b94a9;
+}
+.bpi-agenda-scroll {
+  overflow: auto;
+}
+.bpi-agenda {
+  display: grid;
+  grid-template-columns: 72px repeat(5, minmax(87px, 1fr));
+  min-width: 565px;
+}
+.bpi-corner,
+.bpi-day,
+.bpi-crew,
+.bpi-slot {
+  border: 0;
+  border-right: 1px solid #e1e9ef;
+  border-bottom: 1px solid #e1e9ef;
+}
+.bpi-corner {
+  font-size: 8px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8ea1b0;
+  text-align: center;
+}
+.bpi-day {
+  text-align: center;
+  padding: 14px 0;
+  font-size: 10px;
+  color: #7c8e9d;
+}
+.bpi-day strong {
+  display: block;
+  font-size: 20px;
+  color: #173d5a;
+  margin-top: 4px;
+}
+.bpi-crew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 10px;
+  font-weight: 700;
+  background: #fcfdff;
+  gap: 6px;
+}
+.bpi-crew span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #afc6d7;
+}
+.bpi-slot {
+  min-height: 151px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px 7px;
+  gap: 10px;
+  background: #fff;
+  color: #91a2af;
+  transition: background 0.15s;
+}
+.bpi-slot > span {
+  font-size: 23px;
+  font-weight: 400;
+  color: #c1cdd6;
+}
+.bpi-slot > small {
+  font-size: 8px;
+  line-height: 1.5;
+}
+.bpi-slot.occupied {
+  background: #edf5fa;
+  color: #2b5878;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 22px;
+}
+.bpi-slot strong {
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.bpi-slot.available {
+  background: #fff9ec;
+  color: #ac790b;
+}
+.bpi-slot.available > span {
+  color: #fea101;
+}
+.bpi-slot.active {
+  box-shadow: inset 0 0 0 2px #fea101;
+  background: #fff6e2;
+}
+.bpi-slot:hover {
+  box-shadow: inset 0 0 0 2px #8abbdc;
+}
+.bpi-key {
+  display: flex;
+  gap: 20px;
+  padding: 17px 20px;
+  flex-wrap: wrap;
+  font-size: 9px;
+  color: #8195a5;
+}
+.bpi-key > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bpi-key i {
+  width: 9px;
+  height: 9px;
+  background: #d3e8f5;
+  display: inline-block;
+}
+.bpi-key > span + span i {
+  background: #ffe3a4;
+}
+.bpi-explainer {
+  padding: 20px;
+  background: #f7fafc;
+  margin: 5px 20px 20px;
+  border-left: 2px solid #a8cbe1;
+}
+.bpi-explainer strong {
+  font-size: 11px;
+}
+.bpi-explainer p {
+  font-size: 10px;
+  line-height: 1.75;
+  color: #8a9ca9;
+  margin: 8px 0 0;
+}
+.bpi-error,
+.bpi-message {
+  margin: 15px 20px;
+  font-size: 11px;
+  line-height: 1.6;
+  padding: 12px 14px;
+  background: #fff4eb;
+  color: #ac6b30;
+}
+.bpi-message {
+  background: #f0f8f4;
+  color: #4a8164;
+}
+.bpi-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin: 24px 20px 0;
+}
+.bpi-remove {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  font-size: 10px;
+  color: #8c9ca8;
+}
+.bpi-export {
+  padding: 13px 16px;
+  color: #fff;
+  background: #005b9d;
+  border: 0;
+  font-size: 11px;
+  border-radius: 3px;
+}
+.bpi-menuisier button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.bpi-detail {
+  padding: 25px 20px;
+  border-left: 1px solid #dce5ed;
+  background: #fcfdff;
+}
+.bpi-detail > small {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #90a0af;
+}
+.bpi-detail h2 {
+  font: 600 24px/1.1 "Bricolage Grotesque";
+  margin: 15px 0 10px;
+}
+.bpi-detail > p {
+  font-size: 11px;
+  color: #8a9eae;
+  line-height: 1.6;
+}
+.bpi-detail label {
+  display: block;
+  font-size: 10px;
+  margin-top: 23px;
+  color: #647b8e;
+}
+.bpi-detail input[type="date"],
+.bpi-detail select,
+.bpi-detail textarea {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  border: 1px solid #cadbe7;
+  border-radius: 3px;
+  padding: 10px 9px;
+  font: inherit;
+  font-size: 12px;
+  background: #fff;
+  color: #274c67;
+  min-width: 0;
+}
+.bpi-detail .bpi-check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1.3;
+  margin-top: 18px;
+}
+.bpi-check input {
+  accent-color: #005b9d;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.bpi-detail .bpi-help {
+  font-size: 9px;
+  line-height: 1.7;
+  margin-top: 20px;
+  color: #9ba9b4;
+}
+.bpi-menuisier :focus-visible {
+  outline: 3px solid #fea101;
+  outline-offset: 2px;
+}
+@media (max-width: 1200px) {
+  .bpi-work {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .bpi-detail {
+    grid-column: 1/-1;
+    border-top: 1px solid #dce5ed;
+    border-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+  }
+  .bpi-detail > small,
+  .bpi-detail > h2,
+  .bpi-detail > p {
+    grid-column: 1/-1;
+  }
+  .bpi-detail h2 {
+    font-size: 23px;
+  }
+  .bpi-detail label {
+    margin-top: 16px;
+  }
+  .bpi-detail .bpi-help {
+    margin-top: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .bpi-header {
+    padding: 20px;
+    gap: 15px;
+  }
+  .bpi-header > p {
+    display: none;
+  }
+  .bpi-header > button {
+    margin-left: auto;
+    max-width: 100px;
+    font-size: 10px;
+  }
+  .bpi-mark > span {
+    font-size: 56px;
+  }
+  .bpi-mark strong {
+    font-size: 34px;
+  }
+  .bpi-mark small {
+    font-size: 7px;
+  }
+  .bpi-main {
+    padding: 26px 16px;
+  }
+  .bpi-title {
+    display: block;
+  }
+  .bpi-title h1 {
+    font-size: 35px;
+  }
+  .bpi-title p {
+    font-size: 11px;
+  }
+  .bpi-work {
+    display: block;
+  }
+  .bpi-jobs {
+    border-right: 0;
+    border-bottom: 1px solid #dce5ed;
+    padding: 20px 16px;
+  }
+  .bpi-jobs > button {
+    padding: 13px;
+  }
+  .bpi-jobs > button p {
+    max-width: 240px;
+  }
+  .bpi-example {
+    margin-bottom: 0;
+  }
+  .bpi-detail {
+    display: block;
+    padding: 25px 20px;
+  }
+  .bpi-planner header h2 {
+    font-size: 20px;
+  }
+  .bpi-key {
+    gap: 10px;
+    font-size: 8px;
+  }
+  .bpi-actions {
+    justify-content: center;
+  }
+  .bpi-export {
+    width: 100%;
+  }
+  .bpi-explainer {
+    margin: 5px 16px 20px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .bpi-agenda-scroll::before {
+    content: "Faites défiler la semaine vers la droite →";
+    display: block;
+    position: sticky;
+    left: 0;
+    padding: 10px 6px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #62727a;
+    background: #f7f9fa;
+  }
+}

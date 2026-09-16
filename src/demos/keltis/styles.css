@@ -1,0 +1,242 @@
+.keltis {
+  --navy: #1f2a5b;
+  --gold: #f6b141;
+  color: var(--navy);
+  background: white;
+  min-height: 100vh;
+  font:
+    17px/1.5 Catamaran,
+    Arial,
+    sans-serif;
+}
+.keltis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1510px;
+  margin: auto;
+  padding: 24px 36px 10px;
+}
+.keltis-header a {
+  font:
+    600 42px Livvic,
+    Arial,
+    sans-serif;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+.keltis-header a span {
+  color: var(--gold);
+}
+.keltis button {
+  background: white;
+  color: var(--navy);
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+  padding: 10px 17px;
+  font:
+    700 15px Catamaran,
+    sans-serif;
+}
+.keltis button.primary {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.keltis button:disabled {
+  opacity: 0.38;
+}
+.keltis-header button {
+  border: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.keltis main {
+  max-width: 1510px;
+  margin: auto;
+  padding: 20px 36px 0;
+}
+.keltis h1 {
+  font:
+    600 clamp(30px, 3vw, 44px)/1.18 Livvic,
+    sans-serif;
+  letter-spacing: -1.2px;
+  margin: 0 0 17px;
+}
+.keltis-intro {
+  color: #5d668a;
+  font-size: 18px;
+  margin: 0 0 28px;
+}
+.keltis-desk {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+.keltis-editor {
+  border: 1px solid #dbe0ed;
+  border-radius: 6px;
+  padding: 22px;
+}
+.keltis h2 {
+  font:
+    600 22px Livvic,
+    sans-serif;
+  margin: 0 0 18px;
+}
+.keltis-fields {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.7fr;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+.keltis label {
+  font-size: 14px;
+}
+.keltis input,
+.keltis textarea {
+  display: block;
+  background: white;
+  color: var(--navy);
+  border: 1px solid #cfd8eb;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+  font:
+    16px/1.6 Catamaran,
+    sans-serif;
+}
+.keltis textarea {
+  min-height: 360px;
+  resize: vertical;
+  background: #fcfdff;
+  padding: 18px;
+}
+.keltis-editor-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.keltis-checks > p {
+  color: #657091;
+  font-size: 14px;
+}
+.keltis-checks article {
+  padding: 15px;
+  border: 1px solid #e0e5ee;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.keltis-checks article > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.keltis-checks article > div > span {
+  display: grid;
+  place-items: center;
+  background: var(--gold);
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  font-size: 13px;
+}
+.keltis-checks h3 {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 700;
+}
+.keltis-checks small {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #7380a0;
+}
+.keltis-checks article > p {
+  font-size: 14px;
+  background: #f6f7fa;
+  padding: 9px;
+  margin: 12px 0;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.keltis-checks article button {
+  font-size: 12px;
+  padding: 5px 8px;
+  margin-right: 8px;
+  border-color: #cbd4e6;
+}
+.keltis-checks article.stale {
+  opacity: 0.5;
+}
+.keltis-export {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-wrap: wrap;
+  padding-top: 22px;
+  border-top: 1px solid #e1e5ef;
+  margin-top: 27px;
+}
+.keltis-export p {
+  margin-right: auto;
+  font-size: 14px;
+  color: #6c7796;
+}
+.keltis-notice {
+  min-height: 25px;
+  font-size: 14px;
+  color: #34664b;
+}
+.keltis-clear {
+  background: #f1f7f4;
+  color: #2c624a;
+  padding: 25px;
+  border-radius: 5px;
+}
+.keltis-clear strong {
+  font-size: 30px;
+}
+@media (max-width: 950px) {
+  .keltis-desk {
+    grid-template-columns: 1fr;
+  }
+  .keltis h1 br {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .keltis-header {
+    padding: 18px 16px 8px;
+  }
+  .keltis main {
+    padding: 20px 16px 0;
+  }
+  .keltis h1 {
+    font-size: 32px;
+  }
+  .keltis-fields {
+    grid-template-columns: 1fr;
+  }
+  .keltis-editor {
+    padding: 16px;
+  }
+  .keltis-editor-actions {
+    display: grid;
+  }
+  .keltis-export {
+    display: grid;
+  }
+  .keltis textarea {
+    font-size: 15px;
+  }
+  .keltis-header a {
+    font-size: 33px;
+  }
+}

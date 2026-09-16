@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+.imprimerie-ranchon {
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  min-height: 100vh;
+}
+.imprimerie-ranchon * {
+  box-sizing: border-box;
+}
+.rch-header {
+  padding: 26px 4%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.rch-header > strong {
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+  position: relative;
+}
+.rch-header strong small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
+}
+.rch-header i {
+  display: block;
+  width: 38px;
+  height: 7px;
+  background: #ecec1f;
+  margin-top: 12px;
+}
+.rch-header > p {
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  border-left: 1px solid #bbb;
+  padding-left: 25px;
+  flex: 1;
+}
+.imprimerie-ranchon button {
+  font: inherit;
+  cursor: pointer;
+}
+.rch-header button {
+  font-size: 11px;
+  border: 0;
+  background: none;
+  text-decoration: underline;
+}
+.rch-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 42px 4%;
+}
+.rch-form > small {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.rch-form h1 {
+  font-size: clamp(38px, 4.5vw, 65px);
+  letter-spacing: -3px;
+  line-height: 0.99;
+  margin: 20px 0;
+}
+.rch-form h1 em {
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: #ecec1f;
+  text-decoration-thickness: 9px;
+  text-underline-offset: 3px;
+}
+.rch-form > p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.65;
+  max-width: 390px;
+  margin: 26px 0;
+}
+.rch-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 18px;
+  border-top: 1px solid #ddd;
+  padding-top: 25px;
+  margin-top: 34px;
+}
+.rch-form label {
+  font-size: 11px;
+  display: block;
+  font-weight: 500;
+}
+.rch-form input,
+.rch-form select,
+.rch-form textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #d2d2d2;
+  border-radius: 0;
+  background: #fff;
+  padding: 11px 10px;
+  margin-top: 7px;
+  font: inherit;
+  font-size: 13px;
+  min-width: 0;
+}
+.rch-note {
+  margin-top: 22px;
+}
+.rch-limit {
+  font-size: 10px !important;
+  color: #969696 !important;
+}
+.rch-proof {
+  border-left: 1px solid #e4e4e4;
+  padding-left: 9%;
+  padding-top: 10px;
+  min-width: 0;
+}
+.rch-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 24px;
+}
+.rch-project > span {
+  grid-column: 1/-1;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.rch-project > strong {
+  font-size: 35px;
+  letter-spacing: -1.5px;
+}
+.rch-project > p {
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  padding-left: 15px;
+  border-left: 1px solid #aaa;
+}
+.rch-art {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  margin: 28px 0;
+  gap: 15px;
+  align-items: center;
+}
+.rch-cover {
+  background: #ecec1f;
+  aspect-ratio: 0.705;
+  position: relative;
+  overflow: hidden;
+  padding: 19px;
+  box-shadow: 4px 6px 0 #e9e9e9;
+}
+.rch-cover small {
+  font-size: 8px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+.rch-cover b {
+  font-family: Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 0.97;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-top: 23%;
+}
+.rch-cover > span {
+  position: absolute;
+  left: 19px;
+  bottom: 20px;
+  font-size: 8px;
+  z-index: 2;
+}
+.rch-cover i {
+  position: absolute;
+  right: -14%;
+  bottom: -18%;
+  font-size: clamp(150px, 21vw, 310px);
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  opacity: 0.76;
+}
+.rch-format svg {
+  width: 100%;
+  max-height: 270px;
+}
+.rch-format p {
+  font-size: 9px;
+  line-height: 1.4;
+  text-align: center;
+  color: #777;
+  margin-top: 0;
+}
+.rch-specs h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.rch-specs > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 11px;
+  margin: 11px 0;
+}
+.rch-specs strong {
+  font-weight: 500;
+  text-align: right;
+}
+.rch-specs > p {
+  font-size: 9px;
+  color: #888;
+  line-height: 1.6;
+  margin-top: 17px;
+}
+.rch-feedback {
+  padding: 17px 18px;
+  border-left: 3px solid #d7663b;
+  background: #fff5ef;
+  margin-top: 26px;
+  font-size: 12px;
+}
+.rch-feedback p {
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 8px 0 0;
+  color: #ad4e29;
+}
+.rch-feedback button {
+  margin-top: 12px;
+  padding: 0 0 3px;
+  border: 0;
+  border-bottom: 1px solid #b26940;
+  color: #9e4a25;
+  background: none;
+  font-size: 11px;
+}
+.rch-feedback.valid {
+  border-color: #4d8658;
+  background: #f2f8f1;
+}
+.rch-export {
+  margin-top: 18px;
+  background: #ecec1f;
+  border: 0;
+  padding: 18px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700 !important;
+  text-align: left;
+}
+.rch-export:disabled {
+  background: #eeeecc;
+  color: #929280;
+  cursor: not-allowed;
+}
+.rch-message {
+  font-size: 11px;
+  color: #53724c;
+}
+.imprimerie-ranchon :focus-visible {
+  outline: 3px solid #d6d618;
+  outline-offset: 3px;
+}
+@media (max-width: 900px) {
+  .rch-main {
+    gap: 4%;
+  }
+  .rch-proof {
+    padding-left: 6%;
+  }
+  .rch-fields {
+    grid-template-columns: 1fr;
+  }
+  .rch-form h1 {
+    font-size: 45px;
+  }
+  .rch-art {
+    grid-template-columns: 1fr;
+  }
+  .rch-format {
+    display: none;
+  }
+  .rch-cover {
+    max-width: 250px;
+    margin: auto;
+    width: 100%;
+  }
+  .rch-cover b {
+    font-size: 38px;
+  }
+  .rch-cover i {
+    font-size: 290px;
+  }
+}
+@media (max-width: 650px) {
+  .rch-header {
+    padding: 22px;
+    gap: 20px;
+  }
+  .rch-header > p {
+    display: none;
+  }
+  .rch-header > strong {
+    font-size: 29px;
+  }
+  .rch-header > button {
+    margin-left: auto;
+    font-size: 10px;
+    max-width: 100px;
+    text-align: right;
+  }
+  .rch-main {
+    display: block;
+    padding: 28px 22px;
+  }
+  .rch-form h1 {
+    font-size: 47px;
+  }
+  .rch-fields {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 12px;
+  }
+  .rch-form label {
+    font-size: 10px;
+  }
+  .rch-form input,
+  .rch-form select {
+    font-size: 11px;
+  }
+  .rch-proof {
+    border-left: 0;
+    border-top: 1px solid #ccc;
+    padding: 30px 0 0;
+    margin-top: 28px;
+  }
+  .rch-project strong {
+    font-size: 31px;
+  }
+  .rch-art {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+  .rch-format {
+    display: block;
+  }
+  .rch-cover {
+    padding: 13px;
+  }
+  .rch-cover b {
+    font-size: 28px;
+  }
+  .rch-cover i {
+    font-size: 205px;
+  }
+  .rch-cover > span {
+    left: 13px;
+  }
+  .rch-project p {
+    font-size: 9px;
+  }
+}

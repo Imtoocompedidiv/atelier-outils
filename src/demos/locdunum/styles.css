@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Marcellus&display=swap");
+.locdunum {
+  font-family: Manrope, Arial, sans-serif;
+  color: #28464d;
+  background: #f8fbfb;
+  min-height: 100vh;
+}
+.locdunum * {
+  box-sizing: border-box;
+}
+.loc-header {
+  padding: 24px 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccdfe1;
+  background: #fff;
+}
+.loc-header strong {
+  font-family: Marcellus, serif;
+  font-size: 32px;
+  color: #137185;
+  font-weight: 400;
+}
+.loc-header strong span {
+  display: block;
+  font: 9px Manrope;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+.loc-header > span {
+  font-size: 12px;
+  color: #678086;
+}
+.loc-work {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  max-width: 1500px;
+  margin: auto;
+}
+.loc-controls {
+  padding: 42px 32px;
+  background: #edf5f5;
+  border-right: 1px solid #c0dee4;
+}
+.loc-controls > small {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.loc-controls h1 {
+  font:
+    40px/1.12 Marcellus,
+    serif;
+  margin: 18px 0;
+}
+.loc-controls p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.loc-controls fieldset {
+  border: 0;
+  border-top: 1px solid #bdd0d3;
+  padding: 22px 0 12px;
+  margin: 26px 0 0;
+}
+.loc-controls legend {
+  padding-right: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.loc-controls label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin: 12px 0;
+  gap: 10px;
+}
+.loc-controls label div {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #bad0d4;
+  width: 106px;
+  flex-shrink: 0;
+}
+.loc-controls input {
+  width: 70px;
+  padding: 10px 6px 10px 12px;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 15px;
+  color: #21444c;
+}
+.loc-controls label span {
+  font-size: 10px;
+  color: #697c81;
+}
+.loc-assumption {
+  color: #60787e;
+  border-top: 1px solid #ccdadd;
+  padding-top: 18px;
+  font-size: 11px !important;
+}
+.locdunum button {
+  cursor: pointer;
+  font: inherit;
+}
+.loc-reset {
+  border: 0;
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  padding: 10px 0;
+  font-size: 12px !important;
+  color: #45666e;
+}
+.loc-plan {
+  padding: 32px 40px;
+}
+.loc-plan-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.loc-plan-title h2 {
+  font:
+    25px Marcellus,
+    serif;
+  margin: 0;
+}
+.loc-plan-title span {
+  font-size: 10px;
+  color: #738b8f;
+}
+.loc-paper {
+  margin-top: 20px;
+  border: 1px solid #cededf;
+  background: #fff;
+  height: 580px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+.loc-paper svg {
+  width: 100%;
+  height: 100%;
+}
+.loc-results {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: 1px solid #cbdcde;
+}
+.loc-results > div {
+  display: flex;
+  flex-direction: column;
+}
+.loc-results strong {
+  font:
+    32px Marcellus,
+    serif;
+}
+.loc-results strong small {
+  font-size: 16px;
+}
+.loc-results span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 8px;
+}
+.loc-message {
+  font-size: 13px;
+  padding: 14px 0;
+  color: #246c67;
+}
+.loc-message.warning {
+  color: #9c582a;
+}
+.loc-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.loc-bottom p {
+  max-width: 420px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: #637a80;
+}
+.loc-bottom button {
+  background: #137185;
+  color: #fff;
+  border: 0;
+  padding: 15px 18px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.locdunum button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.locdunum :focus-visible {
+  outline: 3px solid #6796a0;
+  outline-offset: 3px;
+}
+.loc-plan > p[role="status"] {
+  font-size: 12px;
+}
+@media (max-width: 1000px) {
+  .loc-work {
+    grid-template-columns: 300px 1fr;
+  }
+  .loc-controls {
+    padding: 30px 22px;
+  }
+  .loc-plan {
+    padding: 25px;
+  }
+  .loc-bottom {
+    display: block;
+  }
+  .loc-results span {
+    font-size: 9px;
+  }
+  .loc-paper {
+    height: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .loc-header {
+    padding: 20px;
+  }
+  .loc-header > span {
+    display: none;
+  }
+  .loc-work {
+    display: block;
+  }
+  .loc-controls {
+    padding: 28px 24px;
+    border-right: 0;
+  }
+  .loc-controls h1 {
+    font-size: 36px;
+  }
+  .loc-controls fieldset {
+    margin-top: 20px;
+  }
+  .loc-plan {
+    padding: 28px 18px;
+  }
+  .loc-paper {
+    height: 500px;
+    padding: 0;
+  }
+  .loc-plan-title h2 {
+    font-size: 24px;
+  }
+  .loc-results strong {
+    font-size: 29px;
+  }
+  .loc-results span {
+    font-size: 8px;
+  }
+  .loc-bottom button {
+    width: 100%;
+  }
+  .loc-bottom p {
+    font-size: 11px;
+  }
+}
