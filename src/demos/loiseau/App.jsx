@@ -224,7 +224,10 @@ export default function App() {
             </div>
             <div className="loiseau-receipt">
               <p>
-                <span>Main-d’œuvre {r.valid && `· ${r.minutes / 60} h`}</span>
+                <span>
+                  Main-d’œuvre{" "}
+                  {r.valid && `· ${(r.minutes / 60).toLocaleString("fr-FR")} h`}
+                </span>
                 <b>{r.valid ? euro(r.labor) : "—"}</b>
               </p>
               <p>

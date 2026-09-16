@@ -140,7 +140,15 @@ export default function App() {
           )}
           <div className="opera-print-work">
             <section className="opera-print-data">
-              <div className="opera-print-tablewrap">
+              <p className="opera-print-scrollhint">
+                Faites défiler le tableau pour voir toutes les colonnes.
+              </p>
+              <div
+                className="opera-print-tablewrap"
+                tabIndex={0}
+                role="region"
+                aria-label="Tableau des données nominatives, défilement horizontal"
+              >
                 <table>
                   <thead>
                     <tr>

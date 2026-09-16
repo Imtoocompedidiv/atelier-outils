@@ -79,7 +79,8 @@
 }
 .atelier-experience-layout aside button small {
   grid-column: 2;
-  opacity: 0.5;
+  color: #bdbdbd;
+  opacity: 1;
 }
 .atelier-experience-layout aside i {
   font: 30px Georgia;
@@ -268,7 +269,8 @@
     gap: 0 20px;
   }
   .atelier-experience-editor h3,
-  .atelier-experience-editor small {
+  .atelier-experience-editor small,
+  .atelier-experience-editor label:has(textarea) {
     grid-column: 1/-1;
   }
 }

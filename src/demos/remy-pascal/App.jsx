@@ -59,7 +59,7 @@ export default function App() {
     setTickets((ts) =>
       ts.map((t) => (t.id === selected ? validate(t, stage) : t)),
     );
-    setMessage(`${stageNames[stage]} consignée dans l’exemple.`);
+    setMessage(`Étape « ${stageNames[stage]} » consignée dans l’exemple.`);
     if (stage < 3) setStage(stage + 1);
   }
   function exportTicket() {

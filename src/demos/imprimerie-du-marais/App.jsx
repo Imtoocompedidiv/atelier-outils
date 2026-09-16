@@ -214,7 +214,7 @@ export default function App() {
               </div>
             )}
             <div className="imprimerie-du-marais-explanation">
-              <h3>Un ordre compatible, pas une promesse de délai.</h3>
+              <h3>Une durée théorique pour cette gamme.</h3>
               <p>
                 Le calcul additionne les durées fictives selon les dépendances.
                 Il suppose des ressources disponibles, sans temps d’attente,
@@ -274,8 +274,7 @@ export default function App() {
                       }
                     />
                     <span>
-                      <b>{n.id}</b>
-                      {n.workshop}
+                      <b>{n.id}</b> {n.workshop}
                     </span>
                   </label>
                 ))}

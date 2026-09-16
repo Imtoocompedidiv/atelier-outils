@@ -156,6 +156,17 @@
   max-height: 480px;
   border: 1px solid #ddd;
 }
+.opera-print-scrollhint {
+  display: none;
+}
+@media (max-width: 600px) {
+  .opera-print-scrollhint {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    margin: 0 0 12px;
+  }
+}
 .opera-print-app table {
   border-collapse: collapse;
   width: 100%;
