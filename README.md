@@ -42,4 +42,4 @@ Les paramètres illustratifs sont indiqués dans chaque interface. Un schéma de
 
 Un pilote réel commencerait par le format de données existant, les règles validées avec l’équipe, les droits d’accès et les conditions de maintenance. Le prototype permet de tester le parcours avant ce raccordement.
 
-[Autres réalisations de JD](https://imtoocompedidiv.github.io/portfolio/)
+[Autres réalisations](https://imtoocompedidiv.github.io/portfolio/)

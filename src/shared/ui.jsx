@@ -7,7 +7,7 @@ export function DemoNotice({ company }) {
         Prototype indépendant préparé pour {company}. Données fictives.
       </span>
       <a href="https://imtoocompedidiv.github.io/portfolio/">
-        Une réalisation de JD
+        Autres réalisations
       </a>
     </div>
   );

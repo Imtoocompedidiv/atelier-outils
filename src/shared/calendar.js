@@ -19,11 +19,11 @@ function fold(line) {
   }
   return result;
 }
-export function calendarFile(events, label = "Atelier JD") {
+export function calendarFile(events, label = "Atelier") {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//JD//Atelier//FR",
+    "PRODID:-//Imtoocompedidiv//Atelier//FR",
     "CALSCALE:GREGORIAN",
     `X-WR-CALNAME:${escapeValue(label)}`,
   ];

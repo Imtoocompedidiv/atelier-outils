@@ -88,7 +88,7 @@ export function toIcs(events, stamp = new Date()) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//JD//Suivi integration//FR",
+    "PRODID:-//Imtoocompedidiv//Suivi integration//FR",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
   ];
